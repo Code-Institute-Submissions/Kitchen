@@ -6,6 +6,7 @@
 ## UX
 ### UX goals
 ### User Stories
+
 ### Design process
 ### Wireframes
 ### Changes I made throuought
@@ -16,6 +17,8 @@
 ## Technologies used
 ### Languages
 ### Libraries
+MongoDB
+Flask
 ### Technologies
 
 ## Testing
