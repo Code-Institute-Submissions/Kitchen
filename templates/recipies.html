@@ -1,9 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2>I'm extending the base template</h2>
-
     {% for recipe in recipies %}
+        <img src="{{ recipe.recipe_img }}" alt="recipe image" width="20%" height="20%"><br>
         {{ recipe.recipe_name }}<br>
         {{ recipe.category_name }}<br>
         {{ recipe.ingredients }}<br>
