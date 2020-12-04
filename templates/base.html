@@ -15,12 +15,43 @@
 </head>
 <body>
 
+    <header>
+        <!-- navbar -->
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+            <a href="{{ url_for('get_recipies') }}" class="brand-logo open-sans logo-text">Kitchen.</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down open-sans">
+                <li><a href="{{ url_for('get_recipies') }}">Home</a></li>
+                <li><a href="#">Recipies</a></li>
+                <li><a href="#">Add Recipe</a></li>
+                <li><a href="#">Manage Categories</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+            </div>
+        </nav>
+        <!-- navbar collapsed -->
+        <ul class="sidenav open-sans" id="mobile-demo">
+            <li><a href="{{ url_for('get_recipies') }}">Home</a></li>
+                <li><a href="#">Recipies</a></li>
+                <li><a href="#">Add Recipe</a></li>
+                <li><a href="#">Manage Categories</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log Out</a></li>
+        </ul>   
+    </header>
+
     {% block content %}
     {% endblock %}
 
     <!-- scripts -->
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 

@@ -1,0 +1,18 @@
+/* fonts ---------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+.open-sans {
+    font-family: "Open Sans Condensed",  sans-serif;
+}
+
+.logo-text {
+    margin-left: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* navbar ---------------------------------------- */
+.nav-extended {
+    background-color: #093824;
+}
