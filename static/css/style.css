@@ -13,6 +13,18 @@
 }
 
 
+/* body and main content ---------------------------------------- */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+      
+
 /* all rows ---------------------------------------- */
 .row {
     margin-bottom: 0px;
@@ -22,6 +34,8 @@
 /* navbar ---------------------------------------- */
 .nav-extended {
     background-color: #093824;
+    position: fixed;
+    top: 0;
 }
 
 .navbar-text a {
@@ -49,6 +63,7 @@
 .hero-img {
     height: 400px;
     width: 100%;
+    margin-top: 56px;
     background-image: url('../img/hero1.jpg');
     background-position: center center;
     background-size: cover;
@@ -99,10 +114,8 @@
     background-color: #093824;
     font-size: 18px;
     color: #FCFCFF;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%; 
+    width: 100%;
+    padding-top: 0px;
 }
 
 .social-links {
