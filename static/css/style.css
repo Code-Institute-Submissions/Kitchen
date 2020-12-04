@@ -124,6 +124,7 @@ main {
 }
 
 .card-panel {
+    background-color: rgb(252, 252, 255, 0.8);
     width: 500px;
     margin: 0;
     position: absolute;
@@ -131,8 +132,16 @@ main {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    box-shadow: none;
 }
 
+.sign-up {
+    font-size: 20px;
+}
+
+.already-text {
+    font-size: 20px;
+}
 
 /* footer ---------------------------------------- */
 .footer-row {
@@ -157,6 +166,7 @@ main {
     color: #FCFCFF!important;
     margin-right: 10px;
 }
+
 
 /* media query ---------------------------------------- */
 /* ------------------- max-width: 600px */

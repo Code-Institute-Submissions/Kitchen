@@ -5,7 +5,9 @@
         <div class="row">
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signup') }}">
                 <div class="card-panel">
-                    <h3 class="center-align open-sans sign-up-heading">Sign Up</h3>
+                    <div class="row">
+                        <h3 class="center-align open-sans sign-up-heading">Sign Up</h3>
+                    </div>
                     <!-- username input -->
                     <div class="row">
                         <div class="input-field col s12">
@@ -24,7 +26,13 @@
                     </div>
                     <!-- sign up button -->
                     <div class="row center-align">
-                        <button type="submit" class="btn btn-blue">Sign Up</button>
+                        <button type="submit" class="btn btn-blue sign-up">Sign Up</button>
+                    </div>
+                    <div class="row">
+                        <p class="center-align open-sans already-text">
+                            Already a member? 
+                            <a href="#">Click here to sign in!</a>
+                        </p>
                     </div>
                 </div>
             </form>
