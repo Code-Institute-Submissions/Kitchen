@@ -22,11 +22,12 @@ body {
 
 main {
     flex: 1 0 auto;
+    margin-top: 64px;
 }
       
 
 /* all rows ---------------------------------------- */
-.row {
+.row-no-margin {
     margin-bottom: 0px;
 }
 
@@ -63,7 +64,6 @@ main {
 .hero-img {
     height: 400px;
     width: 100%;
-    margin-top: 56px;
     background-image: url('../img/hero1.jpg');
     background-position: center center;
     background-size: cover;
