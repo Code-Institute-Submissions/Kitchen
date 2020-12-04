@@ -22,6 +22,23 @@
     font-size: 20px!important;
 }
 
+
+/* buttons ---------------------------------------- */
+.btn {
+    font-family: "Open Sans Condensed",  sans-serif;
+    text-transform: none;
+    font-weight: bold!important;
+    background-color: #FCFCFF!important;
+    color: #000000!important;
+    box-shadow: none!important;
+}
+
+.btn-blue {
+    background-color: #406E8E!important;
+    color: #FCFCFF!important;
+    box-shadow: none!important;
+}
+
 /* index hero img --------------------------------- */
 .hero-img {
     height: 400px;
