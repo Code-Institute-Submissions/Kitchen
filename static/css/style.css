@@ -107,6 +107,18 @@ main {
 
 
 /* signup.html -------------------------------------- */
+
+#signup-background {
+    background-image: url("../img/login-register-hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    background-color: #0A014F;
+    min-height: 100vh;
+}
+
 .sign-up-heading {
     font-weight: bold;
 }
@@ -147,6 +159,11 @@ main {
 }
 
 /* media query ---------------------------------------- */
+/* ------------------- max-width: 600px */
+main {
+    margin-top: 56px;
+}
+
 /* ------------------- max-width: 640px */
 @media (max-width: 640px) {
     .card-panel {
