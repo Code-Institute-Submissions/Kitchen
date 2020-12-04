@@ -12,6 +12,10 @@
     text-transform: uppercase;
 }
 
+.navbar-text a {
+    font-size: 20px!important;
+}
+
 /* navbar ---------------------------------------- */
 .nav-extended {
     background-color: #093824;
