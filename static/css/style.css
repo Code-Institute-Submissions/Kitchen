@@ -12,13 +12,30 @@
     text-transform: uppercase;
 }
 
-.navbar-text a {
-    font-size: 20px!important;
-}
 
 /* navbar ---------------------------------------- */
 .nav-extended {
     background-color: #093824;
+}
+
+.navbar-text a {
+    font-size: 20px!important;
+}
+
+/* index hero img --------------------------------- */
+.hero-img {
+    height: 400px;
+    width: 100%;
+    background-image: url('../img/hero1.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.welcome-h1 {
+    color: #FCFCFF;
+    font-size: 85px;
+    margin: 0px;
+    padding-top: 150px;
 }
 
 /* footer ---------------------------------------- */
