@@ -13,6 +13,12 @@
 }
 
 
+/* all rows ---------------------------------------- */
+.row {
+    margin-bottom: 0px;
+}
+
+
 /* navbar ---------------------------------------- */
 .nav-extended {
     background-color: #093824;
@@ -39,7 +45,7 @@
     box-shadow: none!important;
 }
 
-/* index hero img --------------------------------- */
+/* index.html -------------------------------------- */
 .hero-img {
     height: 400px;
     width: 100%;
@@ -53,6 +59,23 @@
     font-size: 85px;
     margin: 0px;
     padding-top: 150px;
+}
+
+.red-info-box {
+    background-color: #3E000C;
+    height: 300px;
+    color: #FCFCFF;
+}
+
+.red-info-box h3 {
+    font-weight: bold;
+}
+
+.blue-info-box {
+    background-color: #B7CECE;
+    height: 300px;
+    color: #000000;
+    font-size: 24px;
 }
 
 /* footer ---------------------------------------- */

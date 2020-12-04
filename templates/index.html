@@ -1,8 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="hero-img center-align">
+    <div class="row">
+        <div class="hero-img center-align">
             <h1 class="welcome-h1 open-sans">Welcome to <strong class="logo-text">Kitchen.</strong></h1>
+        </div>
     </div>
-
+    <div class="row">
+        <div class="col m6 s12 center-align blue-info-box open-sans">
+            <p>
+                This is a platform where food <br>
+                enthusiasts from all over the world gather <br>
+                to share their best recipes. 
+                <br>
+                <br>
+                We simply call it everybodys kitchen.
+            </p>
+        </div>
+        <div class="col m6 s12 center-align red-info-box open-sans">
+            <h3>Want to share a recipe?</h3>
+            <a href="#" class="btn btn-blue">Sign Up</a>
+        </div>
+    </div>
+    
 {% endblock %}
