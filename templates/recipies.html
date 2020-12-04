@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for recipe in recipies %}
-        <img src="{{ recipe.recipe_img }}" alt="recipe image" width="20%" height="20%"><br>
-        {{ recipe.recipe_name }}<br>
-        {{ recipe.category_name }}<br>
-        {{ recipe.ingredients }}<br>
-        {{ recipe.preparation_steps }}<br>
-    {% endfor %}
+    <main>
+        {% for recipe in recipies %}
+            <img src="{{ recipe.recipe_img }}" alt="recipe image" width="20%" height="20%"><br>
+            {{ recipe.recipe_name }}<br>
+            {{ recipe.category_name }}<br>
+            {{ recipe.ingredients }}<br>
+            {{ recipe.preparation_steps }}<br>
+        {% endfor %}
+    </main>
 
 {% endblock %}
