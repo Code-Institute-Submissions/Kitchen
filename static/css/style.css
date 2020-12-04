@@ -115,3 +115,20 @@
     color: #FCFCFF!important;
     margin-right: 10px;
 }
+
+/* media query ---------------------------------------- */
+/* ------------------- max-width: 768px */
+
+@media (max-width: 768px) {
+    .box-content {
+        width: 300px;
+    }
+
+    .blue-info-box {
+        font-size: 20px;
+    }
+
+    .red-info-box h3 {
+        font-size: 28px;
+    }
+}
