@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="center-align open-sans">Add recipe</h3>
+
+    <div class="row ">
+        <div class="form-container center-align">
+            <form class="col s12" method="POST" action="">
+                <div class="row">
+                    <div class="input-field col s12 m8">
+                        <i class="fas fa-pencil-alt prefix"></i>
+                        <input id="recipe_name" name="recipe_name" type="text" class="validate">
+                        <label for="recipe_name" class="open-sans">Recipe Name</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
