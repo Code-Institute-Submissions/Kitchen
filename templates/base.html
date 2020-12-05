@@ -19,30 +19,36 @@
         <!-- navbar -->
         <nav class="nav-extended">
             <div class="nav-wrapper">
-            <a href="{{ url_for('get_home') }}" class="brand-logo open-sans logo-text">Kitchen.</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-            <ul class="right hide-on-med-and-down open-sans">
-                <li class="navbar-text"><a href="{{ url_for('get_home') }}">Home</a></li>
-                <li class="navbar-text"><a href="{{ url_for('get_recipies') }}">Recipies</a></li>
-                <li class="navbar-text"><a href="#">Add Recipe</a></li>
-                <li class="navbar-text"><a href="#">Manage Categories</a></li>
-                <li class="navbar-text"><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                <li class="navbar-text"><a href="{{ url_for('signin') }}" class="btn">Sign In</a></li>
-                <li class="navbar-text"><a href="{{ url_for('signup') }}" class="btn btn-blue">Sign Up</a></li>
-                <li class="navbar-text"><a href="#" class="btn">Log Out</a></li>
-            </ul>
+                <a href="{{ url_for('get_home') }}" class="brand-logo open-sans logo-text">Kitchen.</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down open-sans">
+                    <li class="navbar-text"><a href="{{ url_for('get_home') }}">Home</a></li>
+                    <li class="navbar-text"><a href="{{ url_for('get_recipies') }}">Recipies</a></li>
+                    {% if session.user %}
+                        <li class="navbar-text"><a href="#">Add Recipe</a></li>
+                        <li class="navbar-text"><a href="#">Manage Categories</a></li>
+                        <li class="navbar-text"><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                        <li class="navbar-text"><a href="{{ url_for('logout') }}" class="btn">Log Out</a></li>
+                    {% else %}
+                        <li class="navbar-text"><a href="{{ url_for('signup') }}" class="btn btn-blue">Sign Up</a></li>
+                        <li class="navbar-text"><a href="{{ url_for('signin') }}" class="btn">Sign In</a></li>
+                    {% endif %}
+                </ul>
             </div>
         </nav>
         <!-- navbar collapsed -->
         <ul class="sidenav open-sans" id="mobile-demo">
             <li class="navbar-text"><a href="{{ url_for('get_home') }}">Home</a></li>
             <li class="navbar-text"><a href="{{ url_for('get_recipies') }}">Recipies</a></li>
-            <li class="navbar-text"><a href="#">Add Recipe</a></li>
-            <li class="navbar-text"><a href="#">Manage Categories</a></li>
-            <li class="navbar-text"><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-            <li class="navbar-text"><a href="{{ url_for('signin') }}" class="btn">Sign In</a></li>
-            <li class="navbar-text"><a href="{{ url_for('signup') }}" class="btn btn-blue">Sign Up</a></li>
-            <li class="navbar-text"><a href="#" class="btn">Log Out</a></li>
+            {% if session.user %}
+                <li class="navbar-text"><a href="#">Add Recipe</a></li>
+                <li class="navbar-text"><a href="#">Manage Categories</a></li>
+                <li class="navbar-text"><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                <li class="navbar-text"><a href="{{ url_for('logout') }}" class="btn">Log Out</a></li>
+            {% else %}
+                <li class="navbar-text"><a href="{{ url_for('signup') }}" class="btn btn-blue">Sign Up</a></li>
+                <li class="navbar-text"><a href="{{ url_for('signin') }}" class="btn">Sign In</a></li>
+            {% endif %}
         </ul> 
     </header>
         <div class="center-align flashmessage">
