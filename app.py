@@ -36,6 +36,23 @@ def get_recipies():
 # get signup page ---------------------------------------------------------
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
+    if request.method == "POST":
+        #Checking if username exist
+        user_existing = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+        if user_existing:
+            flash("Username already exists!")
+            return redirect(url_for("signup"))
+
+        register = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register)
+
+        # session cookie for new user
+        session["user"] = request.form.get("username").lower()
+        flash("Registration Successful!")
     return render_template("signup.html")
 
 

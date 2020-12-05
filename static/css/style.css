@@ -14,6 +14,11 @@
 
 
 /* body and main content ---------------------------------------- */
+
+html {
+    margin-top: 64px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -22,7 +27,6 @@ body {
 
 main {
     flex: 1 0 auto;
-    margin-top: 64px;
 }
       
 
@@ -36,6 +40,7 @@ main {
 .nav-extended {
     background-color: #093824;
     position: fixed;
+    z-index: 1;
     top: 0;
 }
 
@@ -115,8 +120,9 @@ main {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    background-color: #0A014F;
+    background-color: #FCFCFF;
     min-height: 100vh;
+    position: relative;
 }
 
 .sign-up-heading {
@@ -126,7 +132,7 @@ main {
 .card-panel {
     background-color: rgb(252, 252, 255, 0.8);
     width: 500px;
-    margin: 0;
+    margin: 0px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -168,11 +174,40 @@ main {
 }
 
 
-/* media query ---------------------------------------- */
-/* ------------------- max-width: 600px */
-main {
-    margin-top: 56px;
+/* flash message -------------------------------------- */
+
+.flashmessage {
+    background-color: #3E000C;
 }
+
+.flashmessage p {
+    color: #FCFCFF;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    line-height: 0;
+}
+
+
+
+/* media query ---------------------------------------- */
+/* ------------------- max-width: 480px */
+@media (max-width: 480px) {
+    .flashmessage p {
+    font-size: 14px;
+    line-height: 0;
+    }
+}
+
+
+/* ------------------- max-width: 600px */
+@media (max-width: 600px) {
+    html {
+        margin-top: 56px;
+    }
+}
+
 
 /* ------------------- max-width: 640px */
 @media (max-width: 640px) {
