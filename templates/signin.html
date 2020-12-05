@@ -3,15 +3,15 @@
 
     <main id="signup-background">
         <div class="row">
-            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signup') }}">
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signin') }}">
                 <div class="card-panel">
                     <div class="row">
-                        <h3 class="center-align open-sans sign-up-heading">Sign Up</h3>
+                        <h3 class="center-align open-sans sign-up-heading">Sign In</h3>
                     </div>
                     <!-- username input -->
                     <div class="row signup-username">
                         <div class="input-field col s12">
-                            <i class="fas fa-user-plus prefix"></i>
+                            <i class="fas fa-user-cog prefix"></i>
                             <input id="username" name="username" type="text"
                                 minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="username" class="open-sans">Username</label>
@@ -28,12 +28,12 @@
                     </div>
                     <!-- sign up button -->
                     <div class="row center-align">
-                        <button type="submit" class="btn btn-blue sign-up">Sign Up</button>
+                        <button type="submit" class="btn btn-blue sign-up">Sign In</button>
                     </div>
                     <div class="row">
                         <p class="center-align open-sans already-text">
-                            Already a member? 
-                            <a href="{{ url_for('signin') }}">Click here to sign in!</a>
+                            Not a member yet? 
+                            <a href="{{ url_for('signup') }}">Click here to sign up!</a>
                         </p>
                     </div>
                 </div>

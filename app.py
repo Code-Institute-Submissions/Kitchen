@@ -37,7 +37,7 @@ def get_recipies():
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     if request.method == "POST":
-        #Checking if username exist
+        # Checking if username exist
         user_existing = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
         if user_existing:
@@ -54,6 +54,31 @@ def signup():
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
     return render_template("signup.html")
+
+
+@app.route("/signin", methods=["GET", "POST"])
+def signin():
+    if request.method == "POST":
+        # check if user exists
+        user_existing = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+        if user_existing:
+            # check password match
+            if check_password_hash(
+                user_existing["password"], request.form.get("password")):
+                    session["user"] = request.form.get("username").lower()
+                    flash("Hi there, {}!".format(request.form.get("username")))
+            else:
+                # if password doesn't match
+                flash("The Username and/or Password is incorrect!")
+                return redirect(url_for("signin"))
+
+        else:
+            # username doesn't exist
+            flash("The Username doesn't exist! Please try again.")
+            return redirect(url_for("signin"))
+
+    return render_template("signin.html")
 
 
 if __name__ == "__main__":
