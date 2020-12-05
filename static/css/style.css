@@ -156,6 +156,11 @@ main {
     padding: 10px;
 }
 
+.card-image-position {
+    height: 200px;
+    
+}
+
 
 /* footer ---------------------------------------- */
 .footer-row {

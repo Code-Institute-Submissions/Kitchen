@@ -2,39 +2,39 @@
 {% block content %}
 
     <main>
-        {% for recipe in recipies %}
-            <img src="{{ recipe.recipe_img }}" alt="recipe image" width="20%" height="20%"><br>
-            {{ recipe.recipe_name }}<br>
-            {{ recipe.category_name }}<br>
-            {{ recipe.ingredients }}<br>
-            {{ recipe.preparation_steps }}<br>
-        {% endfor %}
+        <div>
+            <h1>Categories here</h1>
+        </div>
+        
+        <!-- recipe card -->
         <div class="row recipe-area">
-            <div class="col s12 m7">
-                <div class="card">
-                    <div class="card-image">
-                    <img src="images/sample-1.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Recipe Name</span>
-                        <p>
-                            <i class="fas fa-user"></i>
-                            By user
-                        </p>
-                        <p>
-                            <i class="fas fa-utensils"></i>
-                            Category
-                        </p>
-                        <p>
-                            <i class="fas fa-stopwatch"></i>
-                            Preptime
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Recipe Link</a>
+            {% for recipe in recipies %}
+                <div class="col s6 m4 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ recipe.recipe_img }}" class="card-image-position">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title open-sans">{{ recipe.recipe_name }}</span>
+                            <p class="open-sans">
+                                <i class="fas fa-user"></i>
+                                By user
+                            </p>
+                            <p class="open-sans">
+                                <i class="fas fa-utensils"></i>
+                                {{ recipe.category_name }}
+                            </p>
+                            <p class="open-sans">
+                                <i class="fas fa-stopwatch"></i>
+                                {{ recipe.preptime }}
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="open-sans">Recipe Link</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {% endfor %}
         </div>    
     </main>
 
