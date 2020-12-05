@@ -165,6 +165,12 @@ main {
     overflow: hidden;
 }
 
+/* add_recipe.html ---------------------------------------- */
+.add-recipe-container {
+    width: 600px;
+    margin: auto;
+}
+
 /* footer ---------------------------------------- */
 .footer-row {
     margin-bottom: 0px;
@@ -244,5 +250,9 @@ main {
 
     .red-info-box h3 {
         font-size: 28px;
+    }
+
+    .add-recipe-container {
+    width: 350px;
     }
 }

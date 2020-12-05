@@ -1,10 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<main>
-    <div class="card-panel">
-    <h3 class="center-align open-sans">Add recipe</h3>
+
+    <div class="add-recipe-container">
+        <div class="row">
+            <h3 class="center-align open-sans sign-up-heading">Add Recipe</h3>
+        </div>
+        <!-- form container -->
         <div class="form-container">
-            <form class="col s12" method="POST" action="">
+            <form class="col s12" method="POST" action="{{ url_for(('add_recipe')) }}">
+                <!-- recipe name -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix"></i>
@@ -13,6 +17,7 @@
                         <label for="recipe_name" class="open-sans">Recipe Name</label>
                     </div>
                 </div>
+                <!-- categories -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-utensils prefix"></i>
@@ -25,6 +30,7 @@
                         <label for="category_name" class="open-sans">Category</label>
                     </div>
                 </div>
+                <!-- ingredients -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fas fa-list-ul prefix"></i>
@@ -32,6 +38,7 @@
                         <label for="ingredients" class="open-sans">Add ingredients here</label>
                     </div>
                 </div>
+                <!-- preparation steps -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-list-ol prefix"></i>
@@ -39,8 +46,16 @@
                         <label for="preparation_steps" class="open-sans">Add preparation steps here</label>
                     </div>
                 </div>
+                <!-- submit button -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn btn-blue">
+                            Add Recipe <i class="fas fa-plus-square right"></i>
+                        </button>
+                    </div>
+                </div>
             </form>
         </div>
-        </div>
-</main>
+    </div>
+
 {% endblock %}
