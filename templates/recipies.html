@@ -18,7 +18,7 @@
                             <span class="card-title open-sans">{{ recipe.recipe_name }}</span>
                             <p class="open-sans">
                                 <i class="fas fa-user"></i>
-                                By user
+                                {{ recipe.created_by }}
                             </p>
                             <p class="open-sans">
                                 <i class="fas fa-utensils"></i>
@@ -26,7 +26,7 @@
                             </p>
                             <p class="open-sans">
                                 <i class="fas fa-stopwatch"></i>
-                                {{ recipe.preptime }}
+                                {{ recipe.preptime_time }}
                             </p>
                         </div>
                         <div class="card-action">
