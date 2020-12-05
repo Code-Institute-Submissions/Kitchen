@@ -99,6 +99,7 @@ def profile(username):
     return redirect(url_for("signin"))
 
 
+# log out ----------------------------------------------------------------
 @app.route("/logout")
 def logout():
     # log out by deleting session cookies
@@ -107,6 +108,7 @@ def logout():
     return redirect(url_for("signin"))
 
 
+# add recipe -------------------------------------------------------------
 @app.route("/add_recipe")
 def add_recipe():
     categories = mongo.db.categories.find().sort("category_name", 1)
