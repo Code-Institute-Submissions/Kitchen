@@ -158,9 +158,12 @@ main {
 
 .card-image-position {
     height: 200px;
-    
 }
 
+.card-image img {
+    object-fit: cover;
+    overflow: hidden;
+}
 
 /* footer ---------------------------------------- */
 .footer-row {
