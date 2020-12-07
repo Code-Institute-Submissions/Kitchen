@@ -30,7 +30,7 @@
                             </p>
                             <br>
                             <div class="recipe-buttons">
-                                <a href="" class="btn-small btn-edit open-sans">Edit</a>
+                                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small btn-edit open-sans">Edit</a>
                                 <a href="" class="btn-small btn-delete open-sans">Delete</a>
                             </div>
                         </div>

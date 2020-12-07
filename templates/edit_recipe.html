@@ -3,11 +3,11 @@
 
     <div class="add-recipe-container">
         <div class="row">
-            <h3 class="center-align open-sans sign-up-heading">Add Recipe</h3>
+            <h3 class="center-align open-sans sign-up-heading">Edit Recipe</h3>
         </div>
         <!-- form container -->
         <div class="form-container">
-            <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
+            <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
                 <!-- recipe name -->
                 <div class="row">
                     <div class="input-field col s12">
@@ -98,7 +98,7 @@
                 <div class="row">
                     <div class="col s12 center-align">
                         <button type="submit" class="btn btn-blue">
-                            Add Recipe <i class="fas fa-plus-square right"></i>
+                            Edit Recipe <i class="fas fa-edit right"></i>
                         </button>
                     </div>
                 </div>
