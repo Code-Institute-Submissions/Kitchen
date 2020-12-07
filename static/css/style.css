@@ -165,18 +165,26 @@ main {
     overflow: hidden;
 }
 
+.card-content span {
+    font-weight: bold!important;
+}
+
+.card-content p {
+    font-size: 18px;
+}
+
 .recipe-buttons {
     text-align: center;
     height: 30px;
 }
 
 .recipe-buttons a {
-    width: 90px;
+    width: 65px;
 }
 
 .btn-delete {
     box-shadow: none;
-    width: 90px;
+    width: 65px;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 18px;
@@ -186,12 +194,19 @@ main {
 
 .btn-edit {
     box-shadow: none;
-    width: 90px;
+    width: 65px;
     background-color: #406E8E!important;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 18px;
     color: #FCFCFF!important;
+}
+
+.recipe-link {
+    color: black!important;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize!important;
 }
 
 /* add_recipe.html ---------------------------------------- */
@@ -209,7 +224,7 @@ main {
 
 /* edit_recipe.html ---------------------------------------- */
 .btn-edit {
-    width: 90px!important;
+    width: 65px!important;
 }
 
 .btn-cancel {
