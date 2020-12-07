@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <main>
+        <!-- heading text -->
+        <div class="row">
+            <h3 class="center-align open-sans sign-up-heading">Edit Categories</h3>
+        </div>
+        <!-- categories -->
+        <div class="row">
+            {% for category in categories %}
+                <div class="col s6 m4 l3 center-align">
+                    <div class="category-img">
+                        <img src="{{ category.recipe_img }}" alt="category image">
+                    </div>
+                    <div class="card black-text open-sans">
+                        <div class="card-content white-text">
+                            <span class="card-title category-title">{{ category.category_name }}</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="btn btn-delete">Delete</a>
+                            <a href="#" class="btn btn-edit">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+
+{% endblock %}
