@@ -167,6 +167,7 @@ main {
 
 .recipe-buttons {
     text-align: center;
+    height: 30px;
 }
 
 .recipe-buttons a {
