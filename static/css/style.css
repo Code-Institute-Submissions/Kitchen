@@ -40,7 +40,7 @@ main {
 .nav-extended {
     background-color: #093824;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
 }
 
@@ -169,6 +169,12 @@ main {
 .add-recipe-container {
     width: 600px;
     margin: auto;
+}
+
+.red-text {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* footer ---------------------------------------- */
