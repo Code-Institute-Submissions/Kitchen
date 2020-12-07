@@ -49,9 +49,13 @@
                     <div class="input-field col s12">
                         <i class="fas fa-stopwatch prefix"></i>
                         <select id="preptime_time" name="preptime_time" class="validate" required>
-                            <option value="" disabled selected>How long will it take?</option>
+                            <option value="" disabled>How long will it take?</option>
                             {% for time in preptime %}
-                                <option value="{{ time.preptime_time }}">{{ time.preptime_time }}</option>
+                                {% if time.preptime_time == recipe.preptime_time %}
+                                    <option value="{{ time.preptime_time }}" selected>{{ time.preptime_time }}</option>
+                                {% else %}
+                                    <option value="{{ time.preptime_time }}">{{ time.preptime_time }}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                         <label for="preptime_time" class="open-sans">
