@@ -110,9 +110,13 @@
                 </div>
                 <!-- submit button -->
                 <div class="row">
-                    <div class="col s12 center-align">
-                        <button type="submit" class="btn btn-blue">
-                            Edit Recipe <i class="fas fa-edit right"></i>
+                    <div class="col s12 center-align edit-recipe-buttons">
+                        <!-- cancel button -->
+                        <a href="{{ url_for('get_recipies') }}" class="btn btn-cancel">
+                            Cancel
+                        </a>
+                        <button type="submit" class="btn btn-blue btn-edit">
+                            Edit Recipe
                         </button>
                     </div>
                 </div>

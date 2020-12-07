@@ -201,6 +201,20 @@ main {
     font-weight: bold;
 }
 
+
+/* edit_recipe.html ---------------------------------------- */
+.btn-edit {
+    width: 90px!important;
+}
+
+.btn-cancel {
+    background-color: #3E000C!important;
+    width: 90px!important;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FCFCFF!important;
+}
+
 /* footer ---------------------------------------- */
 .footer-row {
     margin-bottom: 0px;
