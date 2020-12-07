@@ -150,6 +150,14 @@ main {
 }
 
 /* recipies.html --------------------------------- */
+.hero-img-recipies {
+    height: 400px;
+    width: 100%;
+    background-image: url('../img/hero2.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
 .recipe-area {
     background-color: #B7CECE;
     margin-bottom: 0px;
