@@ -156,6 +156,7 @@ def edit_recipe(recipe_id):
         categories=categories, preptime=preptimes)
 
 
+# delete recipe -------------------------------------------------------------
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipies.remove({"_id": ObjectId(recipe_id)})
