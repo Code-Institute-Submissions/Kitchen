@@ -131,6 +131,7 @@ def add_recipe():
         "add_recipe.html", categories=categories, preptime=preptimes)
 
 
+# edit recipe -------------------------------------------------------------
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     recipe = mongo.db.recipies.find_one({"_id": ObjectId(recipe_id)})
