@@ -13,6 +13,7 @@
 
 ## Features
 ### Features left to implement
+- Timer that automatically logges you out if ur not active on the site.
 
 ## Technologies used
 ### Languages
