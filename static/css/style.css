@@ -110,6 +110,11 @@ main {
     position: relative;
 }
 
+.category-heading {
+    text-align: center;
+    font-weight: bold;
+}
+
 
 /* signup.html -------------------------------------- */
 
