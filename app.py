@@ -23,7 +23,8 @@ mongo = PyMongo(app)
 @app.route("/get_home")
 def get_home():
     home = mongo.db.home.find()
-    return render_template("index.html", home=home)
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    return render_template("index.html", home=home, categories=categories)
 
 
 # get recipies page ---------------------------------------------------------
@@ -164,7 +165,7 @@ def delete_recipe(recipe_id):
     return redirect(url_for('get_recipies'))
 
 
-# manage categories ----------------------------------------------------------
+# categories ----------------------------------------------------------
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
