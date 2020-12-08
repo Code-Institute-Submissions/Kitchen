@@ -226,6 +226,8 @@ main {
 /* select_recipe.html ---------------------------------------- */
 .recipe-select-img {
     height: 400px;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
 }
 
 .recipe-select-img img {
@@ -233,6 +235,22 @@ main {
     height: 400px;
     object-fit: cover;
     overflow: hidden;
+}
+
+.recipe-description {
+    padding-left: 60px!important;
+    height: 400px;
+    background-color: #3E000C;
+}
+
+.select-recipe-h1 {
+    font-weight: bold;
+    color: #FCFCFF;
+}
+
+.select-recipe-description {
+    font-size: 24px;
+    color: #FCFCFF;
 }
 
 /* add_recipe.html ---------------------------------------- */

@@ -6,22 +6,42 @@
             <img src="{{ recipe.recipe_img }}" class="selected-recipe-img">
         </div>
         <!-- recipe description -->
-        <div class="col s12 m8">
-            <h1 class="open-sans">
+        <div class="col s12 m8 recipe-description">
+            <h1 class="open-sans select-recipe-h1">
                 {{ recipe.recipe_name }}
             </h1>
-            <p class="open-sans">
+            <p class="open-sans select-recipe-description">
                 <i class="fas fa-user"></i>
                 {{ recipe.created_by }}
             </p>
-            <p class="open-sans">
+            <p class="open-sans select-recipe-description">
                 <i class="fas fa-utensils"></i>
                 {{ recipe.category_name }}
             </p>
-            <p class="open-sans">
+            <p class="open-sans select-recipe-description">
                 <i class="fas fa-stopwatch"></i>
                 {{ recipe.preptime_time }}
             </p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- ingredients -->
+        <div class="col s12 m4">
+            <h2 class="open-sans">Ingredients:</h2>
+            <ol>
+                <li>
+                    {{ recipe.ingredients }}
+                </li>
+            </ol>
+        </div>
+        <!-- how to -->
+        <div class="col s12 m8">
+            <h2 class="open-sans">How To:</h2>
+            <ol>
+                <li>
+                    {{ recipe.preparation_steps }}
+                </li>
+            </ol>
         </div>
     </div>
     
