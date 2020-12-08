@@ -31,7 +31,9 @@ def get_home():
 @app.route("/get_recipies")
 def get_recipies():
     recipies = mongo.db.recipies.find()
-    return render_template("recipies.html", recipies=recipies)
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    return render_template(
+        "recipies.html", recipies=recipies, categories=categories)
 
 
 # get signup page ---------------------------------------------------------

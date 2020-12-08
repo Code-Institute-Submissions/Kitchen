@@ -5,11 +5,24 @@
         <div class="hero-img-recipies center-align">
 
         </div>
-
-        <div>
-            <h1>Categories here</h1>
+        <!-- categories -->
+        <div class="row">
+            <h2 class="open-sans category-heading">Pick a category</h2>
         </div>
-        
+        <div class="row">
+            {% for category in categories %}
+                <div class="col s6 m4 l3 center-align">
+                    <div class="category-img">
+                        <img src="{{ category.recipe_img }}" alt="category image">
+                    </div>
+                    <div class="card black-text open-sans">
+                        <div class="card-content white-text">
+                            <span class="card-title category-title">{{ category.category_name }}</span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>        
         <!-- recipe card -->
         <div class="row recipe-area">
             {% for recipe in recipies %}
