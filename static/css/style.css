@@ -222,6 +222,19 @@ main {
     text-transform: capitalize!important;
 }
 
+
+/* select_recipe.html ---------------------------------------- */
+.recipe-select-img {
+    height: 400px;
+}
+
+.recipe-select-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 /* add_recipe.html ---------------------------------------- */
 .add-recipe-container {
     width: 600px;
