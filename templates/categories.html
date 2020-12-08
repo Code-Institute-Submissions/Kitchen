@@ -6,6 +6,15 @@
         <div class="row">
             <h3 class="center-align open-sans sign-up-heading">Edit Categories</h3>
         </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="{{ url_for('add_category') }}" class="btn btn-blue add-category-button">
+                    Add Category <i class="fas fa-plus-square right"></i>
+                </a>
+                <br>
+                <br>
+            </div>
+        </div>
         <!-- categories -->
         <div class="row">
             {% for category in categories %}
