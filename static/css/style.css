@@ -253,6 +253,23 @@ main {
     color: #FCFCFF;
 }
 
+/* search ------------------------------------------------- */
+.card-padding {
+    padding: 0px!important;
+    border-radius: 15px;
+}
+
+.search-input {
+    margin-left: 20px!important;
+}
+
+.valign-wrapper {
+    height: 60px;
+    background-color: #FCFCFF;
+    border-radius: 15px;
+    margin-bottom: 0px;
+}
+
 /* add_recipe.html ---------------------------------------- */
 .add-recipe-container {
     width: 600px;
