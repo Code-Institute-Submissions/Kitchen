@@ -1,14 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="row">
+        <!-- recipe image -->
         <div class="col s12 m4 recipe-select-img">
             <img src="{{ recipe.recipe_img }}" class="selected-recipe-img">
         </div>
+        <!-- recipe description -->
         <div class="col s12 m8">
-            <h1 class="open-sans">{{ recipe.recipe_name }}</h1>
-            <p class="open-sans">{{ recipe.created_by }}</p>
-            <p class="open-sans">{{ recipe.category_name }}</p>
-            <p class="open-sans">{{ recipe.preptime_time }}</p>
+            <h1 class="open-sans">
+                {{ recipe.recipe_name }}
+            </h1>
+            <p class="open-sans">
+                <i class="fas fa-user"></i>
+                {{ recipe.created_by }}
+            </p>
+            <p class="open-sans">
+                <i class="fas fa-utensils"></i>
+                {{ recipe.category_name }}
+            </p>
+            <p class="open-sans">
+                <i class="fas fa-stopwatch"></i>
+                {{ recipe.preptime_time }}
+            </p>
         </div>
     </div>
     
