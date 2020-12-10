@@ -2,18 +2,40 @@
 ## Content
 
 ## About
+Kitchen is a website where food enthusiasts from all over the world can gather to share their best recipes.
+With the simple functions, it is easy for everyone to create an account to get started sharing their best 
+cooking tricks, and in the future we hope to be able to offer more functions to make the stay on the website 
+even easier.
+If you're not interested in signing up and share a recipe, you can ofcourse visit the site to brows through all
+the fantastic recipies for some cooking inspiration.
 
 ## UX
 ### UX goals
+The UX goals for this website are the following:
+- Simple design with a fixed navigation bar at the top.
+- Clear sections of the content of each page.
+- The site is responsive to all devices.
+- All text on the site is easy to read without any distacting backgrounds.
+
+
 ### User Stories
+As a user I want to:
+- Get inspired into learning new recipes.
+- Browse different categories for easier navigation of what kind of recipe I want to cook.
+- Be able to sign up and share my own recipies.
+- Have a good overlook of my own recipies that I've made.
+- Be able to edit and delete recipies that I have made.
 
 ### Design process
+
+
 ### Wireframes
 ### Changes I made throuought
 
 ## Features
 ### Features left to implement
 - Timer that automatically logges you out if ur not active on the site.
+- Search function. 
 
 ## Technologies used
 ### Languages
