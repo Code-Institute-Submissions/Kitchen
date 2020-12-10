@@ -408,6 +408,11 @@ main {
     }
 
     .add-recipe-container {
-    width: 350px;
+        width: 350px;
+    }
+
+    .category-img img {
+        width: 150px;
+        height: 150px;
     }
 }
