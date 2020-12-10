@@ -221,6 +221,14 @@ def select_recipe(recipe_id):
     return render_template("select_recipe.html", recipe=selected_recipe)
 
 
+# select category ----------------------------------------------------------
+@app.route("/select_category/<category_id>")
+def select_category(category_id):
+    selected_category = mongo.db.categories.find_one(
+        {"_id": ObjectId(category_id)})
+    return render_template("select_category.html", category=selected_category)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

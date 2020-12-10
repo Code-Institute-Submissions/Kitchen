@@ -261,7 +261,7 @@ recipe cards on the recipe page together with all other information.
 - [Youtube](https://www.youtube.com/)
 
 ### Code
-This project was made with guidance from Mini Project | Putting It All Together led by Tim
+- This project was made with guidance from Mini Project | Putting It All Together led by Tim
 
 ### Thank you
 
