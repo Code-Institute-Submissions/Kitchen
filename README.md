@@ -31,6 +31,8 @@ even easier.
 If you're not interested in signing up and share a recipe, you can ofcourse visit the site to brows through all
 the fantastic recipies for some cooking inspiration.
 
+[View the live website here!](https://kitchen-josefinekihlstrom.herokuapp.com/get_home)
+
 ## UX
 ### UX goals
 The UX goals for this website are the following:
