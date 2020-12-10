@@ -45,18 +45,21 @@ Figma and can be viewed [here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr
 
 <div align="center">
     <img src="static/img/wireframe1.png" alt="wireframe 1" width="600px">
+    <br>
     Home and Recipies pages.
 </div>
 <br>
 <br>
 <div align="center">
     <img src="static/img/wireframe2.png" alt="wireframe 2" width="600px">
+    <br>
     Inside Category and Sign Up pages.
 </div>
 <br>
 <br>
 <div align="center">
     <img src="static/img/wireframe3.png" alt="wireframe 3" width="600px">
+    <br>
     Inside Recipe and Profile pages.
 </div>
 <br>
