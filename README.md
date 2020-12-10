@@ -141,6 +141,8 @@ The features of this web site are:
     - The ingredients list to the left.
     - The preparation steps to the right.
 
+IMAGE OF SELECTED RECIPE PAGE HERE
+
 ### Add Recipe Page:
 - A form for the logged in user to add their recipe to. The form includes:
     - An input field to write the name of the recipe.
@@ -208,8 +210,13 @@ TEXT HERE
 
 ## Acknowledgements
 ### Pages used to find information
+- [W3C Schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Youtube](https://www.youtube.com/)
+
 ### Code
 This project was made with guidance from Mini Project | Putting It All Together led by Tim
+
 ### Thank you
 
 ## Disclaimer
