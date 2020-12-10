@@ -151,7 +151,7 @@ The features of this web site are:
     The red info box that shows different button text depending on if user is logged in or not.    
 </div>
 
-### Recipes Page:
+### Recipies Page:
 - Hero image.
 - A section with recipe categories that includes:
     - Image of the category.
@@ -210,7 +210,7 @@ TEXT HERE
 
 
 ### Features left to implement
-- A timer that automatically logges you out if ur not active on the site.
+- Some type of timer function that automatically logges the user out after a certain time of no activity.
 - A search function to make the user able to search for specific recipies or ingredients in a recipe. This feature
 was something I wanted to make in this project, and I started to build the function but encountered bugs during the
 process. This led me to take the decision to remove this feature due to lack of time of fixing the bug that was
