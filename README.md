@@ -94,7 +94,7 @@ The features of this web site are:
 - Footer with copyright text and social links.
 
 <div align="center">
-    <img src="static/img/navbar.png" alt="navbar feature" width="600px">
+    <img src="static/img/navbar.png" alt="Navbar feature" width="600px">
     <br>
     The Navbar with the different links depending on if you are logged in or not, an admin or not.
 </div>
@@ -104,18 +104,48 @@ The features of this web site are:
 - A blue section with brief information about the page.
 - A red box with a heading text that encourages the visitor to add a recipe and button 
 (depending on if the user is logged in or not)
-- A section with recipe categories.
+- A section with recipe categories that includes:
+    - Image of the category.
+    - Name of the category
 
 <div align="center">
-    <img src="static/img/infobox.png" alt="wireframe 1" width="600px">
+    <img src="static/img/infobox.png" alt="Info boxes" width="600px">
     <br>
     Navbar    
 </div>
 
 ### Recipes Page:
 - Hero image.
-- A section with recipe categories.
+- A section with recipe categories that includes:
+    - Image of the category.
+    - Name of the category
+
 - Section with all recipies
+
+### Add Recipe Page:
+- A form for the logged in user to add their recipe to. The form includes:
+    - An input field to write the name of the recipe.
+    - An option list to pick the category of the recipe.
+    - An option list to pick the total preptime for the recipe.
+    - A textarea to add all the ingredients of the recipe.
+    - A textarea to add the preparation steps of the recipe.
+    - An input field to add a image url for the recipe image that is to be used.
+    - A button to submit the recipe.
+
+### Manage Categories Page:
+This page can only be viewed by the admin user.
+- A button that leads to a form to add a new category to the page.
+- A section with the existing recipe categories that includes:
+    - Image of the category.
+    - Name of the category
+    - Delete button, that deletes the category.
+    - Edit button, that makes it possible to edit the image url or the name of the category.
+
+<div align="center">
+    <img src="static/img/addcategory.png" alt="Add category form" width="600px">
+    <br>
+    The form that makes it possible for the admin user to add a new category.    
+</div>
 
 
 ### Features left to implement
