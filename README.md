@@ -79,18 +79,44 @@ was applied to this project.
 
 The features of this web site are:
 
-- Fixed Navigation bar at the top of all pages.
+### All Pages:
+- Fixed Navigation bar at the top of all pages. Complete list of links in the navbar:
+    - **Logo** - Linked to home page.
+    - **Home** - Linked to home page.
+    - **Recipies** - linked to recipe page.
+    - **Add Recipe** - Linked to page where the user can add recipe.
+    - **Manage Categories** - Linked to a page where admin can manage categories.
+    - **Profile** - Linked to the profile page of the user.
+    - **Sign In** - Linked to page where user can sign in.
+    - **Sign Up** - Linked to page where new user can sign up.
+    - **Log Out** - Logges user out of the site.
+
+- Footer with copyright text and social links.
+
 <div align="center">
     <img src="static/img/navbar.png" alt="navbar feature" width="600px">
+    <br>
+    The Navbar with the different links depending on if you are logged in or not, an admin or not.
 </div>
     
-- Home page with brief information about the page and links to the different categories, but also a link (which depends on
-wether or not you are logged in) shows Sign Up/Add Recipe.
-
+### Home Page:
+- Hero image with a welcome text.
+- A blue section with brief information about the page.
+- A red box with a heading text that encourages the visitor to add a recipe and button 
+(depending on if the user is logged in or not)
+- A section with recipe categories.
 
 <div align="center">
-    <img src="#" alt="wireframe 1" width="600px">
+    <img src="static/img/infobox.png" alt="wireframe 1" width="600px">
+    <br>
+    Navbar    
 </div>
+
+### Recipes Page:
+- Hero image.
+- A section with recipe categories.
+- Section with all recipies
+
 
 ### Features left to implement
 - Timer that automatically logges you out if ur not active on the site.
