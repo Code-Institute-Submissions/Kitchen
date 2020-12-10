@@ -27,7 +27,7 @@ As a user I want to:
 - Be able to edit and delete recipies that I have made.
 
 ### Design process
-The structure of the site is based upon the data that is presented on the page. I wanted the first page to be simple
+The **structure** of the site is based upon the data that is presented on the page. I wanted the first page to be simple
 and clear for the visitor which then by deciding what content they want to visit navigates through the navigation
 bar at the top to get to that specific content.
 
@@ -40,8 +40,9 @@ stored.
 - Users
 
 ### Wireframes
-The skeleton plane is featured in the wireframes of this project. The wireframes where made with the technology of
-Figma and can be viewed [here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr/MS3?node-id=273669%3A448).
+The **skeleton** plane is defined in the structure of the wireframes for this project.
+The wireframes where made with the technology of Figma and can be viewed 
+[here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr/MS3?node-id=273669%3A448).
 
 <div align="center">
     <img src="static/img/wireframe1.png" alt="wireframe 1" width="600px">
@@ -72,17 +73,28 @@ Figma and can be viewed [here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr
 <br>
 <br>
 
-
-### Changes I made throuought
-
 ## Features
+The features of the site was defined during the scope plane stage and all but one features from the original idea
+was applied to this project.
+
+The features of this web site are:
+
+- Fixed Navigation bar at the top of all pages.
+<div align="center">
+    <img src="static/img/navbar.png" alt="navbar feature" width="600px">
+</div>
+    
+- Home page with brief information about the page and links to the different categories, but also a link (which depends on
+wether or not you are logged in) shows Sign Up/Add Recipe.
+
+
 <div align="center">
     <img src="#" alt="wireframe 1" width="600px">
 </div>
 
 ### Features left to implement
 - Timer that automatically logges you out if ur not active on the site.
-- Search function. 
+- Search function. (Was in the original idea, but left out due to lack of time)
 
 ## Technologies used
 ### Languages
