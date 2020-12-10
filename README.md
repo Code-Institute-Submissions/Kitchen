@@ -43,6 +43,7 @@ The UX goals for this website are the following:
 
 
 ### User Stories
+The user stories was defined during the Strategy Plane phase of this project.
 As a user I want to:
 - Get inspired into learning new recipes.
 - Browse different categories for easier navigation of what kind of recipe I want to cook.
@@ -63,8 +64,20 @@ stored.
 - Preptime
 - Users
 
+The color scheme for this project was generated with the technology of [Coolors](https://coolors.co/). I wanted the
+colors to be a little bit darker and warmer to welcome the visitor, but still make the content of the pages
+easy to understand with the light foregrounds and the pop of color on the buttons on the page.
+<br>
+<br>
+The font used for this project was [Open Sans Condensed](https://fonts.google.com/specimen/Open+Sans+Condensed?query=open+sans+) 
+and came from [Google Fonts](https://fonts.google.com/).
+
+<div align="center">
+    <img src="static/img/colors.png" alt="color scheme" width="600px">
+</div>
+
 ### Wireframes
-The **skeleton** plane is defined in the structure of the wireframes for this project.
+The **skeleton** and **surface** plane was defined in the structure of the wireframes for this project.
 The wireframes where made with the technology of Figma and can be viewed 
 [here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr/MS3?node-id=273669%3A448).
 
@@ -220,6 +233,7 @@ recipe cards on the recipe page together with all other information.
 
 ### Other
 - [Fontawesome]() - Used for icons.
+- [Coolors](https://coolors.co/) - Used to generate the color scheme.
 - [Figma]() - Used to make wireframes.
 - [Google Fonts]() - The font used for this project: **Open Sans Condensed*
 
