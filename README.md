@@ -31,7 +31,8 @@ The structure of the site is based upon the data that is presented on the page. 
 and clear for the visitor which then by deciding what content they want to visit navigates through the navigation
 bar at the top to get to that specific content.
 
-This recipe site has four collections in the database where the main content presented on the paige is stored.
+This recipe site has four collections in the MongoDB database where the main content presented on the paige is 
+stored.
 
 - Recipies
 - Categories
@@ -39,9 +40,36 @@ This recipe site has four collections in the database where the main content pre
 - Users
 
 ### Wireframes
+The skeleton plane is featured in the wireframes of this project. The wireframes where made with the technology of
+Figma and can be viewed [here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr/MS3?node-id=273669%3A448).
+
+<div align="center">
+    <img src="static/img/wireframe1.png" alt="wireframe 1" width="600px">
+    Home and Recipies pages.
+</div>
+<br>
+<br>
+<div align="center">
+    <img src="static/img/wireframe2.png" alt="wireframe 2" width="600px">
+    Inside Category and Sign Up pages.
+</div>
+<br>
+<br>
+<div align="center">
+    <img src="static/img/wireframe3.png" alt="wireframe 3" width="600px">
+    Inside Recipe and Profile pages.
+</div>
+<br>
+<br>
+
+
 ### Changes I made throuought
 
 ## Features
+<div align="center">
+    <img src="#" alt="wireframe 1" width="600px">
+</div>
+
 ### Features left to implement
 - Timer that automatically logges you out if ur not active on the site.
 - Search function. 
