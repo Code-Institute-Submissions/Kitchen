@@ -1,5 +1,27 @@
 # Kitchen
 ## Content
+1. [About](#about)
+2. [UX](#ux)
+    - [UX goals](#ux-goals)
+    - [User stories](#user-stories)
+    - [Design process](#design-process)
+    - [Wireframes](#wireframes)
+3. [Features](#features)
+    - [Features left to implement](#features-left-to-implement)
+4. [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Libraries](#libraries)
+    - [Other](#other)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Cloning This Project](#cloning-this-project)
+8. [Credits](#credits)
+    - [Media](#media)
+9. [Acknowledgements](#acknowledgements)
+    - [Pages used to find information](#pages-used-to-find-information)
+    - [Code](#code)
+    - [Thank you](#thank-you)
+10. [Disclaimer](#disclaimer)
 
 ## About
 Kitchen is a website where food enthusiasts from all over the world can gather to share their best recipes.
@@ -173,23 +195,31 @@ TEXT HERE
 
 
 ### Features left to implement
-- Timer that automatically logges you out if ur not active on the site.
-- Search function. (Was in the original idea, but left out due to lack of time)
+- A timer that automatically logges you out if ur not active on the site.
+- A search function to make the user able to search for specific recipies or ingredients in a recipe. This feature
+was something I wanted to make in this project, and I started to build the function but encountered bugs during the
+process. This led me to take the decision to remove this feature due to lack of time of fixing the bug that was
+ciritcal for the websites overall functionality.
+- A rating function to make all visitors able to rate each recipe. The rating result would then be displaying in the
+recipe cards on the recipe page together with all other information.
 
 ## Technologies used
 ### Languages
-- HTML 5
-- CSS3
-- JQuery
-- Python
+- **HTML 5** - Used to create the structure of the site.
+- **CSS3** - Used to style the HTML elements.
+- **Python** - Used for back end programming.
+- [Jinja]() - Used for template inheritance and database linking.
 
 ### Libraries
-- MongoDB
-- Flask
-- Materialize
-- Fontawesome
+- [JQuery]() - Used to write the JavaScript code.
+- [MongoDB]() - Database that was used for this project.
+- [Flask]() - Used to write python code.
+- [Materialize]() - Used for the overall design of the page.
 
-### Technologies
+### Other
+- [Fontawesome]() - Used for icons.
+- [Figma]() - Used to make wireframes.
+- [Google Fonts]() - The font used for this project: **Open Sans Condensed*
 
 ## Testing
 
