@@ -111,7 +111,7 @@ The features of this web site are:
 <div align="center">
     <img src="static/img/infobox.png" alt="Info boxes" width="600px">
     <br>
-    Navbar    
+    The red info box that shows different button text depending on if user is logged in or not.    
 </div>
 
 ### Recipes Page:
@@ -119,8 +119,27 @@ The features of this web site are:
 - A section with recipe categories that includes:
     - Image of the category.
     - Name of the category
+- Section with all recipies including:
+    - Image of the recipe.
+    - Name of the recipe.
+    - Name of the user who added the recipe.
+    - Category of the recipe.
+    - Preptime of the recipe.
+    - Link to the recipe page.
+- The maker of the recipe also have two buttons above the recipe link:
+    - Delete button - Makes it possible to delete the recipe.
+    - Edit button - Makes it possible to edit the recipe.
 
-- Section with all recipies
+### Selected Recipe Page:
+- An image of the selected recipe.
+- A red section with information about the recipe, including:
+    - Name of the recipe.
+    - Name of the user who added the recipe.
+    - Category of the recipe.
+    - Preptime of the recipe.
+- A section divided into two columns that includes:
+    - The ingredients list to the left.
+    - The preparation steps to the right.
 
 ### Add Recipe Page:
 - A form for the logged in user to add their recipe to. The form includes:
@@ -144,8 +163,11 @@ This page can only be viewed by the admin user.
 <div align="center">
     <img src="static/img/addcategory.png" alt="Add category form" width="600px">
     <br>
-    The form that makes it possible for the admin user to add a new category.    
+    The form that makes it possible for the admin user to add a new category.
 </div>
+
+### Profile Page:
+TEXT HERE
 
 
 ### Features left to implement
