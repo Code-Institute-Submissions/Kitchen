@@ -182,8 +182,9 @@ main {
     font-weight: bold!important;
 }
 
-.card-content p {
+.recipe-description-text {
     font-size: 18px;
+    margin-bottom: 2px!important;
 }
 
 .recipe-buttons {
@@ -383,6 +384,18 @@ main {
     html {
         margin-top: 56px;
     }
+
+    .recipe-name {
+        font-size: 40px!important;
+    }
+
+    .recipe-description-text {
+        font-size: 24px!important;
+    }
+
+    .recipe-link {
+        font-size: 28px!important;
+    }
 }
 
 
@@ -390,6 +403,11 @@ main {
 @media (max-width: 640px) {
     .card-panel {
         width: 350px;
+    }
+
+    .category-img img {
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -410,21 +428,19 @@ main {
     .add-recipe-container {
         width: 350px;
     }
+}
 
-    .category-img img {
-        width: 150px;
-        height: 150px;
-    }
-
+/* ------------------- max-width: 992px */
+@media (max-width: 992px) {
     .recipe-name {
-        font-size: 40px!important;
+        font-size: 30px!important;
     }
 
     .recipe-description-text {
-        font-size: 24px!important;
+        font-size: 20px!important;
     }
 
     .recipe-link {
-        font-size: 28px!important;
+        font-size: 24px!important;
     }
 }
