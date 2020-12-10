@@ -30,7 +30,7 @@
         </div>
                 <div class="row">
                     {% for recipe in recipies %}
-                        <div class="col s6 m4 l3">
+                        <div class="col s12 m4 l3">
                             <div class="card">
                                 <!-- recipe image -->
                                 <div class="card-image">
@@ -38,19 +38,19 @@
                                 </div>
                                 <div class="card-content">
                                     <!-- recipe name -->
-                                    <span class="card-title open-sans">{{ recipe.recipe_name }}</span>
+                                    <span class="card-title open-sans recipe-name">{{ recipe.recipe_name }}</span>
                                     <!-- created by -->
-                                    <p class="open-sans">
+                                    <p class="open-sans recipe-description-text">
                                         <i class="fas fa-user"></i>
                                         {{ recipe.created_by }}
                                     </p>
                                     <!-- category name -->
-                                    <p class="open-sans">
+                                    <p class="open-sans recipe-description-text">
                                         <i class="fas fa-utensils"></i>
                                         {{ recipe.category_name }}
                                     </p>
                                     <!-- preptime -->
-                                    <p class="open-sans">
+                                    <p class="open-sans recipe-description-text">
                                         <i class="fas fa-stopwatch"></i>
                                         {{ recipe.preptime_time }}
                                     </p>
