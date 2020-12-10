@@ -23,7 +23,7 @@ mongo = PyMongo(app)
 @app.route("/get_home")
 def get_home():
     home = mongo.db.home.find()
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("index.html", home=home, categories=categories)
 
 
@@ -31,7 +31,7 @@ def get_home():
 @app.route("/get_recipies")
 def get_recipies():
     recipies = mongo.db.recipies.find()
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template(
         "recipies.html", recipies=recipies, categories=categories)
 
