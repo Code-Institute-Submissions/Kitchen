@@ -64,6 +64,13 @@ Figma and can be viewed [here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr
 </div>
 <br>
 <br>
+<div align="center">
+    <img src="static/img/wireframes-mobile.png" alt="wireframe 3" width="600px">
+    <br>
+    Wireframes for mobile devices.
+</div>
+<br>
+<br>
 
 
 ### Changes I made throuought
