@@ -48,11 +48,17 @@ This recipe site has four collections in the database where the main content pre
 
 ## Technologies used
 ### Languages
+- HTML 5
+- CSS3
+- JQuery
+- Python
+
 ### Libraries
 - MongoDB
 - Flask
 - Materialize
 - Fontawesome
+
 ### Technologies
 
 ## Testing
