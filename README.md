@@ -27,7 +27,16 @@ As a user I want to:
 - Be able to edit and delete recipies that I have made.
 
 ### Design process
+The structure of the site is based upon the data that is presented on the page. I wanted the first page to be simple
+and clear for the visitor which then by deciding what content they want to visit navigates through the navigation
+bar at the top to get to that specific content.
 
+This recipe site has four collections in the database where the main content presented on the paige is stored.
+
+- Recipies
+- Categories
+- Preptime
+- Users
 
 ### Wireframes
 ### Changes I made throuought
