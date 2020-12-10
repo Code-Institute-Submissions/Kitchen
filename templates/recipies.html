@@ -3,22 +3,7 @@
 
     <main>
         <div class="hero-img-recipies">
-            <div class="row card-panel card-padding">
-                <form action="{{ url_for('search') }}" method="post" class="col s12">
-                    <div class="row valign-wrapper center-align">
-                        <div class="input-field col s10">
-                            <input type="text" name="query" id="query" minlength="3" class="validate search-input" required>
-                            <label for="query" class="search-input">Search For Recipies
-                            </label>
-                        </div>
-                        <div class="col s3">
-                            <button type="submit" class="btn">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            
         </div>
         <!-- categories -->
         <div class="row">
@@ -43,7 +28,6 @@
         <div class="row">
             <h2 class="open-sans category-heading">All recipies</h2>
         </div>
-            {% if recipies|length > 0 %}
                 <div class="row">
                     {% for recipe in recipies %}
                         <div class="col s6 m4 l3">
@@ -87,9 +71,6 @@
                         </div>
                     {% endfor %}
                 </div>
-            {% else %}
-                <h3>No recipies found!</h3>
-            {% endif %}
         </div>   
     </main>
 

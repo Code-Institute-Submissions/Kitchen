@@ -221,14 +221,6 @@ def select_recipe(recipe_id):
     return render_template("select_recipe.html", recipe=selected_recipe)
 
 
-# search -----------------------------------------------------------------
-@app.route("/search", methods=["GET", "POST"])
-def search():
-    query = request.form.get("query")
-    recipies = list(mongo.db.recipies.find({"$text": {"$search": query}}))
-    return render_template("recipies.html", recipies=recipies)
-
-
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
