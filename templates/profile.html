@@ -3,7 +3,7 @@
     <div class="hero-img-profile">
     </div>
     <!-- recipe card -->
-    <div class="recipe-area">
+    <div class="recipe-area recipe-area-profile">
         <div class="row">
             <h2 class="open-sans category-heading">{{ username }}'s recipies</h2>
         </div>
@@ -50,8 +50,6 @@
                     </div>
                 </div>
             </div>
-            {% else %}
-                <h1>no recipies found</h1>
             {% endif %}
         {% endfor %}
     </div>
