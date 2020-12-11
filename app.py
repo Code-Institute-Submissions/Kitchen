@@ -92,12 +92,15 @@ def signin():
 # users profile ---------------------------------------------------------
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    # for users recipies
+    recipies = mongo.db.recipies.find()
     # session username from database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        return render_template(
+            "profile.html", username=username, recipies=recipies)
 
     return redirect(url_for("signin"))
 

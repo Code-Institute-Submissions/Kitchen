@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         {% for recipe in recipies %}
-        {% if category.category_name == recipe.category_name %}
+        {% if session.user|lower == recipe.created_by|lower %}
         <div class="col s12 m6 l3">
             <div class="card">
                 <!-- recipe image -->
