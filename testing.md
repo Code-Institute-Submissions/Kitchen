@@ -16,3 +16,4 @@
 I thought I could just reuse the category code from the categories.html page, but I also had to put the categories variable in the home page
 route for the categories to be able to show.
 - **Not Solved** When searching for a recipe the categories disappear.
+- **Not Solved** When a user don't have recipies added, profile page will not fill out completely.
