@@ -327,6 +327,16 @@ main {
     font-size: 18px;
 }
 
+
+/* profile --------------------------------------------- */
+.hero-img-profile {
+    height: 400px;
+    width: 100%;
+    background-image: url('../img/hero3.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
 /* footer ---------------------------------------- */
 .footer-row {
     margin-bottom: 0px;
