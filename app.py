@@ -123,8 +123,8 @@ def add_recipe():
             "recipe_img": request.form.get("recipe_img"),
             "recipe_name": request.form.get("recipe_name"),
             "preptime_time": request.form.get("preptime_time"),
-            "ingredients": request.form.getlist("ingredients"),
-            "preparation_steps": request.form.getlist("preparation_steps"),
+            "ingredients": request.form.get("ingredients"),
+            "preparation_steps": request.form.get("preparation_steps"),
             "created_by": session["user"]
         }
         mongo.db.recipies.insert_one(recipe)
@@ -221,7 +221,8 @@ def delete_category(category_id):
 @app.route("/select_recipe/<recipe_id>")
 def select_recipe(recipe_id):
     selected_recipe = mongo.db.recipies.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("select_recipe.html", recipe=selected_recipe)
+    return render_template(
+        "select_recipe.html", recipe=selected_recipe)
 
 
 # select category ----------------------------------------------------------
