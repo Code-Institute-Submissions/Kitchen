@@ -224,12 +224,17 @@ def select_recipe(recipe_id):
 # select category ----------------------------------------------------------
 @app.route("/select_category/<category_id>")
 def select_category(category_id):
+    # for selecting a new category from category section
     categories = mongo.db.categories.find().sort("category_name", 1)
-    selected_category = mongo.db.categories.find_one(
-        {"_id": ObjectId(category_id)})
+    # connecting to the category id
+    selected_category = mongo.db.categories.find_one({
+        "_id": ObjectId(category_id)
+        })
+    # selected category recipies
+    recipies = mongo.db.recipies.find()
     return render_template(
         "select_category.html", category=selected_category,
-        categories=categories)
+        recipies=recipies, categories=categories)
 
 
 if __name__ == "__main__":
