@@ -14,7 +14,7 @@
                         <i class="fas fa-pencil-alt prefix"></i>
                         <input id="recipe_name" name="recipe_name" minlength="4" maxlength="25"
                             value="{{ recipe.recipe_name }}" type="text" class="validate" required>
-                        <label for="recipe_name" class="open-sans">
+                        <label for="recipe_name" class="open-sans label-text">
                             Recipe Name
                             <span class="red-text">
                                 *
@@ -36,7 +36,7 @@
                                 {% endif %}
                             {% endfor %}
                         </select>
-                        <label for="category_name" class="open-sans">
+                        <label for="category_name" class="open-sans label-text">
                             Category
                             <span class="red-text">
                                 *
@@ -58,7 +58,7 @@
                                 {% endif %}
                             {% endfor %}
                         </select>
-                        <label for="preptime_time" class="open-sans">
+                        <label for="preptime_time" class="open-sans label-text">
                             Preptime
                             <span class="red-text">
                                 *
@@ -73,7 +73,7 @@
                         <textarea id="ingredients" name="ingredients" class="materialize-textarea" required>
                             {{- recipe.ingredients -}}
                         </textarea>
-                        <label for="ingredients" class="open-sans">
+                        <label for="ingredients" class="open-sans label-text">
                             Add ingredients here
                             <span class="red-text">
                                 *
@@ -89,7 +89,7 @@
                             class="materialize-textarea" required>
                             {{- recipe.preparation_steps -}}
                         </textarea>
-                        <label for="preparation_steps" class="open-sans">
+                        <label for="preparation_steps" class="open-sans label-text">
                             Add preparation steps here
                             <span class="red-text">
                                 *
@@ -103,7 +103,7 @@
                         <i class="fas fa-pencil-alt prefix"></i>
                         <input id="recipe_img" name="recipe_img" type="text" class="validate"
                             value="{{ recipe.recipe_img }}">
-                        <label for="recipe_img" class="open-sans">
+                        <label for="recipe_img" class="open-sans label-text">
                             Insert an img url here
                         </label>
                     </div>
