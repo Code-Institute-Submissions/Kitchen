@@ -292,6 +292,11 @@ main {
     font-weight: bold;
 }
 
+.ingredient-prepstep-text {
+    text-align: center;
+    font-size: 14px;
+}
+
 
 /* edit_recipe.html ---------------------------------------- */
 .btn-edit {
