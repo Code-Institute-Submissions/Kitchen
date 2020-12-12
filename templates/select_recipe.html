@@ -28,19 +28,24 @@
         <!-- ingredients -->
         <div class="col s12 m4">
             <h2 class="open-sans">Ingredients:</h2>
-            <ol>
-                <li>
-                    {{ recipe.ingredients }}
-                </li>
-            </ol>
+            <ul>
+                {% for ingredient in recipe.ingredients.split(", ") %}
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        {{ ingredient }}<br>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
         <!-- how to -->
         <div class="col s12 m8">
             <h2 class="open-sans">How To:</h2>
             <ol>
-                <li>
-                    {{ recipe.preparation_steps }}
-                </li>
+                {% for prepstep in recipe.preparation_steps.split(", ") %}
+                    <li>
+                        {{ prepstep }}
+                    </li>
+                {% endfor %}
             </ol>
         </div>
     </div>
