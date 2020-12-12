@@ -39,9 +39,11 @@
         <div class="row">
             {% for category in categories %}
                 <div class="col s6 m4 l3 center-align">
-                    <div class="category-img">
-                        <img src="{{ category.recipe_img }}" alt="category image">
-                    </div>
+                    <a href="{{ url_for('select_category', category_id=category._id) }}" class="open-sans recipe-link">
+                        <div class="category-img">
+                            <img src="{{ category.recipe_img }}" alt="category image">
+                        </div>
+                    </a>
                     <div class="card black-text open-sans">
                         <div class="card-content white-text">
                             <span class="card-title category-title">{{ category.category_name }}</span>
