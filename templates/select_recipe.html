@@ -26,9 +26,9 @@
     </div>
     <div class="row">
         <!-- ingredients -->
-        <div class="col s12 m4">
+        <div class="col s12 m4 ingredients-col">
             <h2 class="open-sans">Ingredients:</h2>
-            <ul>
+            <ul class="open-sans">
                 {% for ingredient in recipe.ingredients.split(", ") %}
                     <li>
                         <i class="fas fa-check-circle"></i>
@@ -38,9 +38,9 @@
             </ul>
         </div>
         <!-- how to -->
-        <div class="col s12 m8">
+        <div class="col s12 m8 prepstep-col">
             <h2 class="open-sans">How To:</h2>
-            <ol>
+            <ol class="open-sans">
                 {% for prepstep in recipe.preparation_steps.split(", ") %}
                     <li>
                         {{ prepstep }}

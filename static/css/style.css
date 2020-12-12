@@ -254,6 +254,15 @@ main {
     color: #FCFCFF;
 }
 
+.ingredients-col ul {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.prepstep-col ol {
+    font-size: 24px;
+}
+
 /* search ------------------------------------------------- */
 .card-padding {
     padding: 0px!important;
