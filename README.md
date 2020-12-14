@@ -239,6 +239,38 @@ recipe cards on the recipe page together with all other information.
 
 ## Testing
 
+## Cloning this project
+If you want to work further on my project, go ahead and clone it following these steps:
+
+1. Go to the top of the [Josefinekihlstrom/Kitchen](https://github.com/Josefinekihlstrom/Kitchen) repository.
+2. Click the button named 'Code' next to the green 'Gitpod' button.
+3. Choose HTTPS and copy the URL by clicking the icon next to the URL.
+4. Open Git Bash/Terminal and change the current working directory to the location where you want the cloned directory.
+5. Type 'git clone' and then paste the copied URL.
+6. Press 'Enter'.
+7. Make sure to create a database for this project with MongoDb and install the requirements using the following
+command: ``` pip3 install -r requirements.txt ```
+8. Create an **env.py** file and a **.gitignore** file and insert the following to them:
+    - env.py:
+    ```
+    import os
+
+    os.environ.setdefault("IP", "0.0.0.0")
+    os.environ.setdefault("PORT", "5000")
+    os.environ.setdefault("SECRET_KEY", "< your_secret_key_for_this_project >")
+    os.environ.setdefault("MONGO_URI", "mongodb+srv://<username>:<password>@<clustername>.gjwpx.mongodb.net/<database_name>?retryWrites=true&w=majority")
+    os.environ.setdefault("MONGO_DBNAME", "< database_name >")
+    ```
+
+    - .gitignore:
+    ```
+    env.py
+    ```
+9. To run this cloned version of the project type in the following in the terminal:
+``` python3 app.py ```
+
+To get to the source of this information: [Click here!](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
 ## Deployment
 This project was deployed to Heroku. To deploy it to Heroku I did the following:
 
@@ -265,18 +297,6 @@ Vars' section.
 6. In the 'Deployment method' section I clicked on the GitHub icon to first connect to my GitHub account and then
 search for the repository name for this project. Once the repository was found I clicked on the 'Connect' button
 to connect to the app.
-
-## Cloning this project
-If you want to work further on my project, go ahead and clone it following these steps:
-
-1. Go to the top of the [Josefinekihlstrom/Kitchen](https://github.com/Josefinekihlstrom/Kitchen) repository.
-2. Click the button named 'Code' next to the green 'Gitpod' button.
-3. Choose HTTPS and copy the URL by clicking the icon next to the URL.
-4. Open Git Bash/Terminal and change the current working directory to the location where you want the cloned directory.
-5. Type 'git clone' and then paste the copied URL.
-6. Press 'Enter'.
-
-To get to the source of this information: [Click here!](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ## Credits
 ### Media
