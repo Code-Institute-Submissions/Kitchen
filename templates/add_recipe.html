@@ -17,7 +17,7 @@
                         <label for="recipe_name" class="open-sans label-text">
                             Recipe Name
                             <span class="red-text">
-                                *
+                                <i class="fas fa-asterisk"></i>
                             </span>
                         </label>
                     </div>
@@ -35,7 +35,7 @@
                         <label for="category_name" class="open-sans label-text">
                             Category
                             <span class="red-text">
-                                *
+                                <i class="fas fa-asterisk"></i>
                             </span>
                         </label>
                     </div>
@@ -53,7 +53,7 @@
                         <label for="preptime_time" class="open-sans label-text">
                             Preptime
                             <span class="red-text">
-                                *
+                                <i class="fas fa-asterisk"></i>
                             </span>
                         </label>
                     </div>
@@ -66,14 +66,16 @@
                         <label for="ingredients" class="open-sans label-text">
                             Add ingredients here
                             <span class="red-text">
-                                *
+                                <i class="fas fa-asterisk"></i>
                             </span>
                         </label>
                     </div>
                     <p class="ingredient-prepstep-text">
-                        Make sure to separate each ingredient with a comma and space. For example:
-                        <br>
-                        (2 Eggs, 2 cups of flour, 3 tbsp butter, ...)
+                        <i>
+                            Make sure to separate each ingredient with a comma and space. For example:
+                            <br>
+                            (2 Eggs, 2 cups of flour, 3 tbsp butter, ...)
+                        </i>
                     </p>
                 </div>
                 <!-- preparation steps -->
@@ -84,14 +86,16 @@
                         <label for="preparation_steps" class="open-sans label-text">
                             Add preparation steps here
                             <span class="red-text">
-                                *
+                                <i class="fas fa-asterisk"></i>
                             </span>
                         </label>
                     </div>
                     <p class="ingredient-prepstep-text">
-                        Make sure to separate each preparation step with a comma and space. For example:
-                        <br>
-                        (Add dry ingredients into a bowl, mix together well, put the wet ingredients in, ...)
+                        <i>
+                            Make sure to separate each preparation step with a comma and space. For example:
+                            <br>
+                            (Add dry ingredients into a bowl, mix together well, put the wet ingredients in, ...)
+                        </i>
                     </p>
                 </div>
                 <!-- img url -->
@@ -107,10 +111,16 @@
                 <!-- submit button -->
                 <div class="row">
                     <div class="col s12 center-align">
-                        <button type="submit" class="btn btn-blue">
+                        <button type="submit" class="btn btn-blue add-recipe-btn">
                             Add Recipe <i class="fas fa-plus-square right"></i>
                         </button>
                     </div>
+                </div>
+                <div class="row">
+                    <p class="red-text center-align">
+                        <i class="fas fa-asterisk"></i>
+                        Don't forget to fill in the required fields
+                    </p>
                 </div>
             </form>
         </div>

@@ -288,8 +288,11 @@ main {
 
 .red-text {
     color: red;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 14px;
+}
+
+.fa-asterisk {
+    font-size: 10px;
 }
 
 .ingredient-prepstep-text {
@@ -299,6 +302,10 @@ main {
 
 .label-text {
     font-size: 20px!important;
+}
+
+.add-recipe-btn {
+    font-size: 18px;
 }
 
 
