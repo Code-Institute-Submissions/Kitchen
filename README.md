@@ -17,6 +17,8 @@
 7. [Cloning This Project](#cloning-this-project)
 8. [Credits](#credits)
     - [Media](#media)
+    - [Recipe images](#recipe-images)
+    - [Recipe text](#recipe-text)
 9. [Acknowledgements](#acknowledgements)
     - [Pages used to find information](#pages-used-to-find-information)
     - [Code](#code)
