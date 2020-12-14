@@ -240,6 +240,7 @@ recipe cards on the recipe page together with all other information.
 - [Google Fonts]() - The font used for this project: **Open Sans Condensed*
 
 ## Testing
+To View the full testing, [click here!](testing.md)
 
 ## Cloning this project
 If you want to work further on my project, go ahead and clone it following these steps:
