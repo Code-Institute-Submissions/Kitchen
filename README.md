@@ -242,6 +242,16 @@ recipe cards on the recipe page together with all other information.
 ## Deployment
 
 ## Cloning this project
+If you want to work further on my project, go ahead and clone it following these steps:
+
+1. Go to the top of the [Josefinekihlstrom/Kitchen](https://github.com/Josefinekihlstrom/Kitchen) repository.
+2. Click the button named 'Code' next to the green 'Gitpod' button.
+3. Choose HTTPS and copy the URL by clicking the icon next to the URL.
+4. Open Git Bash/Terminal and change the current working directory to the location where you want the cloned directory.
+5. Type 'git clone' and then paste the copied URL.
+6. Press 'Enter'.
+
+To get to the source of this information: [Click here!](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ## Credits
 ### Media
