@@ -73,7 +73,7 @@ The font used for this project was [Open Sans Condensed](https://fonts.google.co
 and came from [Google Fonts](https://fonts.google.com/).
 
 <div align="center">
-    <img src="static/img/colors.png" alt="color scheme" width="600px">
+    <img src="static/img/coolors.png" alt="color scheme" width="600px">
 </div>
 
 ### Wireframes
