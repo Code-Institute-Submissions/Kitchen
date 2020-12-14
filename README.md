@@ -241,29 +241,30 @@ recipe cards on the recipe page together with all other information.
 
 ## Deployment
 This project was deployed to Heroku. To deploy it to Heroku I did the following:
-1. Create a Heroku account and create a new app and select the region you're in. 
-From your 'Clusters' page, click on the 'Collections' button.
 
-2. Give the database a name of 'kitchen' and inside it create four collections with the names of 'categories',
-'preptime', 'recipies' and 'users'.
+1. After creating a Heroku account I created a new app and selected the region closest to me. 
 
-3. After the setup of the database and its collections go to your development environment in Gitpod.
+2. After the app was created I went to 'Settings' and clicked on the 'Reveal Config Vars' button in the 'Config 
+Vars' section.
 
-4. Install flask by typing the following into the terminal: ``` pip3 install Flask ```
+3. From there I added the values to the following Config Vars:
+    - MONGO_URI : ``` mongodb+srv://<username>:<password>@<clustername>.gjwpx.mongodb.net/<database_name>?retryWrites=true&w=majority ```
+    - PORT : ``` 5000 ```
+    - IP : ``` 0.0.0.0 ```
 
-5. Create the following files:
-- env.py
-- .gitignore
+    (< username >, < password >, < clustername > and < database_name > in the MONGO_URI where replaced with my 
+    database values)
 
-6. Inside your .gitignore file add the following: **env.py**. This is to hide the sensitive data that will be provided
-in the env.py file.
+4. Then I had to add a **requirements.txt** file and **Procfile** with the following two commands in the terminal:
+    - ``` pip3 freeze --local > requirements.txt ```
+    - ``` echo web: python app.py > Procfile ```
 
-7. Inside the env.py file, create the following text:
-```import os os.environ["MONGO_URI"] = "os.environ.setdefault("MONGO_URI", "mongodb+srv://<username>:<password>@<cluster_name>.gjwpx.mongodb.net/<database_name>?retryWrites=true&w=majority")```
+5. To link my Heroku app with the repository I logged in to my Heroku, navigated to my app and clicked on the 
+'Deploy' button in the menu.
 
-
-
-
+6. In the 'Deployment method' section I clicked on the GitHub icon to first connect to my GitHub account and then
+search for the repository name for this project. Once the repository was found I clicked on the 'Connect' button
+to connect to the app.
 
 ## Cloning this project
 If you want to work further on my project, go ahead and clone it following these steps:
