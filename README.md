@@ -241,12 +241,29 @@ recipe cards on the recipe page together with all other information.
 
 ## Deployment
 This project was deployed to Heroku. To deploy it to Heroku I did the following:
-1. Created a Heroku account and from my 'Clusters' page, I clicked on the 'Collections' button.
-2. I gave the database a name of 'kitchen' and inside it I created four collections with the names of 'categories',
+1. Create a Heroku account and create a new app and select the region you're in. 
+From your 'Clusters' page, click on the 'Collections' button.
+
+2. Give the database a name of 'kitchen' and inside it create four collections with the names of 'categories',
 'preptime', 'recipies' and 'users'.
-3. After the setup of the database and its collections I went to my development environment in Gitpod.
-4. I installed flask by typing the following into my terminal:
-``` pip3 install Flask ```
+
+3. After the setup of the database and its collections go to your development environment in Gitpod.
+
+4. Install flask by typing the following into the terminal: ``` pip3 install Flask ```
+
+5. Create the following files:
+- env.py
+- .gitignore
+
+6. Inside your .gitignore file add the following: **env.py**. This is to hide the sensitive data that will be provided
+in the env.py file.
+
+7. Inside the env.py file, create the following text:
+```import os os.environ["MONGO_URI"] = "os.environ.setdefault("MONGO_URI", "mongodb+srv://<username>:<password>@<cluster_name>.gjwpx.mongodb.net/<database_name>?retryWrites=true&w=majority")```
+
+
+
+
 
 ## Cloning this project
 If you want to work further on my project, go ahead and clone it following these steps:
