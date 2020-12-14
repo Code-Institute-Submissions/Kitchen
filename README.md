@@ -240,6 +240,13 @@ recipe cards on the recipe page together with all other information.
 ## Testing
 
 ## Deployment
+This project was deployed to Heroku. To deploy it to Heroku I did the following:
+1. Created a Heroku account and from my 'Clusters' page, I clicked on the 'Collections' button.
+2. I gave the database a name of 'kitchen' and inside it I created four collections with the names of 'categories',
+'preptime', 'recipies' and 'users'.
+3. After the setup of the database and its collections I went to my development environment in Gitpod.
+4. I installed flask by typing the following into my terminal:
+``` pip3 install Flask ```
 
 ## Cloning this project
 If you want to work further on my project, go ahead and clone it following these steps:
