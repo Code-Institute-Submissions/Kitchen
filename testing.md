@@ -9,7 +9,18 @@
 ## User Testing
     
 ## Bugs found
-- **Not Solved** Not able to make required fields in form 
+- **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
+Materialize applies a custom CSS on all select elements which makes the 'required' attributes not working on 
+unordered lists. Even though this is covered in the Mini Project that this project is based upon, the code provided
+there didn't work for me when I tried it out. I therefor decided to leave this bug to hopefully solve it in the
+future, but for now I decided to put a red **'*'** mark next to the fields I wanted to be required to
+show the user that the fields are required after all.
+<div align="center">
+    <img src="static/img/required.jpg" alt="Add category form" width="600px">
+    <br>
+    The red required mark next to the fields that are required.
+</div>
+
 - **Solved** When getting the data for the ingredients and preparation steps the text was formatted like following:
 "['put on the tap,\r\nput the glass under the tap']"
 To Solve this I decided to change the ingredients and prepsteps from displaying in array format into string format.
