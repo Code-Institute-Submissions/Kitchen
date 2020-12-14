@@ -311,13 +311,37 @@ to connect to the app.
 ### Recipe images
 - Mushroom recipe image [Karolina Kołodziejczak](https://images.unsplash.com/photo-1607116667981-ff148a14e975?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)
 - Grilled Cheese Sandwich [Pixzolo Photography](https://images.unsplash.com/photo-1528736235302-52922df5c122?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2022&q=80)
-
-
+- Chicken Paillard [Tareq Taylor](https://www.koket.se/kyckling-paillard)
+- Butter-fried pikeperch [Tina Nordström](https://www.koket.se/smorstekt-gosfile-med-lattstuvad-blomkal-dill-och-ansjovis)
+- Chicken Noodle Sallad [Lotta Lundgren](https://www.koket.se/nudelsallad-med-friterad-kyckling)
+- Pasta with Pasta with anchovies [Isabella Morrone](https://www.koket.se/pasta-med-sardeller-och-broccoli)
+- Spaghetti Pancetta [Kungsörnen](https://www.koket.se/spaghetti-med-pancetta-och-purjo)
+- Beef Stroganoff [Tommy Myllymäki](https://www.koket.se/mitt-kok/tommy-myllymaki/biff-stroganoff/)
+- Cowboy Soup [Linda Skugge](https://www.koket.se/efter-tio/linda-skugge/cowboysoppa-med-kottfars/)
+- Chicken Gratin [Tareq Taylor](https://www.koket.se/kramig-italiensk-gratang)
+- Sausage Stroganoff [Sara Begner](https://www.koket.se/sara_begner/soppor_och_grytor/korv_och_chark/korv_stroganoff/)
+- Chicken with lemongrass [Donal Skehan](https://www.koket.se/mitt-kok/donal-skehan/kyckling-med-citrongras-och-chili/)
+- Flying haloumi [Siri Barje](https://www.koket.se/flygande-halloumi)
+- Janssons Frestelse [Per Morberg](https://www.koket.se/morberg-lagar-husmanskost/per-morberg/janssons-frestelse-pa-per-morbergs-vis/)
+- Soy marinated salmon [Tommy Myllymäki](https://www.koket.se/mitt-kok/tommy-myllymaki/sojamarinerad-lax-med-sesambroccoli/)
 
 ### Recipe text
 Recipies not mentioned here are made up by me.
 - American Pancakes by [Delphine Fortine](https://www.delscookingtwist.com/easy-fluffy-american-pancakes/)
 - Grilled Cheese Sandwich [Sal](https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/)
+- Chicken Paillard [Köket.se](https://www.koket.se/kyckling-paillard)
+- Butter-fried pikeperch [Köket.se](https://www.koket.se/smorstekt-gosfile-med-lattstuvad-blomkal-dill-och-ansjovis)
+- Chicken Noodle Sallad [Köket.se](https://www.koket.se/nudelsallad-med-friterad-kyckling)
+- Pasta with Pasta with anchovies [Köket.se](https://www.koket.se/pasta-med-sardeller-och-broccoli)
+- Spaghetti Pancetta [Köket.se](https://www.koket.se/spaghetti-med-pancetta-och-purjo)
+- Beef Stroganoff [Köket.se](https://www.koket.se/mitt-kok/tommy-myllymaki/biff-stroganoff/)
+- Cowboy Soup [Köket.se](https://www.koket.se/efter-tio/linda-skugge/cowboysoppa-med-kottfars/)
+- Chicken Gratin [Köket.se](https://www.koket.se/kramig-italiensk-gratang)
+- Sausage Stroganoff [Köket.se](https://www.koket.se/sara_begner/soppor_och_grytor/korv_och_chark/korv_stroganoff/)
+- Chicken with lemongrass [Köket.se](https://www.koket.se/mitt-kok/donal-skehan/kyckling-med-citrongras-och-chili/)
+- Flying haloumi [Köket.se](https://www.koket.se/flygande-halloumi)
+- Janssons Frestelse [Köket.se](https://www.koket.se/morberg-lagar-husmanskost/per-morberg/janssons-frestelse-pa-per-morbergs-vis/)
+- Soy marinated salmon [Köket.se](https://www.koket.se/mitt-kok/tommy-myllymaki/sojamarinerad-lax-med-sesambroccoli/)
 
 ## Acknowledgements
 ### Pages used to find information
