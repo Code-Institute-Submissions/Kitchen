@@ -45,7 +45,7 @@ The UX goals for this website are the following:
 
 
 ### User Stories
-The user stories was defined during the Strategy Plane phase of this project.
+The user stories was defined during the **Strategy Plane** phase of this project.
 As a user I want to:
 - Get inspired into learning new recipes.
 - Browse different categories for easier navigation of what kind of recipe I want to cook.
@@ -113,7 +113,7 @@ The wireframes where made with the technology of Figma and can be viewed
 <br>
 
 ## Features
-The features of the site was defined during the scope plane stage and all but one features from the original idea
+The features of the site was defined during the **scope plane** stage and all but one features from the original idea
 was applied to this project.
 
 The features of this web site are:
