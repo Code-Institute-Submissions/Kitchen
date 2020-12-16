@@ -208,7 +208,18 @@ This page can only be viewed by the admin user.
 </div>
 
 ### Profile Page:
-TEXT HERE
+The link to the profile page can be reached in the navbar once a user is signed in to the page. The features of the
+profile page are:
+- Hero image.
+- Section with all recipies the user has made including:
+    - Image of the recipe.
+    - Name of the recipe.
+    - Name of the user who added the recipe.
+    - Category of the recipe.
+    - Preptime of the recipe.
+    - Delete button - Makes it possible to delete the recipe.
+    - Edit button - Makes it possible to edit the recipe.
+    - Link to the recipe page.
 
 
 ### Features left to implement
