@@ -35,4 +35,9 @@ route for the categories to be able to show.
 
 - **Not Solved** When searching for a recipe the categories disappear.
 
-- **Not Solved** When a user don't have recipies added, profile page will not fill out completely.
+- **Not Solved** When a user don't have recipies added, their profile page will not fill out completely. This was
+about to be solved, or so I thought, when getting in touch with Student Care at Code Institute but the specific
+action I wantet to be done would be more complicated than I thought. Since I had been using an jinja if statement to 
+show the users recipies, I thought the solution would be to put in an else statement there as well. 
+That seemed to cause even more bugs to the code, so I had to skip solving this bug unfortunately. My experience in
+python is very limited atm, so I hope this can be something I can solve in the future when more knowledge is found.
