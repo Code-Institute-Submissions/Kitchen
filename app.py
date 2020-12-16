@@ -70,12 +70,12 @@ def signin():
         if user_existing:
             # check password match
             if check_password_hash(
-                user_existing["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Hi there, {}!".format(
-                        request.form.get("username")))
-                    return redirect(url_for(
-                        "profile", username=session["user"]))
+                    user_existing["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("Hi there, {}!".format(
+                    request.form.get("username")))
+                return redirect(url_for(
+                    "profile", username=session["user"]))
             else:
                 # if password doesn't match
                 flash("The Username and/or Password is incorrect!")
@@ -92,11 +92,11 @@ def signin():
 # users profile ---------------------------------------------------------
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    # for users recipies
-    recipies = mongo.db.recipies.find()
     # session username from database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
+    # for users recipies
+    recipies = mongo.db.recipies.find()
 
     if session["user"]:
         return render_template(
