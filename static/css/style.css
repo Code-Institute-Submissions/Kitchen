@@ -467,7 +467,7 @@ main {
 /* ------------------- max-width: 992px */
 @media (max-width: 992px) {
     .recipe-name {
-        font-size: 30px!important;
+        font-size: 25px!important;
     }
 
     .recipe-description-text {
