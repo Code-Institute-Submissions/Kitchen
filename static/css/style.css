@@ -192,13 +192,9 @@ main {
     height: 30px;
 }
 
-.recipe-buttons a {
-    width: 65px;
-}
-
 .btn-delete {
     box-shadow: none;
-    width: 65px!important;
+    width: 80px!important;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 18px;
@@ -208,7 +204,7 @@ main {
 
 .btn-edit {
     box-shadow: none;
-    width: 65px;
+    width: 80px!important;
     background-color: #406E8E!important;
     text-transform: capitalize;
     font-weight: bold;
@@ -311,7 +307,7 @@ main {
 
 /* edit_recipe.html ---------------------------------------- */
 .btn-edit {
-    width: 65px!important;
+    width: 80px!important;
 }
 
 .btn-cancel {
@@ -344,6 +340,11 @@ main {
 
 .category-title {
     font-size: 36px!important;
+}
+
+.edit-cat-padding {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
 }
 
 
