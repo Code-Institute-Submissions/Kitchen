@@ -230,6 +230,9 @@ process. This led me to take the decision to remove this feature due to lack of 
 ciritcal for the websites overall functionality.
 - A rating function to make all visitors able to rate each recipe. The rating result would then be displaying in the
 recipe cards on the recipe page together with all other information.
+- When the user choose a category to go to, I would like for that category to become disabled to click on again 
+when the user is already on that specific categories page. 
+This to add more clarity to the user on what category that is currently viewed.
 
 ## Technologies used
 ### Languages
