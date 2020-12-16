@@ -102,9 +102,12 @@
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix"></i>
                         <input id="recipe_img" name="recipe_img" type="text" class="validate"
-                            value="{{ recipe.recipe_img }}">
+                            value="{{ recipe.recipe_img }}" required>
                         <label for="recipe_img" class="open-sans label-text">
                             Insert an img url here
+                            <span class="red-text">
+                                <i class="fas fa-asterisk"></i>
+                            </span>
                         </label>
                     </div>
                 </div>
