@@ -198,7 +198,7 @@ main {
 
 .btn-delete {
     box-shadow: none;
-    width: 65px;
+    width: 65px!important;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 18px;
@@ -420,7 +420,7 @@ main {
     }
 
     .recipe-name {
-        font-size: 40px!important;
+        font-size: 30px!important;
     }
 
     .recipe-description-text {
@@ -466,9 +466,7 @@ main {
 
 /* ------------------- max-width: 992px */
 @media (max-width: 992px) {
-    .recipe-name {
-        font-size: 25px!important;
-    }
+    
 
     .recipe-description-text {
         font-size: 20px!important;
