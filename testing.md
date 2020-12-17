@@ -31,12 +31,24 @@
     a recipe.
 
 4. **Have a good overlook of my own recipies that I've made.**
-    - On the users profile page, all the users recipies are displayed right under the hero image of the page.
-    - The user is also provided with a 'Delete' button and 'Edit' button in the recipe cards of the profile page.
-    This to make it easier for the user to delete or edit a recipe.
+    - On the users profile page, all the users recipies are listed right under the hero image of the page.
+    - When the user don't have any recipies made the recipies section will fill out with a blue color to indicate
+    that the list is empty.
 
 5. **Be able to edit and delete recipies that I have made.**
-    - 
+    - On the each user recipe card there are two buttons displayed that only the logged in user can se:
+        - A red 'Delete' button. 
+        - A blue 'Edit' button.
+    - The user can edit and delete their recipies on the following pages:
+        - Profile Page:
+            - On the profile page, the user has a better access over the recipies he/she has written. From here the
+            user is able to both delete and edit each recipe.
+        - Recipies Page:
+            - The user is also able to delete and edit their recipies from the Recipies Page, however when a lot of
+            recipies are displaying, and not only by the user in session, the user has to scroll through all of them
+            in the order that the recipe was made and without any type of relevance.
+    
+    
 
     
 ## Bugs found
