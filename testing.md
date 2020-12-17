@@ -33,7 +33,10 @@ I added a jinja for loop in the select_recipe html code to iterate through the i
 I thought I could just reuse the category code from the categories.html page, but I also had to put the categories variable in the home page
 route for the categories to be able to show.
 
-- **Not Solved** When searching for a recipe the categories disappear.
+- **Solved** When searching for a recipe the categories would disappear. I solved this one by deleting the search
+function entirely and redo it to try to understand the logic of it better. It turned out I did not apply the 
+variable for the categories, so therefor they would not display when searching. After adding the variable the search
+function worked without any issues.
 
 - **Not Solved** When a user don't have recipies added, their profile page will not fill out completely. This was
 about to be solved, or so I thought, when getting in touch with Student Care at Code Institute but the specific
