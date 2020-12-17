@@ -31,7 +31,9 @@
     a recipe.
 
 4. **Have a good overlook of my own recipies that I've made.**
-    - 
+    - On the users profile page, all the users recipies are displayed right under the hero image of the page.
+    - The user is also provided with a 'Delete' button and 'Edit' button in the recipe cards of the profile page.
+    This to make it easier for the user to delete or edit a recipe.
 
 5. **Be able to edit and delete recipies that I have made.**
     - 
