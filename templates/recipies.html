@@ -53,6 +53,7 @@
                 <div class="card">
                     <!-- recipe image -->
                     <div class="card-image">
+                        <!-- on error code from https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images -->
                         <img src="{{ recipe.recipe_img }}" class="card-image-position" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
                     </div>
                     <div class="card-content">
