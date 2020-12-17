@@ -376,8 +376,9 @@ Recipies not mentioned here are made up by me.
 - [Youtube](https://www.youtube.com/)
 
 ### Code
-- This project was made with guidance from Mini Project | Putting It All Together led by Tim
+- This project was made with guidance from Mini Project - Task Manager | Putting It All Together led by Tim
 - [Flask error page](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
+- [Replace broken images](https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images)
 
 ### Thank you
 
