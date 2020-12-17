@@ -45,3 +45,7 @@ show the users recipies, I thought the solution would be to put in an else state
 done on my recipies page with the search function). 
 That seemed to cause even more bugs to the code, so I had to skip solving this bug unfortunately. My experience in
 python is very limited atm, so I hope this can be something I can solve in the future when more knowledge is found.
+
+- **Solved** Though it's required to add an img url when you add a recipe, the images would show a broken link if the
+url was not from the correct source. To solve this bug I added an onerror attribute with a value that would automatically
+replace the broken image link with a default image.
