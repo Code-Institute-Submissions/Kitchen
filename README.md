@@ -368,6 +368,7 @@ Recipies not mentioned here are made up by me.
 
 ### Code
 - This project was made with guidance from Mini Project | Putting It All Together led by Tim
+- [Flask error page](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
 
 ### Thank you
 
