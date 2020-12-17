@@ -7,6 +7,28 @@
 ## Manual Testing
 
 ## User Testing
+
+1. Get inspired into learning new recipes.
+    - 
+
+2. Browse different categories for easier navigation of what kind of recipe I want to cook.
+    - The different categories are displayed on the following pages for easy access for the user:
+        - Home Page 
+        - Recipies Page
+    - The categories has their own category image that represents the content behind the category itself. 
+    This to make it easy to identify the category before reading the name of it.
+    - When clicking on each category the category image acts as the hero image, to also indicate which category is
+    currently viewed.
+
+3. Be able to sign up and share my own recipies.
+    - 
+
+4. Have a good overlook of my own recipies that I've made.
+    - 
+
+5. Be able to edit and delete recipies that I have made.
+    - 
+
     
 ## Bugs found
 - **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
