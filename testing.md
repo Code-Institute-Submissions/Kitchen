@@ -49,3 +49,7 @@ python is very limited atm, so I hope this can be something I can solve in the f
 - **Solved** Though it's required to add an img url when you add a recipe, the images would show a broken link if the
 url was not from the correct source. To solve this bug I added an onerror attribute with a value that would automatically
 replace the broken image link with a default image.
+
+- **Not Solved** When deleting a recipe from the profile page, the user gets redirected to the 'get_recipies' page
+instead of staying on the profile page after deleting. Due to lack of time this bug will have to remain to be solved
+in the future.
