@@ -363,6 +363,13 @@ main {
     background-size: cover;
 }
 
+
+/* 404.html --------------------------------------------- */
+.error-section h1 {
+    font-weight: bold;
+}
+
+
 /* footer ---------------------------------------- */
 .footer-row {
     margin-bottom: 0px;
@@ -408,8 +415,20 @@ main {
 /* ------------------- max-width: 480px */
 @media (max-width: 480px) {
     .flashmessage p {
-    font-size: 14px;
-    line-height: 0;
+        font-size: 14px;
+        line-height: 0;
+    }
+
+    .error-section h1 {
+        font-size: 40px!important;
+    }
+
+    .error-section h5 {
+        font-size: 18px!important;
+    }
+
+    .error-section h6 {
+        font-size: 16px!important;
     }
 }
 
@@ -431,6 +450,7 @@ main {
     .recipe-link {
         font-size: 28px!important;
     }
+
 }
 
 
@@ -443,6 +463,10 @@ main {
     .category-img img {
         width: 150px;
         height: 150px;
+    }
+
+    .error-card {
+        width: 90%!important;
     }
 }
 
