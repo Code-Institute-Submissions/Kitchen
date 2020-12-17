@@ -161,6 +161,7 @@ main {
     background-image: url('../img/hero2.jpg');
     background-position: center center;
     background-size: cover;
+    position: relative;
 }
 
 .recipe-area {
@@ -265,16 +266,18 @@ main {
     border-radius: 15px;
 }
 
-.search-input {
-    margin-left: 20px!important;
+.search-row {
+    margin: 0px!important;
 }
 
-.valign-wrapper {
-    height: 60px;
-    background-color: #FCFCFF;
-    border-radius: 15px;
-    margin-bottom: 0px;
+.search-div {
+    padding: 0px!important;
 }
+
+.no-recipies {
+    color: red;
+}
+
 
 /* add_recipe.html ---------------------------------------- */
 .add-recipe-container {

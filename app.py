@@ -30,7 +30,16 @@ def get_home():
 # get recipies page ---------------------------------------------------------
 @app.route("/get_recipies")
 def get_recipies():
-    recipies = mongo.db.recipies.find()
+    recipies = list(mongo.db.recipies.find())
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template(
+        "recipies.html", recipies=recipies, categories=categories)
+
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    recipies = list(mongo.db.recipies.find({"$text": {"$search": query}}))
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template(
         "recipies.html", recipies=recipies, categories=categories)
