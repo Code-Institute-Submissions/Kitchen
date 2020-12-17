@@ -467,6 +467,10 @@ main {
     .category-title {
         font-size: 30px!important;
     }
+
+    .search-div {
+        width: 80%!important;
+    }
 }
 
 
@@ -504,6 +508,10 @@ main {
 
     .error-card {
         width: 90%!important;
+    }
+
+    .search-div {
+        width: 80%!important;
     }
 }
 
