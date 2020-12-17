@@ -175,6 +175,7 @@ main {
     background-color: #B7CECE;
     margin-bottom: 0px;
     padding: 10px;
+    min-height: 450px;
 }
 
 .card-image-position {

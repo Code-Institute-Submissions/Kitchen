@@ -38,13 +38,13 @@ function entirely and redo it to try to understand the logic of it better. It tu
 variable for the categories, so therefor they would not display when searching. After adding the variable the search
 function worked without any issues.
 
-- **Not Solved** When a user don't have recipies added, their profile page will not fill out completely. This was
-about to be solved, or so I thought, when getting in touch with Student Care at Code Institute but the specific
-action I wantet to be done would be more complicated than I thought. Since I had been using an jinja if statement to 
-show the users recipies, I thought the solution would be to put in an else statement there as well (as I had
-done on my recipies page with the search function). 
-That seemed to cause even more bugs to the code, so I had to skip solving this bug unfortunately. My experience in
-python is very limited atm, so I hope this can be something I can solve in the future when more knowledge is found.
+- **Solved** When a user don't have recipies added, their profile page would not fill out completely causing a 
+white gap between the recipe section and the footer. Originally my
+idea to solve this bug was to put in an else statement in my jinja code for the profile page with a text displaying
+when no recipies was to be found. However this caused even more bugs when adding the else statement due to the limitation
+of jinja. I decided to change my solution and add a min-height of the recipe section that would automatically fill out the page
+with the sections default background color to remove the white gap completely. 
+Not the most ultimate solution, but it works for now.
 
 - **Solved** Though it's required to add an img url when you add a recipe, the images would show a broken link if the
 url was not from the correct source. To solve this bug I added an onerror attribute with a value that would automatically
