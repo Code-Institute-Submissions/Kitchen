@@ -1,4 +1,6 @@
 # Kitchen
+![Am I Responsive](/static/img/amiresponsive.png)
+
 ## Content
 1. [About](#about)
 2. [UX](#ux)
