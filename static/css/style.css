@@ -454,6 +454,19 @@ main {
     .error-section h6 {
         font-size: 16px!important;
     }
+
+    .category-heading {
+        font-size: 40px!important;
+    }
+
+    .category-img img {
+        width: 130px!important;
+        height: 130px!important;
+    }
+
+    .category-title {
+        font-size: 30px!important;
+    }
 }
 
 
