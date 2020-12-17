@@ -221,6 +221,12 @@ profile page are:
     - Edit button - Makes it possible to edit the recipe.
     - Link to the recipe page.
 
+### Error Pages:
+- When an 'Internal Server Error' (500) occurs the page will show a **500** error page which points out the error and
+provides the user with a link to click on to get back to the home page. 
+- When a 'Not Found' error (404) occurs the page will show a **404** error page which points out the error and
+provides the user with a link to click on to get back to the home page.
+
 
 ### Features left to implement
 - Some type of timer function that automatically logges the user out after a certain time of no activity.
