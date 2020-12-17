@@ -251,6 +251,14 @@ main {
     color: #FCFCFF;
 }
 
+.prepstep-col {
+    padding-right: 20px!important;
+}
+
+.ingredients-col {
+    padding-right: 20px!important;
+}
+
 .ingredients-col ul {
     margin-left: 20px;
     font-size: 24px;
@@ -258,6 +266,11 @@ main {
 
 .prepstep-col ol {
     font-size: 24px;
+}
+
+.prepstep-col ol li {
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 /* search ------------------------------------------------- */
