@@ -8,10 +8,10 @@
 
 ## User Testing
 
-1. Get inspired into learning new recipes.
+1. **Get inspired into learning new recipes.**
     - 
 
-2. Browse different categories for easier navigation of what kind of recipe I want to cook.
+2. **Browse different categories for easier navigation of what kind of recipe I want to cook.**
     - The different categories are displayed on the following pages for easy access for the user:
         - Home Page 
         - Recipies Page
@@ -20,13 +20,20 @@
     - When clicking on each category the category image acts as the hero image, to also indicate which category is
     currently viewed.
 
-3. Be able to sign up and share my own recipies.
+3. **Be able to sign up and share my own recipies.**
+    - When the user first visits the page he/she is prompted to press the blue button in the red section right under the hero image
+    to sign up to the page.
+    - The user can also sign up by pressing the 'Sign Up' button in the navigation bar at the top.
+    - The appearance of the 'Sign Up' button is consistent throughout the site, with its blue color and white text.
+    - When the user is signed in, the button text in the red section changes to 'Add Recipe' to encourage the user
+    to share a recipe.
+    - The user can also click on the link in the navigation bar with the text 'Add Recipe' to get to the page to add
+    a recipe.
+
+4. **Have a good overlook of my own recipies that I've made.**
     - 
 
-4. Have a good overlook of my own recipies that I've made.
-    - 
-
-5. Be able to edit and delete recipies that I have made.
+5. **Be able to edit and delete recipies that I have made.**
     - 
 
     
