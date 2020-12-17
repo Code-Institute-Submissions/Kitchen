@@ -6,6 +6,7 @@
 2. [UX](#ux)
     - [UX goals](#ux-goals)
     - [User stories](#user-stories)
+    - [Owner goals](#owner-goals)
     - [Design process](#design-process)
     - [Wireframes](#wireframes)
 3. [Features](#features)
@@ -54,6 +55,13 @@ As a user I want to:
 - Be able to sign up and share my own recipies.
 - Have a good overlook of my own recipies that I've made.
 - Be able to edit and delete recipies that I have made.
+
+### Owner goals
+As the owner of the page I want:
+- The page to look as professional as possible considering the knowledge that I have acquired through the course.
+The page reflect the learning aspect of the journey I have undertaken so far in the Code Institute course.
+- To be able to edit and/or delete a category.
+- To be able to create new food categories for the users to fill with recipies.
 
 ### Design process
 The **structure** of the site is based upon the data that is presented on the page. I wanted the first page to be simple
