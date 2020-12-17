@@ -352,6 +352,7 @@ to connect to the app.
 - Flying haloumi [Siri Barje](https://www.koket.se/flygande-halloumi)
 - Janssons Frestelse [Per Morberg](https://www.koket.se/morberg-lagar-husmanskost/per-morberg/janssons-frestelse-pa-per-morbergs-vis/)
 - Soy marinated salmon [Tommy Myllymäki](https://www.koket.se/mitt-kok/tommy-myllymaki/sojamarinerad-lax-med-sesambroccoli/)
+- Default Recipe Img when img link is broken [Eli Eshaghi](https://images.unsplash.com/photo-1584255014406-2a68ea38e48c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1007&q=80)
 
 ### Recipe text
 Recipies not mentioned here are made up by me.
