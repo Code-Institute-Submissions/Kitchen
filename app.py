@@ -242,6 +242,7 @@ def select_category(category_id):
 
 
 # 404 error ----------------------------------------------------------
+# https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
 @app.errorhandler(404)
 def page_not_found(e):
     # returns the 404.html page
@@ -249,6 +250,7 @@ def page_not_found(e):
 
 
 # 500 error ----------------------------------------------------------
+# https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
 @app.errorhandler(500)
 def internal_server_error(e):
     # returns the 500.html page
