@@ -9,7 +9,9 @@
 ## User Testing
 
 1. **Get inspired into learning new recipes.**
-    - 
+    - This page was designed with an idea to look as realistic as possible (from a beginners point of view). 
+    This to both encourage and inspire the user to scroll through all different kinds of recipies.
+    - High quality images are used throughout the site to increase the user experience to the max.
 
 2. **Browse different categories for easier navigation of what kind of recipe I want to cook.**
     - The different categories are displayed on the following pages for easy access for the user:
