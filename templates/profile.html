@@ -14,7 +14,7 @@
                 <div class="card">
                     <!-- recipe image -->
                     <div class="card-image">
-                        <img src="{{ recipe.recipe_img }}" class="card-image-position">
+                        <img src="{{ recipe.recipe_img }}" class="card-image-position" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
                     </div>
                     <div class="card-content">
                         <!-- recipe name -->
