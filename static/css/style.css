@@ -532,6 +532,10 @@ main {
     .add-recipe-container {
         width: 350px;
     }
+
+    .welcome-h1 {
+        font-size: 60px!important;
+    }
 }
 
 /* ------------------- max-width: 992px */
