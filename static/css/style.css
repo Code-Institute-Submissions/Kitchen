@@ -1,4 +1,4 @@
-/* fonts ---------------------------------------- */
+/* fonts --------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 .open-sans {
@@ -14,7 +14,6 @@
 
 
 /* body and main content ---------------------------------------- */
-
 html {
     margin-top: 64px;
 }
@@ -30,13 +29,13 @@ main {
 }
       
 
-/* all rows ---------------------------------------- */
+/* all rows ----------------------------------------------------- */
 .row-no-margin {
     margin-bottom: 0px;
 }
 
 
-/* navbar ---------------------------------------- */
+/* navbar ------------------------------------------------------- */
 .nav-extended {
     background-color: #093824;
     position: fixed;
@@ -56,7 +55,8 @@ main {
     color: #FCFCFF;
 }
 
-/* buttons ---------------------------------------- */
+
+/* buttons ------------------------------------------------------- */
 .btn {
     font-family: "Open Sans Condensed",  sans-serif;
     text-transform: none;
@@ -72,7 +72,8 @@ main {
     box-shadow: none!important;
 }
 
-/* index.html -------------------------------------- */
+
+/* index.html ----------------------------------------------------- */
 .hero-img {
     height: 400px;
     width: 100%;
@@ -123,8 +124,7 @@ main {
 }
 
 
-/* signup.html -------------------------------------- */
-
+/* signup.html ---------------------------------------------------- */
 #signup-background {
     background-image: url("../img/login-register-hero.jpg");
     background-position: center center;
@@ -161,7 +161,8 @@ main {
     font-size: 20px;
 }
 
-/* recipies.html --------------------------------- */
+
+/* recipies.html -------------------------------------------------- */
 .hero-img-recipies {
     height: 400px;
     width: 100%;
@@ -229,7 +230,7 @@ main {
 }
 
 
-/* select_recipe.html ---------------------------------------- */
+/* select_recipe.html -------------------------------------------- */
 .recipe-select-img {
     height: 400px;
     padding-left: 0px!important;
@@ -281,7 +282,8 @@ main {
     margin-top: 30px;
 }
 
-/* search ------------------------------------------------- */
+
+/* search ---------------------------------------------------------- */
 .card-padding {
     padding: 0px!important;
     border-radius: 15px;
@@ -300,7 +302,7 @@ main {
 }
 
 
-/* add_recipe.html ---------------------------------------- */
+/* add_recipe.html ------------------------------------------------ */
 .add-recipe-container {
     width: 600px;
     margin: auto;
@@ -329,7 +331,7 @@ main {
 }
 
 
-/* edit_recipe.html ---------------------------------------- */
+/* edit_recipe.html ----------------------------------------------- */
 .btn-edit {
     width: 80px!important;
 }
@@ -343,7 +345,7 @@ main {
 }
 
 
-/* categories.html ---------------------------------------- */
+/* categories.html ------------------------------------------------ */
 .card {
     background-color: #FCFCFF;
     box-shadow: none;
@@ -372,12 +374,13 @@ main {
 }
 
 
-/* add category ---------------------------------------- */
+/* add category --------------------------------------------------- */
 .add-category-button {
     font-size: 18px;
 }
 
-/* select_category.html ---------------------------------------- */
+
+/* select_category.html ------------------------------------------- */
 .hero-img-category img {
     height: 400px;
     width: 100%;
@@ -386,7 +389,7 @@ main {
 }
 
 
-/* profile --------------------------------------------- */
+/* profile -------------------------------------------------------- */
 .hero-img-profile {
     height: 400px;
     width: 100%;
@@ -396,13 +399,13 @@ main {
 }
 
 
-/* 404.html --------------------------------------------- */
+/* 404.html -------------------------------------------------------- */
 .error-section h1 {
     font-weight: bold;
 }
 
 
-/* footer ---------------------------------------- */
+/* footer ---------------------------------------------------------- */
 .footer-row {
     margin-bottom: 0px;
 }
@@ -427,8 +430,7 @@ main {
 }
 
 
-/* flash message -------------------------------------- */
-
+/* flash message -------------------------------------------------- */
 .flashmessage {
     background-color: #3E000C;
 }
@@ -443,7 +445,7 @@ main {
 }
 
 
-/* media query ---------------------------------------- */
+/* media query ---------------------------------------------------- */
 /* ------------------- max-width: 480px */
 @media (max-width: 480px) {
     .flashmessage p {
@@ -523,6 +525,7 @@ main {
     }
 }
 
+
 /* ------------------- max-width: 768px */
 @media (max-width: 768px) {
     .box-content {
@@ -546,10 +549,9 @@ main {
     }
 }
 
+
 /* ------------------- max-width: 992px */
 @media (max-width: 992px) {
-    
-
     .recipe-description-text {
         font-size: 20px!important;
     }
