@@ -54,171 +54,177 @@ All manual tests were done in the following browsers:
 - Microsoft Edge
 
 ### Home Page/Index Page
-    - Navbar:
-        - Make sure navbar covers the width of the viewport.
-        - Click on 'Kitchen.' icon on the left to see that it links to the home page.
-        - Click on the 'Home' link to see that it links to the home page.
-        - Click on the 'Recipies' link to see that it links to the recipies page.
-        - Click on the 'Sign Up' link to see that it links to the sign up page.
-        - Click on the 'Sign In' link to see that it links to the sign in page.
-        - **When Signed in as regular user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-        - **When Signed in as regular user:* Click on 'Profile' link to see that it links to the profile page.
-        - **When Signed in as regular user:* Click on 'Log Out' link to see that it removes the session user cookie
-        and redirects the user to the 'Sign In' page.
-        - **When Signed in as Admin user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-        - **When Signed in as Admin user:* Click on 'Profile' link to see that it links to the profile page.
-        - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
-        categories page.
-        - **When Signed in as Admin user:* Click on 'Log Out' link to see that it removes the session user cookie
-        and redirects the user to the 'Sign In' page.
+- Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Sign Up' link to see that it links to the sign up page.
+    - Click on the 'Sign In' link to see that it links to the sign in page.
+    - **When Signed in as regular user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - **When Signed in as regular user:* Click on 'Profile' link to see that it links to the profile page.
+    - **When Signed in as regular user:* Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
+    - **When Signed in as Admin user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - **When Signed in as Admin user:* Click on 'Profile' link to see that it links to the profile page.
+    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    categories page.
+    - **When Signed in as Admin user:* Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
 
-    - Main Content:
-        - Make sure that the main content fits the entire viewport without any white gaps, including:
-            - Hero image
-            - blue and red boxes
-            - 'Pick a category' section
+- Main Content:
+    - Make sure that the main content fits the entire viewport without any white gaps, including:
+        - Hero image
+        - blue and red boxes
+        - 'Pick a category' section
 
-        - Click on 'Sign Up' button in the red box to see that it links to the sign up page.
-        - Make sure every category image is displaying.
-        - Click on the 'Chicken' category image to see that it links to the chicken category page.
-        - Click on the 'Fish' category image to see that it links to the fish category page.
-        - Click on the 'Meat' category image to see that it links to the meat category page.
-        - Click on the 'Vegetarian' category image to see that it links to the vegetarian category page.
+    - Click on 'Sign Up' button in the red box to see that it links to the sign up page.
+    - Make sure every category image is displaying.
+    - Click on the 'Chicken' category image to see that it links to the chicken category page.
+    - Click on the 'Fish' category image to see that it links to the fish category page.
+    - Click on the 'Meat' category image to see that it links to the meat category page.
+    - Click on the 'Vegetarian' category image to see that it links to the vegetarian category page.
 
-    - Footer:
-        - Make sure footer is covering the width of the viewport.
-        - Make sure copyright text is displaying
-        - Click on 'Facebook' icon to see that it links to facebook.com
-        - Click on 'Instagram' icon to see that it links to instagram.com
-        - Click on 'Twitter' icon to see that it links to twitter.com
-        - Click on 'Youtube' icon to see that it links to youtube.com
+- Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Recipies Page
-    - Navbar:
-        - Make sure navbar covers the width of the viewport.
-        - Click on 'Kitchen.' icon on the left to see that it links to the home page.
-        - Click on the 'Home' link to see that it links to the home page.
-        - Click on the 'Recipies' link to see that it links to the recipies page.
-        - Click on the 'Sign Up' link to see that it links to the sign up page.
-        - Click on the 'Sign In' link to see that it links to the sign in page.
-        - **When Signed in as regular user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-        - **When Signed in as regular user:* Click on 'Profile' link to see that it links to the profile page.
-        - **When Signed in as regular user:* Click on 'Log Out' link to see that it removes the session user cookie
-        and redirects the user to the 'Sign In' page.
-        - **When Signed in as Admin user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-        - **When Signed in as Admin user:* Click on 'Profile' link to see that it links to the profile page.
-        - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
-        categories page.
-        - **When Signed in as Admin user:* Click on 'Log Out' link to see that it removes the session user cookie
-        and redirects the user to the 'Sign In' page.
+- Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Sign Up' link to see that it links to the sign up page.
+    - Click on the 'Sign In' link to see that it links to the sign in page.
+    - **When Signed in as regular user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - **When Signed in as regular user:* Click on 'Profile' link to see that it links to the profile page.
+    - **When Signed in as regular user:* Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
+    - **When Signed in as Admin user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - **When Signed in as Admin user:* Click on 'Profile' link to see that it links to the profile page.
+    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    categories page.
+    - **When Signed in as Admin user:* Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
         
-    - Main Content:
-        - Make sure that the main content fits the entire viewport without any white gaps, including:
-            - Hero image.
-            - 'Pick a category' section.
-            - 'All Recipies' section.
-        - Make sure the search function is working by typing in a test word of 'Pasta'.
-            - If recipe: The 'All Recipies' section displays all recipies that include the word pasta in either the
-            ingredient list or the preparation steps.
-        - Make sure the search function is working when no recipe is found by typing in the word 'Nej'.
-            - No recipe during the testing of this site includes the word no, 
-            so therefore the 'All recipies' section displays a red text saying
-            ' No recipies found, try searching for something else'.
-        - Click on 'Reset' button in the search section to see that it links back to all recipies displaying.
-        - Click on the 'Chicken' category image to see that it links to the chicken category page.
-        - Click on the 'Fish' category image to see that it links to the fish category page.
-        - Click on the 'Meat' category image to see that it links to the meat category page.
-        - Click on the 'Vegetarian' category image to see that it links to the vegetarian category page.
-        - Make sure all recipies are showing when first visiting the page but also after clicking the 'Reset' button
-        in the search function.
-        - Make sure the following content is displaying in each recipe card:
-            - Recipe image.
-            - Name of recipe.
-            - Category of the recipe.
-            - The time to prepare the recipe.
-            - Link to the recipe.
-            - When image link is broken, a default image shows.
-        - Click on recipe link to see that it links to the selected recipe page.
+- Main Content:
+    - Make sure that the main content fits the entire viewport without any white gaps, including:
+        - Hero image.
+        - 'Pick a category' section.
+        - 'All Recipies' section.
+    - Make sure the search function is working by typing in a test word of 'Pasta'.
+        - If recipe: The 'All Recipies' section displays all recipies that include the word pasta in either the
+        ingredient list or the preparation steps.
+    - Make sure the search function is working when no recipe is found by typing in the word 'Nej'.
+        - No recipe during the testing of this site includes the word no, 
+        so therefore the 'All recipies' section displays a red text saying
+        'No recipies found, try searching for something else'.
+    - Click on 'Reset' button in the search section to see that it links back to all recipies displaying.
+    - Click on the 'Chicken' category image to see that it links to the chicken category page.
+    - Click on the 'Fish' category image to see that it links to the fish category page.
+    - Click on the 'Meat' category image to see that it links to the meat category page.
+    - Click on the 'Vegetarian' category image to see that it links to the vegetarian category page.
+    - Make sure all recipies are showing when first visiting the page but also after clicking the 'Reset' button
+    in the search function.
+    - Make sure the following content is displaying in each recipe card:
+        - Recipe image.
+        - Name of recipe.
+        - Category of the recipe.
+        - The time to prepare the recipe.
+        - Link to the recipe.
+        - When image link is broken, a default image shows.
+    - Click on recipe link to see that it links to the selected recipe page.
 
-    - Footer:
-        - Make sure footer is covering the width of the viewport.
-        - Make sure copyright text is displaying
-        - Click on 'Facebook' icon to see that it links to facebook.com
-        - Click on 'Instagram' icon to see that it links to instagram.com
-        - Click on 'Twitter' icon to see that it links to twitter.com
-        - Click on 'Youtube' icon to see that it links to youtube.com
+- Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Sign Up Page
-    - Navbar:
-        - Make sure navbar covers the width of the viewport.
-        - Click on 'Kitchen.' icon on the left to see that it links to the home page.
-        - Click on the 'Home' link to see that it links to the home page.
-        - Click on the 'Recipies' link to see that it links to the recipies page.
-        - Click on the 'Sign Up' link to see that it links to the sign up page.
-        - Click on the 'Sign In' link to see that it links to the sign in page.
+- Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Sign Up' link to see that it links to the sign up page.
+    - Click on the 'Sign In' link to see that it links to the sign in page.
 
-    - Main Content:
-        - Make sure the background image covers the whole viewport without any white gaps.
-        - Make sure the 'Sign Up' section is centered
-        - Make sure the content inside the 'Sign Up' section is displaying and centered.
-        - Click on the 'Username' input field to make sure the text you write diplays.
-        - Click on the 'Password' input field to make sure the text you write diplays.
-        - When writing less than 5 letters in the 'Username' input field the line under the input fields turns red.
-        - When trying to write more than 15 letters in the 'Username' input field, the typing input stops.
-        - When writing less than 5 letters in the 'Password' input field the line under the input fields turns red.
-        - When trying to write more than 15 letters in the 'Password' input field, the typing input stops.
-        - Click on the 'Sign Up' button when no input fields are typed in:
-            - The page encourages the user to fill in the required fields.
-        - Click on the 'Sign Up' button when username already exists:
-        - The page displays a flash message that says 'Username already exists!'.
-        - Click on the 'Sign Up' button when a new username and password is typed in:
-            - Page signes user in and redirects user to the profile page.
-        -Click on the 'Click here to sign in!' text to see that it links to the sign in page.        
+- Main Content:
+    - Make sure the background image covers the whole viewport without any white gaps.
+    - Make sure the 'Sign Up' section is centered
+    - Make sure the content inside the 'Sign Up' section is displaying and centered.
+    - Click on the 'Username' input field to make sure the text you write diplays.
+    - Click on the 'Password' input field to make sure the text you write diplays.
+    - When writing less than 5 letters in the 'Username' input field the line under the input fields turns red.
+    - When trying to write more than 15 letters in the 'Username' input field, the typing input stops.
+    - When writing less than 5 letters in the 'Password' input field the line under the input fields turns red.
+    - When trying to write more than 15 letters in the 'Password' input field, the typing input stops.
+    - Click on the 'Sign Up' button when no input fields are typed in:
+        - The page encourages the user to fill in the required fields.
+    - Click on the 'Sign Up' button when username already exists:
+    - The page displays a flash message that says 'Username already exists!'.
+    - Click on the 'Sign Up' button when a new username and password is typed in:
+        - Page signes user in and redirects user to the profile page.
+    - Click on the 'Click here to sign in!' text to see that it links to the sign in page.        
 
-    - Footer:
-        - Make sure footer is covering the width of the viewport.
-        - Make sure copyright text is displaying
-        - Click on 'Facebook' icon to see that it links to facebook.com
-        - Click on 'Instagram' icon to see that it links to instagram.com
-        - Click on 'Twitter' icon to see that it links to twitter.com
-        - Click on 'Youtube' icon to see that it links to youtube.com
+- Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Sign In Page
-    - Navbar:
-        - Make sure navbar covers the width of the viewport.
-        - Click on 'Kitchen.' icon on the left to see that it links to the home page.
-        - Click on the 'Home' link to see that it links to the home page.
-        - Click on the 'Recipies' link to see that it links to the recipies page.
-        - Click on the 'Sign Up' link to see that it links to the sign up page.
-        - Click on the 'Sign In' link to see that it links to the sign in page.
+- Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Sign Up' link to see that it links to the sign up page.
+    - Click on the 'Sign In' link to see that it links to the sign in page.
 
-    - Main Content:
-        - Make sure the background image covers the whole viewport without any white gaps.
-        - Make sure the 'Sign In' section is centered
-        - Make sure the content inside the 'Sign In' section is displaying and centered.
-        - Click on the 'Username' input field to make sure the text you write diplays.
-        - Click on the 'Password' input field to make sure the text you write diplays.
-        - When writing less than 5 letters in the 'Username' input field the line under the input fields turns red.
-        - When trying to write more than 15 letters in the 'Username' input field, the typing input stops.
-        - When writing less than 5 letters in the 'Password' input field the line under the input fields turns red.
-        - When trying to write more than 15 letters in the 'Password' input field, the typing input stops.
-        - Click on the 'Sign In' button when no input fields are typed in:
-            - The page encourages the user to fill in the required fields.
-        - Click on the 'Sign In' button when wrong username:
-        - The page displays a flash message that says 'The username doesn't exist! Please try again'.
-        - Click on the 'Sign In' button when correct username but wrong password is typed in:
-            - The page displays a flash message that says 'The Username and/or Password is incorrect!'.
-        - Click on the 'Sign In' button when correct username and password:
-            - A flash message displays on the page saying 'Hi there, <username>' and redirects the user to the profile page.
-        -Click on the 'Click here to sign up!' text to see that it links to the sign up page.
+- Main Content:
+    - Make sure the background image covers the whole viewport without any white gaps.
+    - Make sure the 'Sign In' section is centered
+    - Make sure the content inside the 'Sign In' section is displaying and centered.
+    - Click on the 'Username' input field to make sure the text you write diplays.
+    - Click on the 'Password' input field to make sure the text you write diplays.
+    - When writing less than 5 letters in the 'Username' input field the line under the input fields turns red.
+    - When trying to write more than 15 letters in the 'Username' input field, the typing input stops.
+    - When writing less than 5 letters in the 'Password' input field the line under the input fields turns red.
+    - When trying to write more than 15 letters in the 'Password' input field, the typing input stops.
+    - Click on the 'Sign In' button when no input fields are typed in:
+        - The page encourages the user to fill in the required fields.
+    - Click on the 'Sign In' button when wrong username:
+    - The page displays a flash message that says 'The username doesn't exist! Please try again'.
+    - Click on the 'Sign In' button when correct username but wrong password is typed in:
+        - The page displays a flash message that says 'The Username and/or Password is incorrect!'.
+    - Click on the 'Sign In' button when correct username and password:
+        - A flash message displays on the page saying 'Hi there, <username>' and redirects the user to the profile page.
+    - Click on the 'Click here to sign up!' text to see that it links to the sign up page.
 
-    - Footer:
-        - Make sure footer is covering the width of the viewport.
-        - Make sure copyright text is displaying
-        - Click on 'Facebook' icon to see that it links to facebook.com
-        - Click on 'Instagram' icon to see that it links to instagram.com
-        - Click on 'Twitter' icon to see that it links to twitter.com
-        - Click on 'Youtube' icon to see that it links to youtube.com
+- Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
+
+### Add Recipe Page (regular user and admin user)
+
+### Profile Page (regular user and admin user)
+
+### Manage Categories Page (admin user only)
     
  
 ## Bugs found
