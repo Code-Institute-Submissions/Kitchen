@@ -36,6 +36,7 @@ def get_recipies():
         "recipies.html", recipies=recipies, categories=categories)
 
 
+# search function ------------------------------------------------------------
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
