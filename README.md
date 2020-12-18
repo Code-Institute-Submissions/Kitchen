@@ -250,7 +250,7 @@ recipe cards on the recipe page together with all other information.
 when the user is already on that specific categories page. 
 This to add more clarity to the user on what category that is currently viewed.
 - Currently when someone is on the 'All Recipies' page, there is no limit on how many recipies that are showing on
-the page. A feature left to implement here would be to only show for example 12 recipies at a time and then the visitor
+the page. A feature left to implement here would be pagination, to only show for example 12 recipies at a time and then the visitor
 gets to press a 'next' button to view the next 12 recipies.
 
 ## Technologies used
