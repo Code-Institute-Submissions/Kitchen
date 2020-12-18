@@ -2,12 +2,7 @@
 
 ## Content
 
-## Automated Testing
-
-## Manual Testing
-
 ## User Testing
-
 1. **Get inspired into learning new recipes.**
     - This page was designed with an idea to look as realistic as possible (from a beginners point of view). 
     This to both encourage and inspire the user to scroll through all different kinds of recipies.
@@ -49,10 +44,13 @@
             - The user is also able to delete and edit their recipies from the Recipies Page, however when a lot of
             recipies are displaying, and not only by the user in session, the user has to scroll through all of them
             in the order that the recipe was made and without any type of relevance.
-    
-    
+
+## Automated Testing
+
+## Manual Testing
 
     
+ 
 ## Bugs found
 - **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
 Materialize applies a custom CSS on all select elements which makes the 'required' attributes not working on 

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     <main>
-        <!-- hero image -->
+        <!-- hero image with heading text -->
         <div class="row row-no-margin">
             <div class="hero-img center-align">
                 <h1 class="welcome-h1 open-sans">Welcome to <strong class="logo-text">Kitchen.</strong></h1>
@@ -9,18 +9,20 @@
         </div>
         <!-- info boxes -->
         <div class="row row-no-margin">
+            <!-- blue box -->
             <div class="col m6 s12 center-align blue-info-box open-sans">
                 <div class="box-content">
                     <p>
                         This is a platform where food <br>
                         enthusiasts from all over the world gather <br>
-                        to share their best recipes. 
+                        to share their best recipes.
                         <br>
                         <br>
                         We simply call it everybodys kitchen.
                     </p>
                 </div>
             </div>
+            <!-- red box -->
             <div class="col m6 s12 center-align red-info-box open-sans">
                 <div class="box-content">
                     <h3>Want to share a recipe?</h3>
@@ -53,5 +55,4 @@
             {% endfor %}
         </div>
     </main>
-    
 {% endblock %}

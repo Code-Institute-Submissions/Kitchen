@@ -4,7 +4,8 @@
         <!-- recipe image -->
         <div class="col s12 m4 recipe-select-img">
             <!-- on error code from https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images -->
-            <img src="{{ recipe.recipe_img }}" class="selected-recipe-img" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
+            <img src="{{ recipe.recipe_img }}" class="selected-recipe-img"
+                onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
         </div>
         <!-- recipe description -->
         <div class="col s12 m8 recipe-description">
@@ -51,5 +52,4 @@
             </ol>
         </div>
     </div>
-    
 {% endblock %}

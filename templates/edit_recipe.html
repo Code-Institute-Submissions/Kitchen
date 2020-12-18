@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-
     <div class="add-recipe-container">
+        <!-- edit recipe heading text -->
         <div class="row">
             <h3 class="center-align open-sans sign-up-heading">Edit Recipe</h3>
         </div>
@@ -71,8 +71,8 @@
                     <div class="input-field col s12">
                         <i class="fas fas fa-list-ul prefix"></i>
                         <textarea id="ingredients" name="ingredients" class="materialize-textarea" required>
-                            {{- recipe.ingredients -}}
-                        </textarea>
+                                {{- recipe.ingredients -}}
+                            </textarea>
                         <label for="ingredients" class="open-sans label-text">
                             Add ingredients here
                             <span class="red-text">
@@ -80,15 +80,21 @@
                             </span>
                         </label>
                     </div>
+                    <p class="ingredient-prepstep-text">
+                        <i>
+                            Make sure to separate each ingredient with a comma and space. For example:
+                            <br>
+                            (2 Eggs, 2 cups of flour, 3 tbsp butter, ...)
+                        </i>
+                    </p>
                 </div>
                 <!-- preparation steps -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-list-ol prefix"></i>
-                        <textarea id="preparation_steps" name="preparation_steps"
-                            class="materialize-textarea" required>
-                            {{- recipe.preparation_steps -}}
-                        </textarea>
+                        <textarea id="preparation_steps" name="preparation_steps" class="materialize-textarea" required>
+                                {{- recipe.preparation_steps -}}
+                            </textarea>
                         <label for="preparation_steps" class="open-sans label-text">
                             Add preparation steps here
                             <span class="red-text">
@@ -96,6 +102,13 @@
                             </span>
                         </label>
                     </div>
+                    <p class="ingredient-prepstep-text">
+                        <i>
+                            Make sure to separate each preparation step with a comma and space. For example:
+                            <br>
+                            (Add dry ingredients into a bowl, mix together well, put the wet ingredients in, ...)
+                        </i>
+                    </p>
                 </div>
                 <!-- img url -->
                 <div class="row">
@@ -125,5 +138,4 @@
             </form>
         </div>
     </div>
-
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-
     <div class="add-recipe-container">
+        <!-- heading text -->
         <div class="row">
             <h3 class="center-align open-sans sign-up-heading">Add Category</h3>
         </div>
@@ -12,8 +12,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix"></i>
-                        <input id="category_name" name="category_name" minlength="3" maxlength="25"
-                            type="text" class="validate" required>
+                        <input id="category_name" name="category_name" minlength="3" maxlength="25" type="text"
+                            class="validate" required>
                         <label for="category_name" class="open-sans label-text">
                             Category Name
                             <span class="red-text">
@@ -22,6 +22,7 @@
                         </label>
                     </div>
                 </div>
+                <!-- img url input -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-image prefix"></i>
@@ -45,5 +46,4 @@
             </form>
         </div>
     </div>
-
 {% endblock %}

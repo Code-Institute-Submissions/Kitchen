@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+    <!-- hero img -->
     <div class="hero-img-category">
         <img src="{{ category.recipe_img }}" alt="category image">
     </div>
@@ -36,11 +37,14 @@
                             <!-- recipe image -->
                             <div class="card-image">
                                 <!-- on error code from https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images -->
-                                <img src="{{ recipe.recipe_img }}" class="card-image-position" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
+                                <img src="{{ recipe.recipe_img }}" class="card-image-position"
+                                    onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
                             </div>
                             <div class="card-content">
                                 <!-- recipe name -->
-                                <span class="card-title open-sans recipe-name">{{ recipe.recipe_name }}</span>
+                                <span class="card-title open-sans recipe-name">
+                                    {{ recipe.recipe_name }}
+                                </span>
                                 <!-- created by -->
                                 <p class="open-sans recipe-description-text">
                                     <i class="fas fa-user"></i>
@@ -60,21 +64,27 @@
                                 <!-- delete/edit buttons -->
                                 <div class="recipe-buttons">
                                     {% if session.user|lower == recipe.created_by|lower %}
-                                    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
-                                        class="btn btn-delete open-sans">Delete</a>
-                                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}"
-                                        class="btn btn-blue btn-edit open-sans">Edit</a>
+                                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
+                                            class="btn btn-delete open-sans">
+                                            Delete
+                                        </a>
+                                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}"
+                                            class="btn btn-blue btn-edit open-sans">
+                                            Edit
+                                        </a>
                                     {% endif %}
                                 </div>
                             </div>
                             <!-- recipe link -->
                             <div class="card-action">
-                                <a href="{{ url_for('select_recipe', recipe_id=recipe._id) }}" class="open-sans recipe-link">Recipe
-                                    Link</a>
+                                <a href="{{ url_for('select_recipe', recipe_id=recipe._id) }}" class="open-sans recipe-link">
+                                    Recipe Link
+                                </a>
                             </div>
                         </div>
                     </div>
                 {% endif %}
             {% endfor %}
         </div>
+    </div>
 {% endblock %}

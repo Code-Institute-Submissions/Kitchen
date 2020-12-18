@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-
     <div class="add-recipe-container">
+        <!-- add recipe heading text -->
         <div class="row">
             <h3 class="center-align open-sans sign-up-heading">Add Recipe</h3>
         </div>
@@ -12,8 +12,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix"></i>
-                        <input id="recipe_name" name="recipe_name" minlength="4" maxlength="25"
-                            type="text" class="validate" required>
+                        <input id="recipe_name" name="recipe_name" minlength="4" maxlength="25" type="text" class="validate"
+                            required>
                         <label for="recipe_name" class="open-sans label-text">
                             Recipe Name
                             <span class="red-text">
@@ -29,7 +29,7 @@
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Choose Category</option>
                             {% for category in categories %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                             {% endfor %}
                         </select>
                         <label for="category_name" class="open-sans label-text">
@@ -47,7 +47,7 @@
                         <select id="preptime_time" name="preptime_time" class="validate" required>
                             <option value="" disabled selected>How long will it take?</option>
                             {% for time in preptime %}
-                                <option value="{{ time.preptime_time }}">{{ time.preptime_time }}</option>
+                            <option value="{{ time.preptime_time }}">{{ time.preptime_time }}</option>
                             {% endfor %}
                         </select>
                         <label for="preptime_time" class="open-sans label-text">
@@ -82,7 +82,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-list-ol prefix"></i>
-                        <textarea id="preparation_steps" name="preparation_steps" class="materialize-textarea" required></textarea>
+                        <textarea id="preparation_steps" name="preparation_steps" class="materialize-textarea"
+                            required></textarea>
                         <label for="preparation_steps" class="open-sans label-text">
                             Add preparation steps here
                             <span class="red-text">
@@ -128,5 +129,4 @@
             </form>
         </div>
     </div>
-
 {% endblock %}
