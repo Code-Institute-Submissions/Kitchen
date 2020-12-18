@@ -209,7 +209,7 @@ All manual tests were done in the following browsers:
     - Click on the 'Sign In' button when correct username but wrong password is typed in:
         - The page displays a flash message that says 'The Username and/or Password is incorrect!'.
     - Click on the 'Sign In' button when correct username and password:
-        - A flash message displays on the page saying 'Hi there, <username>' and redirects the user to the profile page.
+        - A flash message displays on the page saying 'Hi there, < username >' and redirects the user to the profile page.
     - Click on the 'Click here to sign up!' text to see that it links to the sign up page.
 
 - Footer:
@@ -221,10 +221,46 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Add Recipe Page (regular user and admin user)
+- Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - Click on 'Profile' link to see that it links to the profile page.
+    - Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
+    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    categories page.
+
+- Main Content:
+    - Make sure 'Add Recipe' section is centered on the page.
+    - Make sure all content inside the 'Add Recipe' is displaying.
+
+    MORE HERE
+
+
+- Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Profile Page (regular user and admin user)
+- Navbar:
+
+- Main Content:
+
+- Footer:
 
 ### Manage Categories Page (admin user only)
+- Navbar:
+
+- Main Content:
+
+- Footer:
     
  
 ## Bugs found
