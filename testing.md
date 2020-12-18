@@ -53,7 +53,7 @@ All manual tests were done in the following browsers:
 - Google Chrome
 - Microsoft Edge
 
-1. **Home Page/Index Page**
+### Home Page/Index Page
     - Navbar:
         - Make sure navbar covers the width of the viewport.
         - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -93,7 +93,7 @@ All manual tests were done in the following browsers:
         - Click on 'Twitter' icon to see that it links to twitter.com
         - Click on 'Youtube' icon to see that it links to youtube.com
 
-2. **Recipies Page**
+### Recipies Page
     - Navbar:
         - Make sure navbar covers the width of the viewport.
         - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -148,7 +148,7 @@ All manual tests were done in the following browsers:
         - Click on 'Twitter' icon to see that it links to twitter.com
         - Click on 'Youtube' icon to see that it links to youtube.com
 
-3. **Sign Up Page**
+### Sign Up Page
     - Navbar:
         - Make sure navbar covers the width of the viewport.
         - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -156,16 +156,6 @@ All manual tests were done in the following browsers:
         - Click on the 'Recipies' link to see that it links to the recipies page.
         - Click on the 'Sign Up' link to see that it links to the sign up page.
         - Click on the 'Sign In' link to see that it links to the sign in page.
-        - **When Signed in as regular user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-        - **When Signed in as regular user:* Click on 'Profile' link to see that it links to the profile page.
-        - **When Signed in as regular user:* Click on 'Log Out' link to see that it removes the session user cookie
-        and redirects the user to the 'Sign In' page.
-        - **When Signed in as Admin user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-        - **When Signed in as Admin user:* Click on 'Profile' link to see that it links to the profile page.
-        - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
-        categories page.
-        - **When Signed in as Admin user:* Click on 'Log Out' link to see that it removes the session user cookie
-        and redirects the user to the 'Sign In' page.
 
     - Main Content:
         - Make sure the background image covers the whole viewport without any white gaps.
@@ -184,6 +174,43 @@ All manual tests were done in the following browsers:
         - Click on the 'Sign Up' button when a new username and password is typed in:
             - Page signes user in and redirects user to the profile page.
         -Click on the 'Click here to sign in!' text to see that it links to the sign in page.        
+
+    - Footer:
+        - Make sure footer is covering the width of the viewport.
+        - Make sure copyright text is displaying
+        - Click on 'Facebook' icon to see that it links to facebook.com
+        - Click on 'Instagram' icon to see that it links to instagram.com
+        - Click on 'Twitter' icon to see that it links to twitter.com
+        - Click on 'Youtube' icon to see that it links to youtube.com
+
+### Sign In Page
+    - Navbar:
+        - Make sure navbar covers the width of the viewport.
+        - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+        - Click on the 'Home' link to see that it links to the home page.
+        - Click on the 'Recipies' link to see that it links to the recipies page.
+        - Click on the 'Sign Up' link to see that it links to the sign up page.
+        - Click on the 'Sign In' link to see that it links to the sign in page.
+
+    - Main Content:
+        - Make sure the background image covers the whole viewport without any white gaps.
+        - Make sure the 'Sign In' section is centered
+        - Make sure the content inside the 'Sign In' section is displaying and centered.
+        - Click on the 'Username' input field to make sure the text you write diplays.
+        - Click on the 'Password' input field to make sure the text you write diplays.
+        - When writing less than 5 letters in the 'Username' input field the line under the input fields turns red.
+        - When trying to write more than 15 letters in the 'Username' input field, the typing input stops.
+        - When writing less than 5 letters in the 'Password' input field the line under the input fields turns red.
+        - When trying to write more than 15 letters in the 'Password' input field, the typing input stops.
+        - Click on the 'Sign In' button when no input fields are typed in:
+            - The page encourages the user to fill in the required fields.
+        - Click on the 'Sign In' button when wrong username:
+        - The page displays a flash message that says 'The username doesn't exist! Please try again'.
+        - Click on the 'Sign In' button when correct username but wrong password is typed in:
+            - The page displays a flash message that says 'The Username and/or Password is incorrect!'.
+        - Click on the 'Sign In' button when correct username and password:
+            - A flash message displays on the page saying 'Hi there, <username>' and redirects the user to the profile page.
+        -Click on the 'Click here to sign up!' text to see that it links to the sign up page.
 
     - Footer:
         - Make sure footer is covering the width of the viewport.
