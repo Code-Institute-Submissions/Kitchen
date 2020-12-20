@@ -329,6 +329,12 @@ All manual tests were done in the following browsers:
     categories page.
 
 - Main Content:
+    - Make sure heading text is displaying.
+    - Make sure 'Add Category' button is displaying and when clicked redirects the user to the 'Add Category' page.
+    - Make sure all categories are displayed on the page.
+    - Make sure all category names are displayed on the page.
+    - Make sure 'Delete' button is displayed under each category.
+    - Make sure 'Edit' button is displayed under each category.
 
 - Footer:
     - Make sure footer is covering the width of the viewport.

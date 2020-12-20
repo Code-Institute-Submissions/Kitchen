@@ -30,7 +30,7 @@
                 <div class="col s6 m4 l3 center-align">
                     <a href="{{ url_for('select_category', category_id=category._id) }}" class="open-sans recipe-link">
                         <div class="category-img">
-                            <img src="{{ category.recipe_img }}" alt="category image">
+                            <img src="{{ category.recipe_img }}" alt="category image" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
                         </div>
                     </a>
                     <div class="card black-text open-sans">
