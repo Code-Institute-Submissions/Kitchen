@@ -481,6 +481,22 @@ main {
     .search-div {
         width: 80%!important;
     }
+
+    .select-recipe-h1 {
+        font-size: 45px;
+    }
+
+    .recipe-description {
+        padding-left: 30px!important;
+    }
+
+    .ingredients-col h2 {
+        font-size: 35px;
+    }
+
+    .prepstep-col h2 {
+        font-size: 35px;
+    }
 }
 
 
