@@ -491,6 +491,9 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Error 404
+To test the 404 error page I simply added a random letter to the url for the page that I knew would not exist. This
+method could be applied to all pages of the site to test the 404 error function.
+
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
