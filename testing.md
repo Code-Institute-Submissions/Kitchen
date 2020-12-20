@@ -686,6 +686,7 @@ a maximun of three on iPad device.
 a maximun of three on iPad device (not PRO).
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO.
+- Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed.
 
 #### Selected Recipe Page
 - Make sure recipe image get its own row and covers the width of the viewport.
@@ -707,7 +708,7 @@ on iPad PRO.
 - Make sure the hero image covers the width of the viewport.
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO. 
-    - Bug noted on iPad PRO. Gap on bottom. ---------------------------------------------------------------
+- Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed.
 
 #### Selected Category Page:
 - Make sure hero image covers the width of the viewport.
