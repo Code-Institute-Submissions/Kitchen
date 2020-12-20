@@ -491,7 +491,36 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Error 404
+- Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on 'Add Recipe' link to see that it links to the add recipe page. (When logged in as regular user or admin)
+    - Click on 'Profile' link to see that it links to the profile page. (When logged in as regular user or admin)
+    - Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page. (When logged in as regular user or admin)
+    - Click on 'Manage Categories' link to see that it links to the manage categories page. (When logged in as admin)
+    - Click on the 'Sign Up' link to see that it links to the sign up page. (When not logged in)
+    - Click on the 'Sign In' link to see that it links to the sign in page. (When not logged in)
+
+- Main Content:
+    - Make sure the background image covers the whole viewport without any white gaps.
+    - Make sure the 'Oops' section is centered.
+    - Make sure the content inside the 'Oops' section is displaying and centered including:
+        - A description on what the error is about.
+        - A link the user can click on to get back to the home page.
+
+- Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
+
 ### Error 500
+
 
  
 ## Bugs found
