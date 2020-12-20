@@ -431,8 +431,64 @@ All manual tests were done in the following browsers:
 
 ### Edit recipe
 - Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - Click on 'Profile' link to see that it links to the profile page.
+    - Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
+    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    categories page.
+
 - Main Content:
+    - Make sure 'Edit Recipe' section is centered on the page.
+    - Make sure all content inside the 'Add Recipe' is displaying.
+    - 'Recipe Name' input:
+        - Make sure icon is displaying.
+        - Make sure current Name of the recipe is displaying for the user to edit.
+        - Make sure input gets marked in red when filled out with less than 4 letters.
+        - Make sure input stops typing when trying to write more than 25 letters.
+    - 'Category' options:
+        - Make sure icon is displaying.
+        - Make sure current Category is displaying for the user to edit by selecting a new option when clicked on.
+        - Click on 'Choose category' and Make sure all categories are displaying in the option list.
+        - Make sure option cannot be left empty.
+    - 'Preptime' options:
+        - Make sure icon is displaying.
+        - Make sure current Preptime is displaying for the user to edit by selecting a new option when clicked on.
+        - Click on the current preptime and make sure all preparation times are displaying in the option list.
+        - Make sure option cannot be left empty.
+    - Ingredients textarea:
+        - Make sure icon is displaying.
+        - Make sure current ingredient list is displaying for the user to edit.
+        - Make sure browser points out if the textarea input is not filled out when submitting the recipe.
+        **Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
+    - Preparation steps textarea:
+        - Make sure icon is displaying.
+        - Make sure current preparation list is displaying for the user to edit.
+        - Make sure browser points out if the textarea input is not filled out when submitting the recipe.
+        **Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
+    - Img URL input:
+        - Make sure icon is displaying.
+        - Make sure current img url is displaying for the user to edit.
+        - Make sure browser points out if field is not filled out when submitting the recipe.
+    - 'Cancel' button:
+        - Click on the 'Cancel' button and the page redirects to the 'Recipies' page displaying all recipies but
+        without saving the changes that was made to the recipe.
+    - 'Save' button:
+        - Click on the 'Save' button after the form is filled out correctly the page stays on the
+        'Edit Recipe' page but with a flash message displaying at the top saying: "Recipe Edited!"
+    - Make sure red text about required fields are showing.
+
 - Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Error 404
 ### Error 500
