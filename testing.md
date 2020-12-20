@@ -325,7 +325,47 @@ TEXT HÄR
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Selected Category Page
-TEXT HÄR
+---
+- Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on 'Add Recipe' link to see that it links to the add recipe page. (When logged in as regular user or admin)
+    - Click on 'Profile' link to see that it links to the profile page. (When logged in as regular user or admin)
+    - Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page. (When logged in as regular user or admin)
+    - Click on 'Manage Categories' link to see that it links to the manage categories page. (When logged in as admin)
+    - Click on the 'Sign Up' link to see that it links to the sign up page. (When not logged in)
+    - Click on the 'Sign In' link to see that it links to the sign in page. (When not logged in)
+
+- Main Content:
+    - Make sure hero image covers the width of the viewport, displaying the image of the chosen category.
+    - Make sure category section is displaying the following:
+        - Heading text.
+        - Category images.
+        - Category names.
+    - Make sure the category name is displayed in the recipies section.
+    - Make sure that the category recipies are displaying in the blue section under the category name with the following:
+        - Image of the recipe.
+        - Name of the recipe.
+        - The name of the user who added the recipe.
+        - The category of the recipe.
+        - The preparation time of the recipe.
+        - A 'Delete' button. (If signed in as the maker of the recipe)
+        - An 'Edit' button. (If signed in as the maker of the recipe)
+        - A link to the selected recipe page.
+            - When clicked on, the page redirects to the selected recipe page.
+        - Make sure that if img link is broken of a certain recipe added by the user, a default image will display
+        as the recipes' image.
+
+- Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Manage Categories Page (admin user only)
 ---
