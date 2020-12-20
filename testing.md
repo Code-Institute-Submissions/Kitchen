@@ -317,11 +317,30 @@ All manual tests were done in the following browsers:
 
 ### Manage Categories Page (admin user only)
 - Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - Click on 'Profile' link to see that it links to the profile page.
+    - Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
+    - Click on 'Manage Categories' link to see that it links to the manage 
+    categories page.
 
 - Main Content:
 
 - Footer:
-    
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
+
+### Add category (admin user only)
+### Edit category (admin user only)
+### Edit recipe
  
 ## Bugs found
 - **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
