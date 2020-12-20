@@ -151,7 +151,39 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Selected Recipe Page
-TEXT HÄR
+- Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on 'Add Recipe' link to see that it links to the add recipe page. (When logged in as regular user or admin)
+    - Click on 'Profile' link to see that it links to the profile page. (When logged in as regular user or admin)
+    - Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page. (When logged in as regular user or admin)
+    - Click on 'Manage Categories' link to see that it links to the manage categories page. (When logged in as admin)
+    - Click on the 'Sign Up' link to see that it links to the sign up page. (When not logged in)
+    - Click on the 'Sign In' link to see that it links to the sign in page. (When not logged in)
+
+- Main Content:
+    - Make sure the recipe image is displayed to the left on the same row as the red section with all recipe description.
+        - Make sure if recipe image link is broke, a default image will display.
+    - Make sure the red section with recipe details are containing the following:
+        - Name of the recipe.
+        - Name of the user who added the recipe.
+        - Recipe category.
+        - Preparation time.
+    - Make sure the ingredients section is displaying all ingredients in an unordered list beginning each item
+    with a check icon.
+    - Make sure the preparation section is displaying each preparation step in an ordered list, dividing each step
+    with a horizontal rule.
+
+- Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Sign Up Page
 ---
