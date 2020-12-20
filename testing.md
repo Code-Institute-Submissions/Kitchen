@@ -563,6 +563,25 @@ page to the original name of 'recipies.html'.
 The first time this test was applied the page got stuck on the 500 error page despite doing a hard refresh of the page. 
 To solve this issue I had to clear the cache and cookies for the site.
 
+### Testing on phone and tablet devices
+All of the tests above where made on the following devices:
+- iPad
+- iPad Pro
+- iPhone 5/SE
+- iPhone 6/7/8
+- Galaxy S5
+
+The following tests where also made using the above phone and tablet devices:
+#### Home Page/Index Page
+- Make sure the content of the page fits the device nicely.
+- Make sure text on phone devices that the heading text gets smaller to fit the device better.
+- Make sure the blue box and red box gets their own rows covering the whole width of the page.
+- Make sure category images gets smaller to fit the device nicely.
+- Make sure the copyright text and social icons in the footer gets their own rows covering the whole 
+width of the page on smaller devices.
+
+
+
 ## Bugs found
 - **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
 Materialize applies a custom CSS on all select elements which makes the 'required' attributes not working on 
