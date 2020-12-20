@@ -680,36 +680,59 @@ The following tests where also made:
 a maximun of three on iPad device.
 
 #### Recipies page:
-- Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
-on iPad PRO.
+- Make sure hero image covers the width of the viewport.
 - Make sure category images gets smaller on smaller devices to fit the device nicely.
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
-a maximun of three on iPad device.
+a maximun of three on iPad device (not PRO).
+- Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
+on iPad PRO.
 
 #### Selected Recipe Page
+- Make sure recipe image get its own row and covers the width of the viewport.
+- Make sure the red section with recipe description get its own row and covers the width of the viewport.
+- Make sure heading text size is adapted to phone devices.
+- Make sure ingredients list get its own row.
+- Make sure the preparation step list get its own row presented after the ingredient list.
 
 #### Sign Up page:
+- GAP ---------------------------------------------------------------------------------------------------
 
 #### Sign In page:
+- GAP ----------------------------------------------------------------------------------------------------
 
 #### Add Recipe Page (regular user and admin user):
+- Make sure 'Add Recipe' section covers the width of the viewport.
 
 #### Profile Page (regular user and admin user):
+- Make sure the hero image covers the width of the viewport.
+- Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
+on iPad PRO. 
+    - Bug noted on iPad PRO. Gap on bottom. ---------------------------------------------------------------
 
 #### Selected Category Page:
+- Make sure hero image covers the width of the viewport.
+- Make sure category images gets smaller on smaller devices to fit the device nicely.
+- Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
+a maximun of three on iPad device (not PRO).
+- Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
+on iPad PRO.
 
 #### Manage Categories Page (admin user only):
+- Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
+a maximun of three on iPad devices.
 
 #### Add category (admin user only):
+- 
 
 #### Edit category (admin user only):
 
 #### Edit recipe page:
 
 #### Error 404:
+- Make sure 'Oops' message section is centered both horizontally and vertically.
 
 #### Error 500:
-
+- Make sure 'Oops' message section is centered both horizontally and vertically.
 
 ## Bugs found
 - **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
