@@ -262,7 +262,7 @@ All manual tests were done in the following browsers:
     - 'Add Recipe' button:
         - Make sure that when form is filled out correctly and the 'Add Recipe' button is clicked the page redirects
         to the 'Recipies' page with all recipies displaying including the newely added one at the bottom.
-
+    - Make sure red text about required fields are showing.
 - Footer:
     - Make sure footer is covering the width of the viewport.
     - Make sure copyright text is displaying
@@ -371,6 +371,7 @@ All manual tests were done in the following browsers:
         - Category Name input field with icon.
         - Img URL input field with icon.
         - 'Add Category' button.
+        - Red text about the required fields.
     - Make sure if Category Name field doesn't get filled out or gets filled out with less than 3 letters when
         submitting the new category:
         - The line under the input field turns red.
@@ -392,8 +393,34 @@ All manual tests were done in the following browsers:
 
 ### Edit category (admin user only)
 - Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - Click on 'Profile' link to see that it links to the profile page.
+    - Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
+    - Click on 'Manage Categories' link to see that it links to the manage 
+    categories page.
+
 - Main Content:
+    - Make sure content is centered to the page horizontally.
+    - Make sure content is displaying the following:
+        - Heading text.
+        - Category Name input field with icon.
+            - The current category name is displayed within the input field for the user to edit.
+        - Img URL input field with icon.
+        - 'Add Category' button.
+        - Red text about the required fields.
+
 - Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 
 ### Edit recipe
@@ -401,6 +428,8 @@ All manual tests were done in the following browsers:
 - Main Content:
 - Footer:
 
+### Error 404
+### Error 500
 
  
 ## Bugs found
