@@ -240,10 +240,9 @@ provides the user with a link to click on to get back to the home page.
 
 ### Features left to implement
 - Some type of timer function that automatically logges the user out after a certain time of no activity.
-- A search function to make the user able to search for specific recipies or ingredients in a recipe. This feature
-was something I wanted to make in this project, and I started to build the function but encountered bugs during the
-process. This led me to take the decision to remove this feature due to lack of time of fixing the bug that was
-ciritcal for the websites overall functionality.
+- When clicking on the 'Delete' button on a recipe or a category a feature to add here would be some kind of
+defensive programming asking the user if they are sure about deleting the recipe. 
+The user then gets to press yes or no to confirm the action.
 - A rating function to make all visitors able to rate each recipe. The rating result would then be displaying in the
 recipe cards on the recipe page together with all other information.
 - When the user choose a category to go to, I would like for that category to become disabled to click on again 

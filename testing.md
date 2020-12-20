@@ -273,10 +273,46 @@ All manual tests were done in the following browsers:
 
 ### Profile Page (regular user and admin user)
 - Navbar:
+    - Make sure navbar covers the width of the viewport.
+    - Click on 'Kitchen.' icon on the left to see that it links to the home page.
+    - Click on the 'Home' link to see that it links to the home page.
+    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - Click on 'Profile' link to see that it links to the profile page.
+    - Click on 'Log Out' link to see that it removes the session user cookie
+    and redirects the user to the 'Sign In' page.
+    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    categories page.
 
 - Main Content:
+    - Make sure hero image covers the width of the viewport.
+    - Make sure the users name is displaying in the blue section under the hero image.
+    - Make sure that the users recipies are displaying in the blue section under the users name with the following:
+        - Image of the recipe.
+        - Name of the recipe.
+        - The name of the user who added the recipe.
+        - The category of the recipe.
+        - The preparation time of the recipe.
+        - A 'Delete' button.
+        - An 'Edit' button
+        - A link to the selected recipe page.
+            - When clicked on the page redirects to the selected recipe page.
+        - Make sure that if img link is broken of a certain recipe added by the user, a default image will display
+        as the recipes' image.
+    - Make sure that if user has no recipies added yet the blue section fills out the page with a min height of 450px.
+    - Click on the 'Delete' button and the recipe gets deleted correctly.
+        - **A feature left to implement here would be a defensive action asking the user if they are sure about deleting*
+        **the recipe. The user then gets to press yes or no to confirm the action. Please see 'Features Left To Implement'*
+        **section in the README.md file.*
+
 
 - Footer:
+    - Make sure footer is covering the width of the viewport.
+    - Make sure copyright text is displaying
+    - Click on 'Facebook' icon to see that it links to facebook.com
+    - Click on 'Instagram' icon to see that it links to instagram.com
+    - Click on 'Twitter' icon to see that it links to twitter.com
+    - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Manage Categories Page (admin user only)
 - Navbar:
