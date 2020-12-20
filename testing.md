@@ -411,8 +411,14 @@ All manual tests were done in the following browsers:
         - Category Name input field with icon.
             - The current category name is displayed within the input field for the user to edit.
         - Img URL input field with icon.
-        - 'Add Category' button.
+            - The current img url is displayed within the input field for the user to edit.
+        - 'Cancel' button.
+        - 'Edit Category' button.
         - Red text about the required fields.
+    - Click on the 'Cancel' button and the page redirects to the 'Manage Categories' page without saving the changes
+    that was made to the category.
+    - Click on the 'Edit Category' button and the page redirects to the 'Manage Categories' page and displays the changes
+    to the category that was edited.
 
 - Footer:
     - Make sure footer is covering the width of the viewport.
