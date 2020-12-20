@@ -54,6 +54,7 @@ All manual tests were done in the following browsers:
 - Microsoft Edge
 
 ### Home Page/Index Page
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -94,6 +95,7 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Recipies Page
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -148,7 +150,11 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
+### Selected Recipe Page
+TEXT HÄR
+
 ### Sign Up Page
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -184,6 +190,7 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Sign In Page
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -221,6 +228,7 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Add Recipe Page (regular user and admin user)
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -272,6 +280,7 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Profile Page (regular user and admin user)
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -315,7 +324,11 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
+### Selected Category Page
+TEXT HÄR
+
 ### Manage Categories Page (admin user only)
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -351,7 +364,8 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Add category (admin user only)
+### Add category Page (admin user only)
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -391,7 +405,8 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Edit category (admin user only)
+### Edit category Page (admin user only)
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -429,7 +444,8 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 
-### Edit recipe
+### Edit recipe Page
+---
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -490,7 +506,8 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Error 404
+### Error 404 Page
+---
 To test the 404 error page I simply added a random letter to the url for the page that I knew would not exist. This
 method could be applied to all pages of the site to test the 404 error function.
 
@@ -522,7 +539,8 @@ method could be applied to all pages of the site to test the 404 error function.
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Error 500
+### Error 500 Page
+---
 To test the 500 error page, when an internal service error occure, I did the following:
 - Changed debug mode in the app.py to **False**.
 - Changed the name of 'recipies.html' page to 'recipiess.html'
@@ -564,6 +582,7 @@ The first time this test was applied the page got stuck on the 500 error page de
 To solve this issue I had to clear the cache and cookies for the site.
 
 ### Testing on phone and tablet devices
+---
 All of the tests above where made on the following devices:
 - iPad
 - iPad Pro
@@ -571,16 +590,53 @@ All of the tests above where made on the following devices:
 - iPhone 6/7/8
 - Galaxy S5
 
-The following tests where also made using the above phone and tablet devices:
-#### Home Page/Index Page
-- Make sure the content of the page fits the device nicely.
-    - **Bug noted of gap in category section*
-- Make sure text on phone devices that the heading text gets smaller to fit the device better.
-- Make sure the blue box and red box gets their own rows covering the whole width of the page.
-- Make sure category images gets smaller to fit the device nicely.
+With additional testing on all the above devices:
+- Make sure menu collapse on phone and tablet devices (not on iPad PRO though).
+- Make sure side navigation menu appears to the left by clicking the trigger button to the left in the navigation bar.
 - Make sure the copyright text and social icons in the footer gets their own rows covering the whole 
 width of the page on smaller devices.
 
+The following tests where also made:
+
+#### Home Page/Index Page:
+- Make sure the content of the page fits the device nicely.
+    - **Bug noted of gap in category section. Please se 'Bugs Found' section further down.*
+- Make sure text gets smaller to fit the device better.
+- Make sure the blue box and red box gets their own rows covering the whole width of the page.
+- Make sure category images gets smaller on smaller devices to fit the device nicely.
+- Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
+a maximun of three on iPad device.
+
+#### Recipies page:
+- Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
+on iPad PRO.
+- Make sure category images gets smaller on smaller devices to fit the device nicely.
+- Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
+a maximun of three on iPad device.
+
+#### Selected Recipe Page
+
+#### Sign Up page:
+
+#### Sign In page:
+
+#### Add Recipe Page (regular user and admin user):
+
+#### Profile Page (regular user and admin user):
+
+#### Selected Category Page:
+
+#### Manage Categories Page (admin user only):
+
+#### Add category (admin user only):
+
+#### Edit category (admin user only):
+
+#### Edit recipe page:
+
+#### Error 404:
+
+#### Error 500:
 
 
 ## Bugs found
