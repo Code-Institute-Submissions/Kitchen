@@ -236,9 +236,32 @@ All manual tests were done in the following browsers:
 - Main Content:
     - Make sure 'Add Recipe' section is centered on the page.
     - Make sure all content inside the 'Add Recipe' is displaying.
-
-    MORE HERE
-
+    - 'Recipe Name' input:
+        - Make sure icon is displaying.
+        - Make sure input gets marked in red when filled out with less than 4 letters.
+        - Make sure input stops typing when trying to write more than 25 letters.
+    - 'Category' options:
+        - Make sure icon is displaying.
+        - Click on 'Choose category' and Make sure all categories are displaying in the option list.
+        - **Bug noted when not choosing an option in the list. Please se 'Bugs Found' section further down.*
+    - 'Preptime' options:
+        - Make sure icon is displaying.
+        - Click on 'How long will it take' and Make sure all preparation times are displaying in the option list.
+        - **Bug noted when not choosing an option in the list. Please se 'Bugs Found' section further down.*
+    - Ingredients textarea:
+        - Make sure icon is displaying.
+        - Make sure browser points out if the textarea input is not filled out when submitting the recipe.
+        **Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
+    - Preparation steps textarea:
+        - Make sure icon is displaying.
+        - Make sure browser points out if the textarea input is not filled out when submitting the recipe.
+        **Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
+    - Img URL input:
+        - Make sure icon is displaying.
+        - Make sure browser points out if field is not filled out when submitting the recipe.
+    - 'Add Recipe' button:
+        - Make sure that when form is filled out correctly and the 'Add Recipe' button is clicked the page redirects
+        to the 'Recipies' page with all recipies displaying including the newely added one at the bottom.
 
 - Footer:
     - Make sure footer is covering the width of the viewport.
@@ -269,7 +292,8 @@ Materialize applies a custom CSS on all select elements which makes the 'require
 unordered lists. Even though this is covered in the Mini Project that this project is based upon, the code provided
 there didn't work for me when I tried it out. I therefor decided to leave this bug to hopefully solve it in the
 future, but for now I decided to put a red **'*'** mark next to the fields I wanted to be required to
-show the user that the fields are required after all.
+show the user that the fields are required after all. When a user wants to add a recipe or edit a recipe and the option
+sections gets left out empty, the browser does not point this out correctly.
 <div align="center">
     <img src="static/img/required.jpg" alt="Add category form" width="600px">
     <br>
@@ -308,3 +332,7 @@ replace the broken image link with a default image.
 - **Not Solved** When deleting a recipe from the profile page, the user gets redirected to the 'get_recipies' page
 instead of staying on the profile page after deleting. Due to lack of time this bug will have to remain to be solved
 in the future.
+
+- **Not Solved** When not filling out the textareas that are required when adding/editing a recipe the line under the
+text input doesn't change to a red color due to a Materialize bug. However if not filling out the text area when submitting
+a recipe still makes the browser point out to fill the required field in.
