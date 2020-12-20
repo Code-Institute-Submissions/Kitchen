@@ -300,10 +300,11 @@ All manual tests were done in the following browsers:
         - Make sure that if img link is broken of a certain recipe added by the user, a default image will display
         as the recipes' image.
     - Make sure that if user has no recipies added yet the blue section fills out the page with a min height of 450px.
-    - Click on the 'Delete' button and the recipe gets deleted correctly.
+    - Click on the 'Delete' button and the recipe gets deleted.
         - **A feature left to implement here would be a defensive action asking the user if they are sure about deleting*
         **the recipe. The user then gets to press yes or no to confirm the action. Please see 'Features Left To Implement'*
         **section in the README.md file.*
+    - Click on the 'Edit' button and the user gets redirected to the edit recipe page.
 
 
 - Footer:
