@@ -791,7 +791,8 @@ edited category. The recipies will still have the old category name displayed wh
 the select category function. As soon as the name for the edited category got changed back or a new category with that
 particular name was created, the recipies could be reached.
 
-- **Not Solved** When inspecting my site in the developer tool on my different browsers I discovered that a duplicate
-of the < main > tag was made. Because of that misunderstanding I had already made my own < main > tags on each html page
-but after removing the tag from every html document the bug remained. This would cause a gap under the category section
-on the home page when viewing the page from an iPad Pro perspective. The bug remains unsolved.
+- **Not Solved** When inspecting the home page in the developer tool a gap under the category section when 
+viewing the page from an iPad Pro perspective would appear. I guess this has to do with the fact that the iPad PRO 
+vh is larger than what my site is designed for. To solve this I would have to add more content to the page
+to fill the gap out. The best would be to be able to target only the iPad PRO perspective, but since that is out
+of my knowledge the bug remains unsolved.
