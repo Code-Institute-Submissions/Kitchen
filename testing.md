@@ -482,3 +482,7 @@ in the future.
 - **Not Solved** When not filling out the textareas that are required when adding/editing a recipe the line under the
 text input doesn't change to a red color due to a Materialize bug. However if not filling out the text area when submitting
 a recipe still makes the browser point out to fill the required field in.
+
+- **Not Solved** When a category gets edited, the recipies within that category will not automatically change to the
+edited category. The recipies will still have the old category name displayed which makes it impossible to reach them within
+the select category function.
