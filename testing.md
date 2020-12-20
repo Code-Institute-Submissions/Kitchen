@@ -574,6 +574,7 @@ All of the tests above where made on the following devices:
 The following tests where also made using the above phone and tablet devices:
 #### Home Page/Index Page
 - Make sure the content of the page fits the device nicely.
+    - **Bug noted of gap in category section*
 - Make sure text on phone devices that the heading text gets smaller to fit the device better.
 - Make sure the blue box and red box gets their own rows covering the whole width of the page.
 - Make sure category images gets smaller to fit the device nicely.
@@ -637,3 +638,8 @@ a recipe still makes the browser point out to fill the required field in.
 edited category. The recipies will still have the old category name displayed which makes it impossible to reach them within
 the select category function. As soon as the name for the edited category got changed back or a new category with that
 particular name was created, the recipies could be reached.
+
+- **Not Solved** When inspecting my site in the developer tool on my different browsers I discovered that a duplicate
+of the < main > tag was made. Because of that misunderstanding I had already made my own < main > tags on each html page
+but after removing the tag from every html document the bug remained. This would cause a gap under the category section
+on the home page when viewing the page from an iPad Pro perspective. The bug remains unsolved.
