@@ -563,8 +563,6 @@ page to the original name of 'recipies.html'.
 The first time this test was applied the page got stuck on the 500 error page despite doing a hard refresh of the page. 
 To solve this issue I had to clear the cache and cookies for the site.
 
-
- 
 ## Bugs found
 - **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
 Materialize applies a custom CSS on all select elements which makes the 'required' attributes not working on 
@@ -618,4 +616,5 @@ a recipe still makes the browser point out to fill the required field in.
 
 - **Not Solved** When a category gets edited, the recipies within that category will not automatically change to the
 edited category. The recipies will still have the old category name displayed which makes it impossible to reach them within
-the select category function.
+the select category function. As soon as the name for the edited category got changed back or a new category with that
+particular name was created, the recipies could be reached.
