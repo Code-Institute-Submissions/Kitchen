@@ -213,7 +213,7 @@ The Edit Recipe page includes:
     - A red paragraph with information about required fields.
 
 ### Selected Recipe Page:
-The selected recipe page includes:
+The Selected Recipe page includes:
 - An image of the selected recipe.
 - A red section with details about the recipe, including:
     - Name of the recipe.
@@ -225,7 +225,7 @@ The selected recipe page includes:
     - The preparation steps to the right.
 
 ### Add Recipe Page:
-The 'Add Recipe' page includes:
+The Add Recipe page includes:
 - Heading text.
 - A form for the logged in user to add their recipe to. The form includes:
     - An input field to write the name of the recipe.
@@ -238,7 +238,7 @@ The 'Add Recipe' page includes:
     - A red paragraph with information about required fields.
 
 ### Manage Categories Page:
-This page can only be reached in the navbar by the admin user. It includes:
+The Manage Categories page can only be reached in the navbar by the admin user. It includes:
 - Heading text.
 - A button that leads to the 'Add Category' page.
 - A section with the existing recipe categories that includes:
@@ -249,7 +249,7 @@ This page can only be reached in the navbar by the admin user. It includes:
     edited.
 
 ### Add Category Page:
-The 'Add Category' page can be reached within the 'Manage Categories' page. It includes:
+The Add Category page can be reached within the 'Manage Categories' page. It includes:
 - Heading text.
 - Text input to fill out the name of the category.
 - Text input to add an image url for the category.
@@ -257,7 +257,7 @@ The 'Add Category' page can be reached within the 'Manage Categories' page. It i
 - A red paragraph with information about required fields.
 
 ### Edit Category Page:
-The 'Edit Category' page can be reached within the 'Manage Categories' page. It includes:
+The Edit Category page can be reached within the 'Manage Categories' page. It includes:
 - Heading text.
 - Text input to edit the name of the category.
 - Text input to edit the image url for the category.
@@ -281,12 +281,17 @@ profile page are:
     can be edited.
     - Link to each recipe page.
 
-### Error Pages:
-- When an 'Internal Server Error' (500) occurs the page will show a **500** error page which points out the error and
-provides the user with a link to click on to get back to the home page. 
-- When a 'Not Found' error (404) occurs the page will show a **404** error page which points out the error and
-provides the user with a link to click on to get back to the home page.
+### 500 Error Page:
+When an 'Internal Server Error' occurs the 500 page will show with the following features:
+- Heading text
+- A smaller heading text which points out the type of error.
+- A link that redirects the user to the home page. 
 
+### 404 Error Page:
+When a 'Not Found' error occurs the 404 page will show with the following features:
+- Heading text
+- A smaller heading text which points out the type of error.
+- A link that redirects the user to the home page. 
 
 ### Features left to implement
 - Some type of timer function that automatically logges the user out after a certain time of no activity.
