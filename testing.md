@@ -819,7 +819,7 @@ This however is causing a pretty large blue empty area at the page, but at least
 This is something I will have to try to solve in the future, when more knowledge in python is found.
 
 <div align="center">
-    <img src="static/img/bug.png" alt="Add category form" width="600px">
+    <img src="static/img/bug1.png" alt="Profile bug" width="600px">
     <br>
     Bug on Profile page when no user recipies.
     <br>
