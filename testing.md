@@ -62,6 +62,10 @@ The errors that occured was
 caused by the Jinja templates that was used. These errors was expected to occur and did not lead to any 
 changes of the code itself since it would break the site.
 
+### CSS
+The CSS was tested by using [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). The CSS passed the test
+without any errors.
+
 ## Manual Testing
 All manual tests were done in the following browsers:
 - Firefox
