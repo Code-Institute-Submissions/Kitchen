@@ -196,8 +196,21 @@ The features of the site was defined during the **scope plane** phase. The featu
     - Preptime of each recipe.
     - Link to each recipe page.
 - The maker of the recipe also have two buttons above the recipe link:
-    - Delete button - Makes it possible to delete the recipe.
-    - Edit button - Redirects the user to a page where the prewritten recipe details can be edited.
+    - 'Delete' button - Makes it possible to delete the recipe.
+    - 'Edit' button - Redirects the user to a page where the prewritten recipe details can be edited.
+
+### Edit Recipe Page:
+- Heading text.
+- A form for the logged in user to edit their recipe. The form includes:
+    - An input field to edit the name of the recipe.
+    - An option list to edit the category of the recipe.
+    - An option list to edit the total preptime for the recipe.
+    - A textarea to edit all the ingredients of the recipe.
+    - A textarea to edit the preparation steps of the recipe.
+    - An input field to edit the image url.
+    - 'Cancel' button that cancels the recipe editing and redirects the user to the 'Recipies' page.
+    - 'Save' button that saves the changes of the edited recipe and reloads the page with the saved changes displaying.
+    - A red paragraph with information about required fields.
 
 ### Selected Recipe Page:
 - An image of the selected recipe.
@@ -240,25 +253,21 @@ This page can only be viewed by the admin user.
 - 'Add Category' button that creates the new category and redirects the user to the 'Manage Categories' page.
 - A red paragraph with information about required fields.
 
-<div align="center">
-    <img src="static/img/addcategory.png" alt="Add category form" width="600px">
-    <br>
-    The form that makes it possible for the admin user to add a new category.
-</div>
-
 ### Profile Page:
 The link to the profile page can be reached in the navbar once a user is signed in to the page. The features of the
 profile page are:
 - Hero image.
 - Section with all recipies the user has made including:
-    - Image of the recipe.
-    - Name of the recipe.
-    - Name of the user who added the recipe.
-    - Category of the recipe.
-    - Preptime of the recipe.
-    - Delete button - Makes it possible to delete the recipe.
-    - Edit button - Makes it possible to edit the recipe.
-    - Link to the recipe page.
+    - Heading text
+    - Image of each recipe.
+    - Name of each recipe.
+    - Name of the user.
+    - Category of each recipe.
+    - Preptime of each recipe.
+    - 'Delete' button in each recipe card - Makes it possible to delete the recipe.
+    - 'Edit' button in each recipe card - Redirects the user to a page where the prewritten recipe details 
+    can be edited.
+    - Link to each recipe page.
 
 ### Error Pages:
 - When an 'Internal Server Error' (500) occurs the page will show a **500** error page which points out the error and
