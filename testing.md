@@ -1,5 +1,18 @@
 # Testing
 ## Content
+1. [User Testing](#user-testing)
+2. [Automated testing](#automated-testing)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [JavaScript](#javascript)
+    - [Python](#python)
+3. [Manual Testing](#manual-testing)
+    - [Home Page/Index Page](#home-page/index-page)
+    - [Recipies Page](#recipies-page)
+    - [Selected Recipe Page](#selected-recipe-page)
+    - [Sign Up Page](#sign-up-page)
+    - [Sign In Page](#sign-in-page)
+    - [Add Recipe Page (regular user and admin user)](#add-recipe-page)
 
 ## User Testing
 1. **Get inspired into learning new recipes.**
@@ -287,7 +300,8 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Add Recipe Page (regular user and admin user)
+### Add Recipe Page
+### (regular user and admin user)
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -338,7 +352,8 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Profile Page (regular user and admin user)
+### Profile Page
+### (regular user and admin user)
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -424,7 +439,8 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Manage Categories Page (admin user only)
+### Manage Categories Page
+### (admin user only)
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -460,7 +476,8 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Add category Page (admin user only)
+### Add category Page
+### (admin user only)
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -500,7 +517,8 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Edit category Page (admin user only)
+### Edit category Page
+### (admin user only)
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
