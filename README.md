@@ -345,7 +345,7 @@ gets to press a 'next' button to view the next 12 recipies.
 - [JSHint](https://jshint.com/) - Used to test the JavaScript code.
 
 ## Testing
-To View the full testing, [click here!](testing.md)
+[To View the full testing, click here!](testing.md)
 
 ## Cloning this project
 If you want to work further on my project, go ahead and clone it following these steps:
