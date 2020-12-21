@@ -169,11 +169,11 @@ The features of the site was defined during the **scope plane** phase. The featu
 ### Home Page:
 - Hero image with a welcome text.
 - A blue box with brief information about the page.
-- A red box with a heading text that encourages the visitor to add a recipe and button 
-(depending on if the user is logged in or not)
+- A red box, with a heading text and a button.
 - A section with recipe categories that includes:
-    - Image of the category.
-    - Name of the category
+    - Heading text.
+    - Image of each category.
+    - Name of each category
 
 <div align="center">
     <img src="static/img/infobox.png" alt="Info boxes" width="600px">
@@ -182,52 +182,63 @@ The features of the site was defined during the **scope plane** phase. The featu
 </div>
 
 ### Recipies Page:
-- Hero image.
+- Hero image with a built in search function.
 - A section with recipe categories that includes:
-    - Image of the category.
-    - Name of the category
+    - Heading text.
+    - Image of each category.
+    - Name of each category
 - Section with all recipies including:
-    - Image of the recipe.
-    - Name of the recipe.
+    - Heading text
+    - Image of each recipe.
+    - Name of each recipe.
     - Name of the user who added the recipe.
-    - Category of the recipe.
-    - Preptime of the recipe.
-    - Link to the recipe page.
+    - Category of each recipe.
+    - Preptime of each recipe.
+    - Link to each recipe page.
 - The maker of the recipe also have two buttons above the recipe link:
     - Delete button - Makes it possible to delete the recipe.
     - Edit button - Redirects the user to a page where the prewritten recipe details can be edited.
 
 ### Selected Recipe Page:
 - An image of the selected recipe.
-- A red section with information about the recipe, including:
+- A red section with details about the recipe, including:
     - Name of the recipe.
     - Name of the user who added the recipe.
     - Category of the recipe.
-    - Preptime of the recipe.
+    - Preptime for the recipe.
 - A section divided into two columns that includes:
     - The ingredients list to the left.
     - The preparation steps to the right.
 
 ### Add Recipe Page:
+- Heading text.
 - A form for the logged in user to add their recipe to. The form includes:
     - An input field to write the name of the recipe.
     - An option list to pick the category of the recipe.
     - An option list to pick the total preptime for the recipe.
     - A textarea to add all the ingredients of the recipe.
     - A textarea to add the preparation steps of the recipe.
-    - An input field to add a image url for the recipe image that is to be used.
+    - An input field to add an image url.
     - A button to submit the recipe.
+    - A red paragraph with information about required fields.
 
 ### Manage Categories Page:
 This page can only be viewed by the admin user.
 - Heading text.
-- A button that leads to another page with a form to add a new category to the page.
+- A button that leads to the 'Add Category' page.
 - A section with the existing recipe categories that includes:
     - Image of the category.
     - Name of the category
     - 'Delete' button, that deletes the category.
     - 'Edit button', that redirects the admin user to another page where the category name or image url can be
     edited.
+
+### Add Category Page:
+- Heading text.
+- Text input to fill out the name of the category.
+- Text input to add an image url.
+- 'Add Category' button that creates the new category and redirects the user to the 'Manage Categories' page.
+- A red paragraph with information about required fields.
 
 <div align="center">
     <img src="static/img/addcategory.png" alt="Add category form" width="600px">
