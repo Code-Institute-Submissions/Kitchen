@@ -7,12 +7,22 @@
     - [JavaScript](#javascript)
     - [Python](#python)
 3. [Manual Testing](#manual-testing)
-    - [Home Page/Index Page](#home-page/index-page)
+    - [Home Page/Index Page](#home-page)
     - [Recipies Page](#recipies-page)
     - [Selected Recipe Page](#selected-recipe-page)
     - [Sign Up Page](#sign-up-page)
     - [Sign In Page](#sign-in-page)
     - [Add Recipe Page (regular user and admin user)](#add-recipe-page)
+    - [Profile Page (regular user and admin user)](#profile-page)
+    - [Selected Category Page](#selected-category-page)
+    - [Manage Categories Page](#manage-categories-page)
+    - [Add category Page (admin user only)](#add-category-page)
+    - [Edit category Page (admin user only)](#edit-category-page)
+    - [Edit recipe Page](#edit-recipe-page)
+    - [Error 404 Page](#error-404-page)
+    - [Error 500 Page](#error-500-page)
+    - [Testing on phone and tablet devices](#testing-on-phone-and-tablet-devices)
+4. [Bugs Found](#bugs-found)
 
 ## User Testing
 1. **Get inspired into learning new recipes.**
