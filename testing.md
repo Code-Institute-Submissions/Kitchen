@@ -1,5 +1,4 @@
 # Testing
-
 ## Content
 
 ## User Testing
@@ -46,6 +45,22 @@
             in the order that the recipe was made and without any type of relevance.
 
 ## Automated Testing
+### HTML
+All html templates (except for the 404.html, 500.html, profile.html and base.html) where tested using 
+[W3C Markup Validation Service](https://validator.w3.org/) by Validate by URI. 
+This, to not cause any errors by the Jinja code that was used in this project, since that would be expected.
+The errors that occured was the following:
+1. Alt attribute missing on recipe images in recipies.html.
+    - This error was corrected by adding the alt attribute.
+2. Alt attribute missing on recipe images in select_category.html.
+    - This error was corrected by adding the alt attribute.
+3. < hr > tag not allowed as a child of < ol > in select_recipe.html.
+    - This error was corrected by putting the < hr > inside the list elements of the preparation steps instead.
+
+The 404.html, 500.html, profile.html and base.html had to be tested with 'Validate by Direct Input'. 
+The errors that occured was 
+caused by the Jinja templates that was used. These errors was expected to occur and did not lead to any 
+changes of the code itself since it would break the site.
 
 ## Manual Testing
 All manual tests were done in the following browsers:
