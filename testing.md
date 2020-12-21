@@ -701,7 +701,7 @@ The first time this test was applied the page got stuck on the 500 error page de
 To solve this issue I had to clear the cache and cookies for the site.
 
 ### Testing on phone and tablet devices
-All of the tests above where made on the following devices:
+All of the tests mentioned above where also made on the following devices using developer tool on Google Chrome:
 - iPad
 - iPad Pro
 - iPhone 5/SE
@@ -714,7 +714,7 @@ With additional testing on all the above devices:
 - Make sure the copyright text and social icons in the footer gets their own rows covering the whole 
 width of the page on smaller devices.
 
-The following tests where also made:
+Further testing was made on the following pages:
 
 #### Home Page
 - Make sure the content of the page fits the device nicely.
@@ -741,15 +741,6 @@ on iPad PRO.
 - Make sure ingredients list get its own row.
 - Make sure the preparation step list get its own row presented after the ingredient list.
 
-#### Sign Up page
-- GAP ---------------------------------------------------------------------------------------------------
-
-#### Sign In page
-- GAP ----------------------------------------------------------------------------------------------------
-
-#### Add Recipe Page (regular user and admin user)
-- Make sure 'Add Recipe' section covers the width of the viewport.
-
 #### Profile Page (regular user and admin user)
 - Make sure the hero image covers the width of the viewport.
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
@@ -767,19 +758,6 @@ on iPad PRO.
 #### Manage Categories Page (admin user only)
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
 a maximun of three on iPad devices.
-
-#### Add category (admin user only)
-- 
-
-#### Edit category (admin user only)
-
-#### Edit recipe page
-
-#### Error 404
-- Make sure 'Oops' message section is centered both horizontally and vertically.
-
-#### Error 500
-- Make sure 'Oops' message section is centered both horizontally and vertically.
 
 ## Bugs found
 - **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
