@@ -17,22 +17,35 @@
         <!-- categories -->
         <div class="row">
             {% for category in categories %}
-            <div class="col s6 m6 l4 xl3 center-align">
-                <div class="category-img">
-                    <img src="{{ category.recipe_img }}" alt="category image"
-                        onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
-                </div>
-                <div class="card black-text open-sans">
-                    <div class="card-content white-text edit-cat-padding">
-                        <span class="card-title category-title">{{ category.category_name }}</span>
+                <div class="col s6 m6 l4 xl3 center-align">
+                    <div class="category-img">
+                        <img src="{{ category.recipe_img }}" alt="category image"
+                            onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
                     </div>
-                    <div class="card-action edit-cat-padding">
+                    <div class="card black-text open-sans">
+                        <div class="card-content white-text edit-cat-padding">
+                            <span class="card-title category-title">{{ category.category_name }}</span>
+                        </div>
+                        <div class="card-action edit-cat-padding">
+                            <a href="#modal3" data-target="modal3{{ loop.index }}"
+                                class="btn btn-delete modal-trigger">Delete</a>
+                            <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn btn-edit">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- pop up modal for deleting recipe - Materialize -->
+                <div id="modal3{{ loop.index }}" class="modal">
+                    <div class="modal-content">
+                        <h4 class="open-sans center-align">Are you sure you want to delete the category?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- yes -->
                         <a href="{{ url_for('delete_category', category_id=category._id) }}"
-                            class="btn btn-delete">Delete</a>
-                        <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn btn-edit">Edit</a>
+                            class="modal-close waves-effect waves-green btn-flat open-sans btn-delete center-align">Yes</a>
+                        <!-- no -->
+                        <a href="{{ url_for('profile', username=session['user']) }}" class="modal-close waves-effect waves-green btn-flat open-sans btn-edit center-align">No</a>
                     </div>
                 </div>
-            </div>
             {% endfor %}
         </div>
 {% endblock %}
