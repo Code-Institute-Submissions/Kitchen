@@ -1,6 +1,4 @@
 # Kitchen
-![Am I Responsive](/static/img/amiresponsive.png)
-
 ## Content
 1. [About](#about)
 2. [UX](#ux)
@@ -29,6 +27,7 @@
 10. [Disclaimer](#disclaimer)
 
 ## About
+![Am I Responsive](/static/img/amiresponsive.png)
 Kitchen is a website where food enthusiasts from all over the world can gather to share their best recipes.
 With the simple functions, it is easy for everyone to create an account to get started sharing their best 
 cooking tricks, and in the future we hope to be able to offer more functions to make the stay on the website 
