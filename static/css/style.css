@@ -22,6 +22,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    overflow: visible!important;
 }
 
 main {
@@ -442,6 +443,11 @@ main {
     margin-top: 20px;
     margin-bottom: 5px;
     line-height: 0;
+}
+
+/* pop up modal ---------------------------------------------------- */
+.modal-footer {
+    text-align: center!important;
 }
 
 
