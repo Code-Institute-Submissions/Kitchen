@@ -320,22 +320,29 @@ gets to press a 'next' button to view the next 12 recipies.
 
 ## Technologies used
 ### Languages
-- **HTML 5** - Used to create the structure of the site.
-- **CSS3** - Used to style the HTML elements.
-- **Python** - Used for back end programming.
-- [Jinja]https://jinja.palletsprojects.com/en/2.11.x/) - Used for template inheritance and database linking.
+- **HTML 5**
+- **CSS3**
+- **Python**
+- **JavaScript**
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
 
 ### Libraries
 - [JQuery](https://jquery.com/) - Used to write the JavaScript code.
-- [MongoDB](https://www.mongodb.com/) - Database that was used for this project.
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Used to write python code.
-- [Materialize](https://materializecss.com/) - Used for the overall design of the page.
+- [Materialize](https://materializecss.com/) - Used for the front-end framework.
 
 ### Other
+- [MongoDB](https://www.mongodb.com/) - Database that was used for this project.
+- [Gitpod](https://gitpod.io/) - The developer environment used for this project.
+- [GitHub](https://github.com/) - Used as remote repository.
+- [Heroku](https://www.heroku.com/) - Used as hosting platform for the live app.
 - [Fontawesome](https://fontawesome.com/) - Used for icons.
 - [Coolors](https://coolors.co/) - Used to generate the color scheme.
 - [Figma](https://www.figma.com/) - Used to make wireframes.
 - [Google Fonts](https://fonts.google.com/) - The font used for this project: **Open Sans Condensed*
+- [W3C Markup Validation Service](https://validator.w3.org/) - Used to test the HTML code.
+- [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used to test the CSS code.
+- [JSHint](https://jshint.com/) - Used to test the JavaScript code.
 
 ## Testing
 To View the full testing, [click here!](testing.md)
