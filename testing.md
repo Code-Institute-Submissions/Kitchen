@@ -821,6 +821,10 @@ replace the broken image link with a default image.
 instead of staying on the profile page after deleting. Due to lack of time this bug will have to remain to be solved
 in the future.
 
+- **Not Solved** When editing a recipe from the profile page, and the user clicks on the 'Cancel' button the user 
+gets redirected to the 'get_recipies' page instead of staying on the profile page after clicking on 'Cancel'. 
+Due to lack of time this bug will have to remain to be solved in the future.
+
 - **Not Solved** When not filling out the textareas that are required when adding/editing a recipe the line under the
 text input doesn't change to a red color due to a Materialize bug. However if not filling out the text area when submitting
 a recipe still makes the browser point out to fill the required field in.
