@@ -805,13 +805,19 @@ function entirely and redo it to try to understand the logic of it better. It tu
 variable for the categories, so therefor they would not display when searching. After adding the variable the search
 function worked without any issues.
 
-- **Solved** When a user don't have recipies added, their profile page would not fill out completely causing a 
+- **Not Solved** When a user don't have recipies added, their profile page would not fill out completely causing a 
 white gap between the recipe section and the footer. Originally my
-idea to solve this bug was to put in an else statement in my jinja code for the profile page with a text displaying
-when no recipies was to be found. However this caused even more bugs when adding the else statement due to the limitation
-of jinja. I decided to change my solution and add a min-height of the recipe section that would automatically fill out the page
-with the sections default background color to remove the white gap completely. 
-Not the most ultimate solution, but it works for now.
+idea to solve this bug was to put in an else statement in my Jinja code for the profile page with a text displaying
+a text of "No recipies found!" when no recipies was to be found. 
+However this caused even more bugs when adding the else statement by looping the text endlessly all over the 
+page even if there was recipies there or not.
+Explained by tutor support, this was apperently a limitation with Jinja templating, so to solve this problem I 
+would have to do it from my python code. Because of my limitation of knowledge in python (and lack of time) it 
+led me to do an emergency solution for this bug by adding a min-height of the recipe section that 
+would automatically fill out the view height with the blue background color on all devices.
+This however is causing a pretty large blue empty area at the page, but at least there are no white gaps on the page.
+This is something I will have to try to solve in the future, when more knowledge in python is found.
+
 
 - **Solved** Though it's required to add an img url when you add a recipe, the images would show a broken link if the
 url was not from the correct source. To solve this bug I added an onerror attribute with a value that would automatically
