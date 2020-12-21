@@ -78,11 +78,15 @@ then have their own key/values.
     - created_by
 
 - **categories**
-    - category_name
+    - category_name (with the following values to choose from)
+        - Vegetarian
+        - Chicken
+        - Fish
+        - Meat
     - recipe_img
 
 - **preptime**
-    - preptime_time
+    - preptime_time (with the following values to choose from)
         - '<' 30 min 
         - 30 min
         - 45 min
