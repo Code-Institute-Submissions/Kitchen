@@ -818,6 +818,14 @@ would automatically fill out the view height with the blue background color on a
 This however is causing a pretty large blue empty area at the page, but at least there are no white gaps on the page.
 This is something I will have to try to solve in the future, when more knowledge in python is found.
 
+<div align="center">
+    <img src="static/img/bug.png" alt="Add category form" width="600px">
+    <br>
+    Bug on Profile page when no user recipies.
+    <br>
+    <br>
+</div>
+
 
 - **Solved** Though it's required to add an img url when you add a recipe, the images would show a broken link if the
 url was not from the correct source. To solve this bug I added an onerror attribute with a value that would automatically
