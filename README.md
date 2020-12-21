@@ -8,6 +8,17 @@
     - [Design process](#design-process)
     - [Wireframes](#wireframes)
 3. [Features](#features)
+    - [Home Page](#home-page)
+    - [Recipies Page](#recipies-page)
+    - [Edit Recipe Page](#edit-recipe-page)
+    - [Selected Recipe Page](#selected-recipe-page)
+    - [Add Recipe Page](#add-recipe-page)
+    - [Manage Categories Page](#manage-categories-page)
+    - [Add Category Page](#add-category-page)
+    - [Edit Category Page](#edit-category-page)
+    - [Profile Page](#profile-page)
+    - [500 Error Page](#500-error-page)
+    - [400 Error Page](#400-error-page)
     - [Features left to implement](#features-left-to-implement)
 4. [Technologies Used](#technologies-used)
     - [Languages](#languages)
@@ -163,7 +174,7 @@ The features of the site was defined during the **scope plane** phase. The featu
     The Navbar with the different links depending on if you are logged in or not, an admin or not.
 </div>
     
-### Home Page:
+### Home Page
 The home page includes:
 - Hero image with a welcome text.
 - A blue box with brief information about the page.
@@ -179,7 +190,7 @@ The home page includes:
     The red info box that shows different button text depending on if user is logged in or not.    
 </div>
 
-### Recipies Page:
+### Recipies Page
 The Recipies page includes:
 - Hero image with a built in search function.
 - A section with recipe categories that includes:
@@ -198,7 +209,7 @@ The Recipies page includes:
     - 'Delete' button - Makes it possible to delete the recipe.
     - 'Edit' button - Redirects the user to a page where the prewritten recipe details can be edited.
 
-### Edit Recipe Page:
+### Edit Recipe Page
 The Edit Recipe page includes:
 - Heading text.
 - A form for the logged in user to edit their recipe. The form includes:
@@ -212,7 +223,7 @@ The Edit Recipe page includes:
     - 'Save' button that saves the changes of the edited recipe and reloads the page with the saved changes displaying.
     - A red paragraph with information about required fields.
 
-### Selected Recipe Page:
+### Selected Recipe Page
 The Selected Recipe page includes:
 - An image of the selected recipe.
 - A red section with details about the recipe, including:
@@ -224,7 +235,7 @@ The Selected Recipe page includes:
     - The ingredients list to the left.
     - The preparation steps to the right.
 
-### Add Recipe Page:
+### Add Recipe Page
 The Add Recipe page includes:
 - Heading text.
 - A form for the logged in user to add their recipe to. The form includes:
@@ -237,7 +248,7 @@ The Add Recipe page includes:
     - A button to submit the recipe.
     - A red paragraph with information about required fields.
 
-### Manage Categories Page:
+### Manage Categories Page
 The Manage Categories page can only be reached in the navbar by the admin user. It includes:
 - Heading text.
 - A button that leads to the 'Add Category' page.
@@ -248,7 +259,7 @@ The Manage Categories page can only be reached in the navbar by the admin user. 
     - 'Edit button', that redirects the admin user to another page where the category name or image url can be
     edited.
 
-### Add Category Page:
+### Add Category Page
 The Add Category page can be reached within the 'Manage Categories' page. It includes:
 - Heading text.
 - Text input to fill out the name of the category.
@@ -256,7 +267,7 @@ The Add Category page can be reached within the 'Manage Categories' page. It inc
 - 'Add Category' button that creates the new category and redirects the user to the 'Manage Categories' page.
 - A red paragraph with information about required fields.
 
-### Edit Category Page:
+### Edit Category Page
 The Edit Category page can be reached within the 'Manage Categories' page. It includes:
 - Heading text.
 - Text input to edit the name of the category.
@@ -265,7 +276,7 @@ The Edit Category page can be reached within the 'Manage Categories' page. It in
 - 'Add Category' button that saves the changes of the edited category and redirects the user to the 'Manage Categories' page.
 - A red paragraph with information about required fields.
 
-### Profile Page:
+### Profile Page
 The link to the profile page can be reached in the navbar once a user is signed in to the page. The features of the
 profile page are:
 - Hero image.
@@ -281,13 +292,13 @@ profile page are:
     can be edited.
     - Link to each recipe page.
 
-### 500 Error Page:
+### 500 Error Page
 When an 'Internal Server Error' occurs the 500 page will show with the following features:
 - Heading text
 - A smaller heading text which points out the type of error.
 - A link that redirects the user to the home page. 
 
-### 404 Error Page:
+### 404 Error Page
 When a 'Not Found' error occurs the 404 page will show with the following features:
 - Heading text
 - A smaller heading text which points out the type of error.
