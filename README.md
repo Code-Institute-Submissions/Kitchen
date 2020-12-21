@@ -30,7 +30,7 @@
 ![Am I Responsive](/static/img/amiresponsive.png)
 Kitchen is a website where food enthusiasts from all over the world can gather to share their best recipes.
 With the simple functions, it is easy for everyone to create an account to get started sharing their best 
-cooking tricks, and in the future we hope to be able to offer more functions to make the user experience on the website 
+cooking tricks. In the future we hope to be able to offer more functions to make the user experience on the website 
 even better.
 If you're not interested in signing up and share a recipe, you can of course visit the site to brows through all
 the fantastic recipies for some cooking inspiration.
@@ -44,7 +44,6 @@ The UX goals for this website are the following:
 - Clear sections of the content of each page.
 - The site is responsive to all devices.
 - All text on the site is easy to read without any distracting backgrounds.
-- To be able to search for recipies with a specific name or ingredient in it.
 
 
 ### User Stories
@@ -55,6 +54,7 @@ As a user I want to:
 - Be able to sign up and share my own recipies.
 - Have a good overlook of my own recipies that I've made.
 - Be able to edit and delete recipies that I have made.
+- To be able to search for recipies with a specific name or ingredient in it.
 
 ### Owner goals
 As the owner of the page I want:
@@ -140,10 +140,7 @@ The wireframes where made with the technology of Figma and can be viewed
 <br>
 
 ## Features
-The features of the site was defined during the **scope plane** stage and all but one features from the original idea
-was applied to this project.
-
-The features of this web site are:
+The features of the site was defined during the **scope plane** phase. The features of this web site are:
 
 ### All Pages:
 - Fixed Navigation bar at the top of all pages. Complete list of links in the navbar:
@@ -167,7 +164,7 @@ The features of this web site are:
     
 ### Home Page:
 - Hero image with a welcome text.
-- A blue section with brief information about the page.
+- A blue box with brief information about the page.
 - A red box with a heading text that encourages the visitor to add a recipe and button 
 (depending on if the user is logged in or not)
 - A section with recipe categories that includes:
@@ -207,8 +204,6 @@ The features of this web site are:
     - The ingredients list to the left.
     - The preparation steps to the right.
 
-IMAGE OF SELECTED RECIPE PAGE HERE
-
 ### Add Recipe Page:
 - A form for the logged in user to add their recipe to. The form includes:
     - An input field to write the name of the recipe.
@@ -221,6 +216,7 @@ IMAGE OF SELECTED RECIPE PAGE HERE
 
 ### Manage Categories Page:
 This page can only be viewed by the admin user.
+- Heading text.
 - A button that leads to another page with a form to add a new category to the page.
 - A section with the existing recipe categories that includes:
     - Image of the category.
