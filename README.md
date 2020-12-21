@@ -315,9 +315,6 @@ When a 'Not Found' error occurs the 404 page will show with the following featur
 
 ### Features left to implement
 - Some type of timer function that automatically logges the user out after a certain time of no activity.
-- When clicking on the 'Delete' button on a recipe or a category a feature to add here would be some kind of
-defensive programming asking the user if they are sure about deleting the recipe. 
-The user then gets to press yes or no to confirm the action.
 - A rating function to make all visitors able to rate each recipe. The rating result would then be displaying in the
 recipe cards on the recipe page together with all other information.
 - When the user choose a category to go to, I would like for that category to become disabled to click on again 
