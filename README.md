@@ -18,7 +18,7 @@
     - [Edit Category Page](#edit-category-page)
     - [Profile Page](#profile-page)
     - [500 Error Page](#500-error-page)
-    - [400 Error Page](#400-error-page)
+    - [404 Error Page](#404-error-page)
     - [Features left to implement](#features-left-to-implement)
 4. [Technologies Used](#technologies-used)
     - [Languages](#languages)
