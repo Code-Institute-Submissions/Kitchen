@@ -41,7 +41,8 @@
                                 <br>
                                 <!-- delete/edit buttons -->
                                 <div class="recipe-buttons">
-                                    <a href="#modal1" data-target="modal1{{ loop.index }}" class="btn btn-delete open-sans modal-trigger">Delete</a>
+                                    <a href="#modal1" data-target="modal1{{ loop.index }}"
+                                        class="btn btn-delete open-sans modal-trigger">Delete</a>
                                     <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}"
                                         class="btn btn-blue btn-edit open-sans">Edit</a>
                                 </div>
