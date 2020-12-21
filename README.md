@@ -59,22 +59,39 @@ As a user I want to:
 ### Owner goals
 As the owner of the page I want:
 - The page to look as professional as possible considering the knowledge that I have acquired through the course.
-The page reflect the learning aspect of the journey I have undertaken so far in the Code Institute course.
+The site reflects the learning outcome of the Code Institute course so far.
 - To be able to edit and/or delete a category.
 - To be able to create new food categories for the users to fill with recipies.
 
 ### Design process
-The **structure** of the site is based upon the data that is presented on the page. I wanted the first page to be simple
-and clear for the visitor which then by deciding what content they want to visit navigates through the navigation
-bar at the top to get to that specific content.
+The **structure** of the site is based upon the data that is presented on each page.
+This recipe site has four collections in the MongoDB database. Recipies, categories, preptime and users. The collections
+then have their own key/values.
 
-This recipe site has four collections in the MongoDB database where the main content presented on the paige is 
-stored.
+- **recipies**
+    - category_name
+    - recipe_img
+    - recipe_name
+    - preptime_time
+    - ingredients
+    - preparation_steps
+    - created_by
 
-- Recipies
-- Categories
-- Preptime
-- Users
+- **categories**
+    - category_name
+    - recipe_img
+
+- **preptime**
+    - preptime_time
+        - < 30 min 
+        - 30 min
+        - 45 min
+        - 60 min
+        - > 60 min 
+
+- **users**
+    - username
+    - password
 
 The color scheme for this project was generated with the technology of [Coolors](https://coolors.co/). I wanted the
 colors to be a little bit darker and warmer to welcome the visitor, but still make the content of the pages
