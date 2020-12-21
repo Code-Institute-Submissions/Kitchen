@@ -1,6 +1,5 @@
 # Testing
 ## Content
----
 1. [User Testing](#user-testing)
 2. [Automated testing](#automated-testing)
     - [HTML](#html)
@@ -26,7 +25,6 @@
 4. [Bugs Found](#bugs-found)
 
 ## User Testing
----
 1. **Get inspired into learning new recipes.**
     - This page was designed with an idea to look as realistic as possible (from a beginners point of view). 
     This to both encourage and inspire the user to scroll through all different kinds of recipies.
@@ -75,7 +73,6 @@
     it easier to find what you are looking for.
 
 ## Automated Testing
----
 ### HTML
 All html templates (except for the 404.html, 500.html, profile.html and base.html) where tested using 
 [W3C Markup Validation Service](https://validator.w3.org/) by Validate by URI. 
@@ -778,7 +775,6 @@ on iPad PRO.
 a maximun of three on iPad devices.
 
 ## Bugs found
----
 - **Not Solved** Not able to make select elements required in the forms when adding a recipe. 
 Materialize applies a custom CSS on all select elements which makes the 'required' attributes not working on 
 unordered lists. Even though this is covered in the Mini Project that this project is based upon, the code provided
