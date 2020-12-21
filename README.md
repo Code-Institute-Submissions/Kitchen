@@ -176,7 +176,7 @@ The features of this web site are:
     - Link to the recipe page.
 - The maker of the recipe also have two buttons above the recipe link:
     - Delete button - Makes it possible to delete the recipe.
-    - Edit button - Makes it possible to edit the recipe.
+    - Edit button - Redirects the user to a page where the prewritten recipe details can be edited.
 
 ### Selected Recipe Page:
 - An image of the selected recipe.
@@ -203,12 +203,13 @@ IMAGE OF SELECTED RECIPE PAGE HERE
 
 ### Manage Categories Page:
 This page can only be viewed by the admin user.
-- A button that leads to a form to add a new category to the page.
+- A button that leads to another page with a form to add a new category to the page.
 - A section with the existing recipe categories that includes:
     - Image of the category.
     - Name of the category
-    - Delete button, that deletes the category.
-    - Edit button, that makes it possible to edit the image url or the name of the category.
+    - 'Delete' button, that deletes the category.
+    - 'Edit button', that redirects the admin user to another page where the category name or image url can be
+    edited.
 
 <div align="center">
     <img src="static/img/addcategory.png" alt="Add category form" width="600px">
