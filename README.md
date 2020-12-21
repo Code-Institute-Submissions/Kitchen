@@ -144,9 +144,7 @@ The wireframes where made with the technology of Figma and can be viewed
 <br>
 
 ## Features
-The features of the site was defined during the **scope plane** phase. The features of this web site are:
-
-### All Pages:
+The features of the site was defined during the **scope plane** phase. The features for all pages are:
 - Fixed Navigation bar at the top of all pages. Complete list of links in the navbar:
     - **Logo** - Linked to home page.
     - **Home** - Linked to home page.
@@ -157,7 +155,6 @@ The features of the site was defined during the **scope plane** phase. The featu
     - **Sign In** - Linked to page where user can sign in.
     - **Sign Up** - Linked to page where new user can sign up.
     - **Log Out** - Logges user out of the site.
-
 - Footer with copyright text and social links.
 
 <div align="center">
@@ -167,6 +164,7 @@ The features of the site was defined during the **scope plane** phase. The featu
 </div>
     
 ### Home Page:
+The home page includes:
 - Hero image with a welcome text.
 - A blue box with brief information about the page.
 - A red box, with a heading text and a button.
@@ -182,6 +180,7 @@ The features of the site was defined during the **scope plane** phase. The featu
 </div>
 
 ### Recipies Page:
+The Recipies page includes:
 - Hero image with a built in search function.
 - A section with recipe categories that includes:
     - Heading text.
@@ -200,6 +199,7 @@ The features of the site was defined during the **scope plane** phase. The featu
     - 'Edit' button - Redirects the user to a page where the prewritten recipe details can be edited.
 
 ### Edit Recipe Page:
+The Edit Recipe page includes:
 - Heading text.
 - A form for the logged in user to edit their recipe. The form includes:
     - An input field to edit the name of the recipe.
@@ -213,6 +213,7 @@ The features of the site was defined during the **scope plane** phase. The featu
     - A red paragraph with information about required fields.
 
 ### Selected Recipe Page:
+The selected recipe page includes:
 - An image of the selected recipe.
 - A red section with details about the recipe, including:
     - Name of the recipe.
@@ -224,6 +225,7 @@ The features of the site was defined during the **scope plane** phase. The featu
     - The preparation steps to the right.
 
 ### Add Recipe Page:
+The 'Add Recipe' page includes:
 - Heading text.
 - A form for the logged in user to add their recipe to. The form includes:
     - An input field to write the name of the recipe.
@@ -236,7 +238,7 @@ The features of the site was defined during the **scope plane** phase. The featu
     - A red paragraph with information about required fields.
 
 ### Manage Categories Page:
-This page can only be viewed by the admin user.
+This page can only be reached in the navbar by the admin user. It includes:
 - Heading text.
 - A button that leads to the 'Add Category' page.
 - A section with the existing recipe categories that includes:
@@ -247,6 +249,7 @@ This page can only be viewed by the admin user.
     edited.
 
 ### Add Category Page:
+The 'Add Category' page can be reached within the 'Manage Categories' page. It includes:
 - Heading text.
 - Text input to fill out the name of the category.
 - Text input to add an image url for the category.
@@ -254,6 +257,7 @@ This page can only be viewed by the admin user.
 - A red paragraph with information about required fields.
 
 ### Edit Category Page:
+The 'Edit Category' page can be reached within the 'Manage Categories' page. It includes:
 - Heading text.
 - Text input to edit the name of the category.
 - Text input to edit the image url for the category.
