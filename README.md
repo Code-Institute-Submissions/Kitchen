@@ -207,6 +207,9 @@ The Recipies page includes:
     - Link to each recipe page.
 - The maker of the recipe also have two buttons above the recipe link:
     - 'Delete' button - Makes it possible to delete the recipe.
+        - When clicked on a modal pops up asking the user if they are sure about deleting the recipe.
+        The user is provided with a 'Yes' or a 'No' button, which either deletes the recipe or redirects the user
+        back to the page.
     - 'Edit' button - Redirects the user to a page where the prewritten recipe details can be edited.
 
 ### Edit Recipe Page
@@ -256,6 +259,9 @@ The Manage Categories page can only be reached in the navbar by the admin user. 
     - Image of the category.
     - Name of the category
     - 'Delete' button, that deletes the category.
+        - When clicked on a modal pops up asking the user if they are sure about deleting the category.
+        The user is provided with a 'Yes' or a 'No' button, which either deletes the recipe or redirects the user
+        back to the page.
     - 'Edit button', that redirects the admin user to another page where the category name or image url can be
     edited.
 
@@ -288,6 +294,9 @@ profile page are:
     - Category of each recipe.
     - Preptime of each recipe.
     - 'Delete' button in each recipe card - Makes it possible to delete the recipe.
+        - When clicked on a modal pops up asking the user if they are sure about deleting the recipe.
+        The user is provided with a 'Yes' or a 'No' button, whihc either deletes the recipe or redirects the user
+        back to the page.
     - 'Edit' button in each recipe card - Redirects the user to a page where the prewritten recipe details 
     can be edited.
     - Link to each recipe page.
