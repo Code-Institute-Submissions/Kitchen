@@ -465,11 +465,16 @@ Recipies not mentioned here are made up by me.
 - [Youtube](https://www.youtube.com/)
 
 ### Code
-- This project was made with guidance from Mini Project - Task Manager | Putting It All Together led by Tim
+- This project was made with guidance from the Mini Project - Task Manager | Putting It All Together led by Tim
 - [Flask error page](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
 - [Replace broken images](https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images)
 
 ### Thank you
+- To the Slack community, for all the guidance and support.
+- To all involved tutors for the guidance when the code got too frustrating to work with.
+- To my mentor Aaron Sinnott for the feedback and guidance along the way.
+- To friends and family for all support.
+- To my pet bunny Bo for all your comforting cuddles throughout this journey.
 
 ## Disclaimer
 This website was created for educational use only.
