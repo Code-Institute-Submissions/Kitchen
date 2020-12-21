@@ -249,8 +249,16 @@ This page can only be viewed by the admin user.
 ### Add Category Page:
 - Heading text.
 - Text input to fill out the name of the category.
-- Text input to add an image url.
+- Text input to add an image url for the category.
 - 'Add Category' button that creates the new category and redirects the user to the 'Manage Categories' page.
+- A red paragraph with information about required fields.
+
+### Edit Category Page:
+- Heading text.
+- Text input to edit the name of the category.
+- Text input to edit the image url for the category.
+- 'Cancel' button that cancels the category editing and redirects the user to the 'Manage Recipies' page.
+- 'Add Category' button that saves the changes of the edited category and redirects the user to the 'Manage Categories' page.
 - A red paragraph with information about required fields.
 
 ### Profile Page:
