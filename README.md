@@ -30,9 +30,9 @@
 ![Am I Responsive](/static/img/amiresponsive.png)
 Kitchen is a website where food enthusiasts from all over the world can gather to share their best recipes.
 With the simple functions, it is easy for everyone to create an account to get started sharing their best 
-cooking tricks, and in the future we hope to be able to offer more functions to make the stay on the website 
-even easier.
-If you're not interested in signing up and share a recipe, you can ofcourse visit the site to brows through all
+cooking tricks, and in the future we hope to be able to offer more functions to make the user experience on the website 
+even better.
+If you're not interested in signing up and share a recipe, you can of course visit the site to brows through all
 the fantastic recipies for some cooking inspiration.
 
 [View the live website here!](https://kitchen-josefinekihlstrom.herokuapp.com/get_home)
@@ -43,7 +43,8 @@ The UX goals for this website are the following:
 - Simple design with a fixed navigation bar at the top.
 - Clear sections of the content of each page.
 - The site is responsive to all devices.
-- All text on the site is easy to read without any distacting backgrounds.
+- All text on the site is easy to read without any distracting backgrounds.
+- To be able to search for recipies with a specific name or ingredient in it.
 
 
 ### User Stories

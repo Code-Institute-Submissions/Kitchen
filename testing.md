@@ -67,6 +67,11 @@
             recipies are displaying, and not only by the user in session, the user has to scroll through all of them
             in the order that the recipe was made and without any type of relevance.
 
+6. **To be able to search for recipies with a specific name or ingredient in it.**
+    - The search function on the 'Recipies' page makes it possible for the user to search for a recipe with a 
+    specific ingredient in it or with a specific name. You can search for multiple search words at a time which makes
+    it easier to find what you are looking for.
+
 ## Automated Testing
 ### HTML
 All html templates (except for the 404.html, 500.html, profile.html and base.html) where tested using 
