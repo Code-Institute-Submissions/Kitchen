@@ -98,7 +98,7 @@ All manual tests were done in the following browsers:
 - Google Chrome
 - Microsoft Edge
 
-### Home Page/Index Page
+### Home Page
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -706,7 +706,7 @@ width of the page on smaller devices.
 
 The following tests where also made:
 
-#### Home Page/Index Page:
+#### Home Page
 - Make sure the content of the page fits the device nicely.
     - **Bug noted of gap in category section. Please se 'Bugs Found' section further down.*
 - Make sure text gets smaller to fit the device better.
@@ -715,7 +715,7 @@ The following tests where also made:
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
 a maximun of three on iPad device.
 
-#### Recipies page:
+#### Recipies page
 - Make sure hero image covers the width of the viewport.
 - Make sure category images gets smaller on smaller devices to fit the device nicely.
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
@@ -731,22 +731,22 @@ on iPad PRO.
 - Make sure ingredients list get its own row.
 - Make sure the preparation step list get its own row presented after the ingredient list.
 
-#### Sign Up page:
+#### Sign Up page
 - GAP ---------------------------------------------------------------------------------------------------
 
-#### Sign In page:
+#### Sign In page
 - GAP ----------------------------------------------------------------------------------------------------
 
-#### Add Recipe Page (regular user and admin user):
+#### Add Recipe Page (regular user and admin user)
 - Make sure 'Add Recipe' section covers the width of the viewport.
 
-#### Profile Page (regular user and admin user):
+#### Profile Page (regular user and admin user)
 - Make sure the hero image covers the width of the viewport.
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO. 
 - Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed.
 
-#### Selected Category Page:
+#### Selected Category Page
 - Make sure hero image covers the width of the viewport.
 - Make sure category images gets smaller on smaller devices to fit the device nicely.
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
@@ -754,21 +754,21 @@ a maximun of three on iPad device (not PRO).
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO.
 
-#### Manage Categories Page (admin user only):
+#### Manage Categories Page (admin user only)
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
 a maximun of three on iPad devices.
 
-#### Add category (admin user only):
+#### Add category (admin user only)
 - 
 
-#### Edit category (admin user only):
+#### Edit category (admin user only)
 
-#### Edit recipe page:
+#### Edit recipe page
 
-#### Error 404:
+#### Error 404
 - Make sure 'Oops' message section is centered both horizontally and vertically.
 
-#### Error 500:
+#### Error 500
 - Make sure 'Oops' message section is centered both horizontally and vertically.
 
 ## Bugs found
