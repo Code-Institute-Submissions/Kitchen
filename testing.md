@@ -71,7 +71,7 @@
 ### HTML
 All html templates (except for the 404.html, 500.html, profile.html and base.html) where tested using 
 [W3C Markup Validation Service](https://validator.w3.org/) by Validate by URI. 
-This, to not cause any errors by the Jinja code that was used in this project, since that would be expected.
+This, to not cause any errors by the Jinja templates that was used in this project, since that would be expected.
 The errors that occured was the following:
 1. Alt attribute missing on recipe images in recipies.html.
     - This error was corrected by adding the alt attribute.
@@ -92,7 +92,7 @@ without any errors.
 ### JavaScript
 The JavaScript was tested using [JSHint](https://jshint.com/). The error that occured was the following:
 - One undefined variable. ($)
-This however could not lead to any change of the code, since it would break the jQuery.
+    - This however could not lead to any change of the code, since it would break the jQuery.
 
 ### Python
 The Python code was tested using [PEP8](http://pep8online.com/). When testing my **env.py** file the following error
@@ -100,6 +100,8 @@ occured:
 - E501 line too long (106 > 79 characters)
     - This was caused by the MONGO_URI line being to long. This however could not lead to any change of the code, 
     since it would break the MONGO_URI itself.
+<br>
+<br>
 The **app.py** passed the test without any errors in it.
 
 ## Manual Testing
