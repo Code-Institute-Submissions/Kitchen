@@ -257,19 +257,19 @@ gets to press a 'next' button to view the next 12 recipies.
 - **HTML 5** - Used to create the structure of the site.
 - **CSS3** - Used to style the HTML elements.
 - **Python** - Used for back end programming.
-- [Jinja]() - Used for template inheritance and database linking.
+- [Jinja]https://jinja.palletsprojects.com/en/2.11.x/) - Used for template inheritance and database linking.
 
 ### Libraries
-- [JQuery]() - Used to write the JavaScript code.
-- [MongoDB]() - Database that was used for this project.
-- [Flask]() - Used to write python code.
-- [Materialize]() - Used for the overall design of the page.
+- [JQuery](https://jquery.com/) - Used to write the JavaScript code.
+- [MongoDB](https://www.mongodb.com/) - Database that was used for this project.
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Used to write python code.
+- [Materialize](https://materializecss.com/) - Used for the overall design of the page.
 
 ### Other
-- [Fontawesome]() - Used for icons.
+- [Fontawesome](https://fontawesome.com/) - Used for icons.
 - [Coolors](https://coolors.co/) - Used to generate the color scheme.
-- [Figma]() - Used to make wireframes.
-- [Google Fonts]() - The font used for this project: **Open Sans Condensed*
+- [Figma](https://www.figma.com/) - Used to make wireframes.
+- [Google Fonts](https://fonts.google.com/) - The font used for this project: **Open Sans Condensed*
 
 ## Testing
 To View the full testing, [click here!](testing.md)
