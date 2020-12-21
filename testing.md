@@ -86,7 +86,6 @@ All manual tests were done in the following browsers:
 - Microsoft Edge
 
 ### Home Page/Index Page
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -127,7 +126,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Recipies Page
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -218,7 +216,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Sign Up Page
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -254,7 +251,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Sign In Page
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -292,7 +288,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Add Recipe Page (regular user and admin user)
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -344,7 +339,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Profile Page (regular user and admin user)
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -389,7 +383,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Selected Category Page
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -432,7 +425,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Manage Categories Page (admin user only)
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -469,7 +461,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Add category Page (admin user only)
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -510,7 +501,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Edit category Page (admin user only)
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -549,7 +539,6 @@ All manual tests were done in the following browsers:
 
 
 ### Edit recipe Page
----
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
@@ -611,7 +600,6 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Error 404 Page
----
 To test the 404 error page I simply added a random letter to the url for the page that I knew would not exist. This
 method could be applied to all pages of the site to test the 404 error function.
 
@@ -644,7 +632,6 @@ method could be applied to all pages of the site to test the 404 error function.
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 ### Error 500 Page
----
 To test the 500 error page, when an internal service error occure, I did the following:
 - Changed debug mode in the app.py to **False**.
 - Changed the name of 'recipies.html' page to 'recipiess.html'
@@ -686,7 +673,6 @@ The first time this test was applied the page got stuck on the 500 error page de
 To solve this issue I had to clear the cache and cookies for the site.
 
 ### Testing on phone and tablet devices
----
 All of the tests above where made on the following devices:
 - iPad
 - iPad Pro
