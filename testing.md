@@ -71,6 +71,14 @@ The JavaScript was tested using [JSHint](https://jshint.com/). The error that oc
 - One undefined variable. ($)
 This however could not lead to any change of the code, since it would break the jQuery.
 
+### Python
+The Python code was tested using [PEP8](http://pep8online.com/). When testing my **env.py** file the following error
+occured:
+- E501 line too long (106 > 79 characters)
+    - This was caused by the MONGO_URI line being to long. This however could not lead to any change of the code, 
+    since it would break the MONGO_URI itself.
+The **app.py** passed the test without any errors in it.
+
 ## Manual Testing
 All manual tests were done in the following browsers:
 - Firefox
