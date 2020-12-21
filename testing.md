@@ -66,6 +66,11 @@ changes of the code itself since it would break the site.
 The CSS was tested by using [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). The CSS passed the test
 without any errors.
 
+### JavaScript
+The JavaScript was tested using [JSHint](https://jshint.com/). The error that occured was the following:
+- One undefined variable. ($)
+This however could not lead to any change of the code, since it would break the jQuery.
+
 ## Manual Testing
 All manual tests were done in the following browsers:
 - Firefox
