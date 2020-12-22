@@ -877,3 +877,7 @@ in the future.
 the view height properly. However, when viewing the pages on my Google Chrome developer tool the background image
 works properly. When trying to search for a solution on this bug it seems like iOS is not supporting fixed 
 background images. Despite research I have not yet come up with a solution for this bug.
+
+- **Not Solved** When selecting a preptime when editing or adding a recipe, the options does not display in 
+the increasing logic order they should be. The '< 30' option is displaying right before the '> 60' option instead of
+displaying as the first option. Due to lack of time, this bug remains.
