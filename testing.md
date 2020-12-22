@@ -798,13 +798,6 @@ there didn't work for me when I tried it out. I therefor decided to leave this b
 future, but for now I decided to put a red **'*'** mark next to the fields I wanted to be required to
 show the user that the fields are required after all. When a user wants to add a recipe or edit a recipe and the option
 sections gets left out empty, the browser does not point this out correctly.
-<div align="center">
-    <img src="static/img/bug3.jpg" alt="Add category form" width="600px">
-    <br>
-    The red required mark next to the fields that are required.
-    <br>
-    <br>
-</div>
 
 - **Solved** When getting the data for the ingredients and preparation steps the text was formatted like following:
 "['put on the tap,\r\nput the glass under the tap']"
@@ -818,13 +811,13 @@ route for the categories to be able to show.
 
 - **Solved** When searching for a recipe the categories would disappear. I solved this one by deleting the search
 function entirely and redo it to try to understand the logic of it better. It turned out I did not apply the 
-variable for the categories, so therefor they would not display when searching. After adding the variable the search
+variable for the categories, so therefor they would not display when searching. After adding the variable to the search
 function worked without any issues.
 
 - **Not Solved** When a user don't have recipies added, their profile page would not fill out completely causing a 
-white gap between the recipe section and the footer. Originally my
+white gap within the recipe section until the footer area. Originally my
 idea to solve this bug was to put in an else statement in my Jinja code for the profile page with a text displaying
-a text of "No recipies found!" when no recipies was to be found. 
+"No recipies found!" when no recipies was to be found. 
 However this caused even more bugs when adding the else statement by looping the text endlessly all over the 
 page even if there was recipies there or not.
 Explained by tutor support, this was apperently a limitation with Jinja templating, so to solve this problem I 
