@@ -250,6 +250,30 @@ The Selected Recipe page includes:
     - The ingredients list to the left.
     - The preparation steps to the right.
 
+### Selected Category Page
+The selected category page includes:
+- Hero image
+- A section with recipe categories that includes:
+    - Heading text.
+    - 'All Recipies' button that links to 'Recipies' page with all recipies displaying.
+    - Image of each category.
+    - Name of each category
+- Section with all recipies from selected category including:
+    - Heading text with category name included
+    - Image of each recipe.
+    - Name of each recipe.
+    - Name of the user who added the recipe.
+    - Category of each recipe.
+    - Preptime of each recipe.
+    - Link to each recipe page.
+- The maker of the recipe also have two buttons above the recipe link:
+    - 'Delete' button - Makes it possible to delete the recipe.
+        - When clicked on a modal pops up asking the user if they are sure about deleting the recipe.
+        The user is provided with a 'Yes' or a 'No' button, which either deletes the recipe or redirects the user
+        back to the page.
+    - 'Edit' button - Redirects the user to a page where the prewritten recipe details can be edited.
+
+
 ### Add Recipe Page
 The Add Recipe page includes:
 - Heading text.
