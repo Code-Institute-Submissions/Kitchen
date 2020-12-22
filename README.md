@@ -165,13 +165,13 @@ The features of the site was defined during the **scope plane** phase. The featu
 - Fixed Navigation bar at the top of all pages. Complete list of links in the navbar:
     - **Logo** - Linked to home page.
     - **Home** - Linked to home page.
-    - **Recipies** - linked to recipe page.
+    - **Recipies** - linked to recipies page.
     - **Add Recipe** - Linked to page where the user can add recipe.
     - **Manage Categories** - Linked to a page where admin can manage categories.
     - **Profile** - Linked to the profile page of the user.
     - **Sign In** - Linked to page where user can sign in.
     - **Sign Up** - Linked to page where new user can sign up.
-    - **Log Out** - Logges user out of the site.
+    - **Log Out** - Logs user out of the site.
 - Footer with copyright text and social links.
 
 <div align="center">
@@ -413,7 +413,7 @@ If you want to work further on my project, go ahead and clone it following these
 7. Make sure to create a database for this project with MongoDb and install the requirements using the following
 command: ``` pip3 install -r requirements.txt ```
 8. Create an **env.py** file and a **.gitignore** file and insert the following to them:
-    - env.py:
+    - **env.py:**
     ```
     import os
 
@@ -425,7 +425,7 @@ command: ``` pip3 install -r requirements.txt ```
     ```
     (< username >, < password >, < clustername > and < database_name > in the MONGO_URI must be
     replaced with your database values)
-    - .gitignore:
+    - **.gitignore:**
     ```
     env.py
     ```
