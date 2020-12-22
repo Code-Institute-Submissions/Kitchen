@@ -1,133 +1,139 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="add-recipe-container">
-        <!-- add recipe heading text -->
-        <div class="row">
-            <h3 class="center-align open-sans sign-up-heading">Add Recipe</h3>
+    {% if session.user %}
+        <div class="add-recipe-container">
+            <!-- add recipe heading text -->
+            <div class="row">
+                <h3 class="center-align open-sans sign-up-heading">Add Recipe</h3>
+            </div>
+            <!-- form container -->
+            <div class="form-container">
+                <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
+                    <!-- recipe name -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-pencil-alt prefix"></i>
+                            <input id="recipe_name" name="recipe_name" minlength="4" maxlength="25" type="text" class="validate"
+                                required>
+                            <label for="recipe_name" class="open-sans label-text">
+                                Recipe Name
+                                <span class="red-text">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- categories -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-utensils prefix"></i>
+                            <select id="category_name" name="category_name" class="validate" required>
+                                <option value="" disabled selected>Choose Category</option>
+                                {% for category in categories %}
+                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <label for="category_name" class="open-sans label-text">
+                                Category
+                                <span class="red-text">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- preptime -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-stopwatch prefix"></i>
+                            <select id="preptime_time" name="preptime_time" class="validate" required>
+                                <option value="" disabled selected>How long will it take?</option>
+                                {% for time in preptime %}
+                                    <option value="{{ time.preptime_time }}">{{ time.preptime_time }}</option>
+                                {% endfor %}
+                            </select>
+                            <label for="preptime_time" class="open-sans label-text">
+                                Preptime
+                                <span class="red-text">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- ingredients -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fas fa-list-ul prefix"></i>
+                            <textarea id="ingredients" name="ingredients" class="materialize-textarea" required></textarea>
+                            <label for="ingredients" class="open-sans label-text">
+                                Add ingredients here
+                                <span class="red-text">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </label>
+                        </div>
+                        <p class="ingredient-prepstep-text">
+                            <i>
+                                Make sure to separate each ingredient with a comma and space. For example:
+                                <br>
+                                (2 Eggs, 2 cups of flour, 3 tbsp butter, ...)
+                            </i>
+                        </p>
+                    </div>
+                    <!-- preparation steps -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-list-ol prefix"></i>
+                            <textarea id="preparation_steps" name="preparation_steps" class="materialize-textarea"
+                                required></textarea>
+                            <label for="preparation_steps" class="open-sans label-text">
+                                Add preparation steps here
+                                <span class="red-text">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </label>
+                        </div>
+                        <p class="ingredient-prepstep-text">
+                            <i>
+                                Make sure to separate each preparation step with a comma and space. For example:
+                                <br>
+                                (Add dry ingredients into a bowl, mix together well, put the wet ingredients in, ...)
+                            </i>
+                        </p>
+                    </div>
+                    <!-- img url -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-pencil-alt prefix"></i>
+                            <input id="recipe_img" name="recipe_img" type="text" class="validate" required>
+                            <label for="recipe_img" class="open-sans label-text">
+                                Insert an img url here
+                                <span class="red-text">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- submit button -->
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <button type="submit" class="btn btn-blue add-recipe-btn">
+                                Add Recipe <i class="fas fa-plus-square right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- red text about required fields -->
+                    <div class="row">
+                        <p class="red-text center-align">
+                            <i class="fas fa-asterisk"></i>
+                            Don't forget to fill in the required fields
+                        </p>
+                    </div>
+                </form>
+            </div>
         </div>
-        <!-- form container -->
-        <div class="form-container">
-            <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
-                <!-- recipe name -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-pencil-alt prefix"></i>
-                        <input id="recipe_name" name="recipe_name" minlength="4" maxlength="25" type="text" class="validate"
-                            required>
-                        <label for="recipe_name" class="open-sans label-text">
-                            Recipe Name
-                            <span class="red-text">
-                                <i class="fas fa-asterisk"></i>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <!-- categories -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-utensils prefix"></i>
-                        <select id="category_name" name="category_name" class="validate" required>
-                            <option value="" disabled selected>Choose Category</option>
-                            {% for category in categories %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                            {% endfor %}
-                        </select>
-                        <label for="category_name" class="open-sans label-text">
-                            Category
-                            <span class="red-text">
-                                <i class="fas fa-asterisk"></i>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <!-- preptime -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-stopwatch prefix"></i>
-                        <select id="preptime_time" name="preptime_time" class="validate" required>
-                            <option value="" disabled selected>How long will it take?</option>
-                            {% for time in preptime %}
-                                <option value="{{ time.preptime_time }}">{{ time.preptime_time }}</option>
-                            {% endfor %}
-                        </select>
-                        <label for="preptime_time" class="open-sans label-text">
-                            Preptime
-                            <span class="red-text">
-                                <i class="fas fa-asterisk"></i>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <!-- ingredients -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fas fa-list-ul prefix"></i>
-                        <textarea id="ingredients" name="ingredients" class="materialize-textarea" required></textarea>
-                        <label for="ingredients" class="open-sans label-text">
-                            Add ingredients here
-                            <span class="red-text">
-                                <i class="fas fa-asterisk"></i>
-                            </span>
-                        </label>
-                    </div>
-                    <p class="ingredient-prepstep-text">
-                        <i>
-                            Make sure to separate each ingredient with a comma and space. For example:
-                            <br>
-                            (2 Eggs, 2 cups of flour, 3 tbsp butter, ...)
-                        </i>
-                    </p>
-                </div>
-                <!-- preparation steps -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-list-ol prefix"></i>
-                        <textarea id="preparation_steps" name="preparation_steps" class="materialize-textarea"
-                            required></textarea>
-                        <label for="preparation_steps" class="open-sans label-text">
-                            Add preparation steps here
-                            <span class="red-text">
-                                <i class="fas fa-asterisk"></i>
-                            </span>
-                        </label>
-                    </div>
-                    <p class="ingredient-prepstep-text">
-                        <i>
-                            Make sure to separate each preparation step with a comma and space. For example:
-                            <br>
-                            (Add dry ingredients into a bowl, mix together well, put the wet ingredients in, ...)
-                        </i>
-                    </p>
-                </div>
-                <!-- img url -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-pencil-alt prefix"></i>
-                        <input id="recipe_img" name="recipe_img" type="text" class="validate" required>
-                        <label for="recipe_img" class="open-sans label-text">
-                            Insert an img url here
-                            <span class="red-text">
-                                <i class="fas fa-asterisk"></i>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <!-- submit button -->
-                <div class="row">
-                    <div class="col s12 center-align">
-                        <button type="submit" class="btn btn-blue add-recipe-btn">
-                            Add Recipe <i class="fas fa-plus-square right"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- red text about required fields -->
-                <div class="row">
-                    <p class="red-text center-align">
-                        <i class="fas fa-asterisk"></i>
-                        Don't forget to fill in the required fields
-                    </p>
-                </div>
-            </form>
+    {% else %}
+        <div class="session-flash">
+            <p class="session-header open-sans">You must be signed in to be able to add a recipe!</p>
         </div>
-    </div>
+    {% endif %}
 {% endblock %}
