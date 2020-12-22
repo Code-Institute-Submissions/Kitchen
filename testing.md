@@ -567,6 +567,10 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
+- Further testing:
+    - If an unauthorized user tries to get to the 'Add Category' page they will be displayed with a flash 
+    message displaying "You are not allowed on this page!"
+
 ### Edit category Page
 ### (admin user only)
 - Navbar:
@@ -606,7 +610,7 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 - Further testing:
-    - If a regular user tries to get to the 'Edit Category' page they will be displayed
+    - If an unauthorized user tries to get to the 'Edit Category' page they will be displayed
     with a flash message displaying "You are not allowed on this page!"
 
 
@@ -670,6 +674,10 @@ All manual tests were done in the following browsers:
     - Click on 'Instagram' icon to see that it links to instagram.com
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
+
+- Further testing:
+    - If an unauthorized user tries to get to the 'Edit Recipe' page for a recipe they did not create
+    they will be displayed with a flash message displaying "You are not allowed on this page!"
 
 ### Error 404 Page
 To test the 404 error page I simply added a random letter to the url for the page that I knew would not exist. This
