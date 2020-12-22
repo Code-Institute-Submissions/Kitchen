@@ -6,7 +6,7 @@
         <div class="row">
             {% if session.user %}
                 <div class="session-flash">
-                    <p class="session-header open-sans">You are already logged in!</p>
+                    <p class="session-header open-sans">You are already signed in!</p>
                 </div>
             {% else %}
                 <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signin') }}">
