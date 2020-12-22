@@ -342,6 +342,7 @@ This to add more clarity to the user on what category that is currently viewed.
 - Currently when someone is on the 'All Recipies' page, there is no limit on how many recipies that are showing on
 the page. A feature left to implement here would be pagination, to only show for example 12 recipies at a time and then the visitor
 gets to press a 'next' button to view the next 12 recipies.
+- To make it possible to search for specific recipe or ingredient inside a selected category.
 
 ## Technologies used
 ### Languages

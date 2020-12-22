@@ -29,15 +29,16 @@
     - This page was designed with an idea to look as realistic as possible (from a beginners point of view). 
     This to both encourage and inspire the user to scroll through all different kinds of recipies.
     - High quality images are used throughout the site to increase the user experience to the max.
+    - All recipies are authentic. (All authors are credited in the [README.md](README.md) file)
 
 2. **Browse different categories for easier navigation of what kind of recipe I want to cook.**
-    - The different categories are displayed on the following pages for easy access for the user:
+    - The different categories are displayed on the following pages for the user to navigate to:
         - Home Page 
         - Recipies Page
     - The categories has their own category image that represents the content behind the category itself. 
     This to make it easy to identify the category before reading the name of it.
-    - When clicking on each category the category image acts as the hero image, to also indicate which category is
-    currently viewed.
+    - When clicking on each category the category image acts as the hero image on the selected category page, 
+    to also indicate which category is currently viewed.
 
 3. **Be able to sign up and share my own recipies.**
     - When the user first visits the page he/she is prompted to press the blue button in the red section right under the hero image
@@ -66,6 +67,8 @@
             - The user is also able to delete and edit their recipies from the Recipies Page, however when a lot of
             recipies are displaying, and not only by the user in session, the user has to scroll through all of them
             in the order that the recipe was made and without any type of relevance.
+        - Selected Category page.
+            - The same rules apply on this page as on the Recipies page mentioned above.
 
 6. **To be able to search for recipies with a specific name or ingredient in it.**
     - The search function on the 'Recipies' page makes it possible for the user to search for a recipe with a 
@@ -783,7 +786,7 @@ future, but for now I decided to put a red **'*'** mark next to the fields I wan
 show the user that the fields are required after all. When a user wants to add a recipe or edit a recipe and the option
 sections gets left out empty, the browser does not point this out correctly.
 <div align="center">
-    <img src="static/img/required.jpg" alt="Add category form" width="600px">
+    <img src="static/img/bug3.jpg" alt="Add category form" width="600px">
     <br>
     The red required mark next to the fields that are required.
     <br>
@@ -853,3 +856,19 @@ viewing the page from an iPad Pro perspective would appear. I guess this has to 
 vh is larger than what my site is designed for. To solve this I would have to add more content to the page
 to fill the gap out. The best would be to be able to target only the iPad PRO perspective, but since that is out
 of my knowledge the bug remains unsolved.
+
+- **Not Solved** When inspecting the site from an iPad perspective the categories are displaying with a maximun of 
+three on each row. When testing the site I had a total of four categories. This would cause the fourth category to take up
+a new row, displayed to the left.
+An ideal solution for this would be to make that fourth category display in the center of that row, for a better balance.
+Another solution would be to implement some kind of pagination, to make the user scroll through the categories vertically
+on the same row. This however is out of my knowledge at the moment, and due to lack of time I will have to solve this one
+in the future.
+
+<div align="center">
+    <img src="static/img/bug2.png" alt="Profile bug" width="600px">
+    <br>
+    Bug in categories section when viewed on tablet device.
+    <br>
+    <br>
+</div>
