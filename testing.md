@@ -872,3 +872,8 @@ in the future.
     <br>
     <br>
 </div>
+
+- **Not Solved** When viewing the 'Sign Up' page and 'Sign In' page from my iPhone, the background image doesn't cover 
+the view height properly. However, when viewing the pages on my Google Chrome developer tool the background image
+works properly. When trying to search for a solution on this bug it seems like iOS is not supporting fixed 
+background images. Despite research I have not yet come up with a solution for this bug.
