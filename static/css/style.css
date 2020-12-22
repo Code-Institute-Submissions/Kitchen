@@ -145,7 +145,7 @@ main {
 
 /* signup.html ---------------------------------------------------- */
 .signup-background {
-    background-image: url("../img/login-register-hero.jpg");
+    background-image: url("/static/img/login-register-hero.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
