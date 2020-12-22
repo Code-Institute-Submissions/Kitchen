@@ -122,6 +122,7 @@ main {
 .category-heading {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 
@@ -389,6 +390,14 @@ main {
     position: relative;
 }
 
+.back-btn a {
+    font-size: 24px;
+}
+
+.back-btn i {
+    font-size: 24px;
+}
+
 
 /* profile -------------------------------------------------------- */
 .hero-img-profile {
@@ -502,6 +511,14 @@ main {
 
     .prepstep-col h2 {
         font-size: 35px;
+    }
+
+    .back-btn a {
+        font-size: 16px;
+    }
+
+    .back-btn i {
+        font-size: 16px;
     }
 }
 

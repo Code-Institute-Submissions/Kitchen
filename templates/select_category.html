@@ -2,18 +2,28 @@
 {% block content %}
     <!-- hero img -->
     <div class="hero-img-category">
-        <img src="{{ category.recipe_img }}" alt="category image">
+        <img src="{{ category.recipe_img }}" class="category-img" alt="category image">
     </div>
     <!-- categories -->
     <div class="row">
-        <h2 class="open-sans category-heading">Pick a ategory</h2>
+        <h2 class="open-sans category-heading">Pick a category</h2>
+    </div>
+    <!-- all recipies button -->
+    <div class="row">
+        <div class="back-btn center-align">
+            <a href="{{ url_for('get_recipies') }}" class="btn btn-blue open-sans">
+                <i class="fas fa-long-arrow-alt-left"></i>
+                All Recipies
+            </a>
+        </div>
     </div>
     <div class="row">
         {% for category in categories %}
             <div class="col s6 m4 l3 center-align">
                 <a href="{{ url_for('select_category', category_id=category._id) }}" class="open-sans recipe-link">
                     <div class="category-img">
-                        <img src="{{ category.recipe_img }}" alt="category image" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
+                        <img src="{{ category.recipe_img }}" alt="category image"
+                            onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
                     </div>
                 </a>
                 <div class="card black-text open-sans">
