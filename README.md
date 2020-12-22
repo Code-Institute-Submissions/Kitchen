@@ -423,7 +423,8 @@ command: ``` pip3 install -r requirements.txt ```
     os.environ.setdefault("MONGO_URI", "mongodb+srv://<username>:<password>@<clustername>.gjwpx.mongodb.net/<database_name>?retryWrites=true&w=majority")
     os.environ.setdefault("MONGO_DBNAME", "< database_name >")
     ```
-    (< username >, < password >, < clustername > and < database_name > in the MONGO_URI where replaced with my database values)
+    (< username >, < password >, < clustername > and < database_name > in the MONGO_URI must be
+    replaced with your database values)
     - .gitignore:
     ```
     env.py
