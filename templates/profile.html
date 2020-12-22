@@ -42,15 +42,20 @@
                                 <!-- delete/edit buttons -->
                                 <div class="recipe-buttons">
                                     <a href="#modal1" data-target="modal1{{ loop.index }}"
-                                        class="btn btn-delete open-sans modal-trigger">Delete</a>
+                                        class="btn btn-delete open-sans modal-trigger">
+                                        Delete
+                                    </a>
                                     <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}"
-                                        class="btn btn-blue btn-edit open-sans">Edit</a>
+                                        class="btn btn-blue btn-edit open-sans">
+                                        Edit
+                                    </a>
                                 </div>
                             </div>
                             <!-- recipe link -->
                             <div class="card-action">
                                 <a href="{{ url_for('select_recipe', recipe_id=recipe._id) }}" class="open-sans recipe-link">Recipe
-                                    Link</a>
+                                    Link
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -62,9 +67,13 @@
                         <div class="modal-footer">
                             <!-- yes -->
                             <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
-                                class="modal-close waves-effect waves-green btn-flat open-sans btn-delete center-align">Yes</a>
+                                class="modal-close waves-effect waves-green btn-flat open-sans btn-delete center-align">
+                                Yes
+                            </a>
                             <!-- no -->
-                            <a href="{{ url_for('profile', username=session['user']) }}" class="modal-close waves-effect waves-green btn-flat open-sans btn-edit center-align">No</a>
+                            <a href="{{ url_for('profile', username=session['user']) }}" class="modal-close waves-effect waves-green btn-flat open-sans btn-edit center-align">
+                                No
+                            </a>
                         </div>
                     </div>
                 {% endif %}

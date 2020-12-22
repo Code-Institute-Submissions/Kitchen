@@ -10,18 +10,18 @@
     </div>
     <div class="row">
         {% for category in categories %}
-        <div class="col s6 m4 l3 center-align">
-            <a href="{{ url_for('select_category', category_id=category._id) }}" class="open-sans recipe-link">
-                <div class="category-img">
-                    <img src="{{ category.recipe_img }}" alt="category image" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
-                </div>
-            </a>
-            <div class="card black-text open-sans">
-                <div class="card-content white-text">
-                    <span class="card-title category-title">{{ category.category_name }}</span>
+            <div class="col s6 m4 l3 center-align">
+                <a href="{{ url_for('select_category', category_id=category._id) }}" class="open-sans recipe-link">
+                    <div class="category-img">
+                        <img src="{{ category.recipe_img }}" alt="category image" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
+                    </div>
+                </a>
+                <div class="card black-text open-sans">
+                    <div class="card-content white-text">
+                        <span class="card-title category-title">{{ category.category_name }}</span>
+                    </div>
                 </div>
             </div>
-        </div>
         {% endfor %}
     </div>
     <!-- recipe card -->

@@ -1,56 +1,58 @@
 {% extends "base.html" %}
 {% block content %}
-        <!-- hero image with heading text -->
-        <div class="row row-no-margin">
-            <div class="hero-img center-align">
-                <h1 class="welcome-h1 open-sans">Welcome to <strong class="logo-text">Kitchen.</strong></h1>
+    <!-- hero image with heading text -->
+    <div class="row row-no-margin">
+        <div class="hero-img center-align">
+            <h1 class="welcome-h1 open-sans">Welcome to <strong class="logo-text">Kitchen.</strong></h1>
+        </div>
+    </div>
+    <!-- info boxes -->
+    <div class="row row-no-margin">
+        <!-- blue box -->
+        <div class="col m6 s12 center-align blue-info-box open-sans">
+            <div class="box-content">
+                <p>
+                    This is a platform where food <br>
+                    enthusiasts from all over the world gather <br>
+                    to share their best recipes.
+                    <br>
+                    <br>
+                    We simply call it everybodys kitchen.
+                </p>
             </div>
         </div>
-        <!-- info boxes -->
-        <div class="row row-no-margin">
-            <!-- blue box -->
-            <div class="col m6 s12 center-align blue-info-box open-sans">
-                <div class="box-content">
-                    <p>
-                        This is a platform where food <br>
-                        enthusiasts from all over the world gather <br>
-                        to share their best recipes.
-                        <br>
-                        <br>
-                        We simply call it everybodys kitchen.
-                    </p>
-                </div>
-            </div>
-            <!-- red box -->
-            <div class="col m6 s12 center-align red-info-box open-sans">
-                <div class="box-content">
-                    <h3>Want to share a recipe?</h3>
-                    {% if session.user %}
-                        <a href="{{ url_for('add_recipe') }}" class="btn btn-blue sign-up">Add recipe</a>
-                    {% else %}
-                        <a href="{{ url_for('signup') }}" class="btn btn-blue sign-up">Sign Up</a>
-                    {% endif %}
-                </div>
+        <!-- red box -->
+        <div class="col m6 s12 center-align red-info-box open-sans">
+            <div class="box-content">
+                <h3>Want to share a recipe?</h3>
+                {% if session.user %}
+                    <a href="{{ url_for('add_recipe') }}" class="btn btn-blue sign-up">Add recipe</a>
+                {% else %}
+                    <a href="{{ url_for('signup') }}" class="btn btn-blue sign-up">Sign Up</a>
+                {% endif %}
             </div>
         </div>
-        <!-- categories -->
-        <div class="row">
-            <h2 class="open-sans category-heading">Pick a category</h2>
-        </div>
-        <div class="row">
-            {% for category in categories %}
-                <div class="col s6 m4 l3 center-align">
-                    <a href="{{ url_for('select_category', category_id=category._id) }}" class="open-sans recipe-link">
-                        <div class="category-img">
-                            <img src="{{ category.recipe_img }}" alt="category image" onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
-                        </div>
-                    </a>
-                    <div class="card black-text open-sans">
-                        <div class="card-content white-text">
-                            <span class="card-title category-title">{{ category.category_name }}</span>
-                        </div>
+    </div>
+    <!-- categories -->
+    <div class="row">
+        <h2 class="open-sans category-heading">Pick a category</h2>
+    </div>
+    <div class="row">
+        {% for category in categories %}
+            <div class="col s6 m4 l3 center-align">
+                <a href="{{ url_for('select_category', category_id=category._id) }}" class="open-sans recipe-link">
+                    <div class="category-img">
+                        <!-- onerror https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images -->
+                        <img src="{{ category.recipe_img }}" alt="category image"
+                            onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
+                    </div>
+                </a>
+                <div class="card black-text open-sans">
+                    <div class="card-content white-text">
+                        <span class="card-title category-title">{{ category.category_name }}</span>
                     </div>
                 </div>
-            {% endfor %}
-        </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
