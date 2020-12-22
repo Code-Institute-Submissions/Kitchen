@@ -126,6 +126,23 @@ main {
 }
 
 
+/* signin.html ---------------------------------------------------- */
+.session-flash {
+    background-color: #3E000C;
+    color: #FCFCFF;
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 5px;
+    text-align: center;
+    
+}
+
+.session-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
 /* signup.html ---------------------------------------------------- */
 #signup-background {
     background-image: url("../img/login-register-hero.jpg");

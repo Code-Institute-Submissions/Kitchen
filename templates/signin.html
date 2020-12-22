@@ -4,42 +4,48 @@
     <div id="signup-background">
         <!-- sign in form -->
         <div class="row">
-            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signin') }}">
-                <div class="card-panel">
-                    <div class="row">
-                        <h3 class="center-align open-sans sign-up-heading">Sign In</h3>
-                    </div>
-                    <!-- username input -->
-                    <div class="row signup-username">
-                        <div class="input-field col s12">
-                            <i class="fas fa-user-cog prefix"></i>
-                            <input id="username" name="username" type="text" minlength="5" maxlength="15"
-                                pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-                            <label for="username" class="open-sans">Username</label>
-                        </div>
-                    </div>
-                    <!-- password input -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="fas fa-user-lock prefix"></i>
-                            <input id="password" name="password" type="password" minlength="5" maxlength="15"
-                                pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-                            <label for="password" class="open-sans">Password</label>
-                        </div>
-                    </div>
-                    <!-- sign in button -->
-                    <div class="row center-align">
-                        <button type="submit" class="btn btn-blue sign-up">Sign In</button>
-                    </div>
-                    <!-- not a member yet text -->
-                    <div class="row">
-                        <p class="center-align open-sans already-text">
-                            Not a member yet?
-                            <a href="{{ url_for('signup') }}">Click here to sign up!</a>
-                        </p>
-                    </div>
+            {% if session.user %}
+                <div class="session-flash">
+                    <p class="session-header open-sans">You are already logged in!</p>
                 </div>
-            </form>
+            {% else %}
+                <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signin') }}">
+                    <div class="card-panel">
+                        <div class="row">
+                            <h3 class="center-align open-sans sign-up-heading">Sign In</h3>
+                        </div>
+                        <!-- username input -->
+                        <div class="row signup-username">
+                            <div class="input-field col s12">
+                                <i class="fas fa-user-cog prefix"></i>
+                                <input id="username" name="username" type="text" minlength="5" maxlength="15"
+                                    pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                                <label for="username" class="open-sans">Username</label>
+                            </div>
+                        </div>
+                        <!-- password input -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="fas fa-user-lock prefix"></i>
+                                <input id="password" name="password" type="password" minlength="5" maxlength="15"
+                                    pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                                <label for="password" class="open-sans">Password</label>
+                            </div>
+                        </div>
+                        <!-- sign in button -->
+                        <div class="row center-align">
+                            <button type="submit" class="btn btn-blue sign-up">Sign In</button>
+                        </div>
+                        <!-- not a member yet text -->
+                        <div class="row">
+                            <p class="center-align open-sans already-text">
+                                Not a member yet?
+                                <a href="{{ url_for('signup') }}">Click here to sign up!</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            {% endif %}
         </div>
     </div>
 {% endblock %}
