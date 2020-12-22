@@ -388,6 +388,10 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
+- Further testing:
+    - If a user is not signed in and tries to get to the 'Add Recipies' page they will be displayed
+    with a flash message displaying "You must be signed in to be able to add a recipe!"
+
 ### Profile Page
 ### (regular user and admin user)
 - Navbar:
