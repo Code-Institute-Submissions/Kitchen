@@ -291,6 +291,10 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
+- Further testing:
+    - If an already signed in user tries to get to the 'Sign Up' page they will be displayed
+    with a flash message displaying "Please log out before signin up again!"
+
 ### Sign In Page
 - Navbar:
     - Make sure navbar covers the width of the viewport.
@@ -327,6 +331,10 @@ All manual tests were done in the following browsers:
     - Click on 'Instagram' icon to see that it links to instagram.com
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
+
+- Further testing:
+    - If an already signed in user tries to get to the 'Sign In' page they will be displayed
+    with a flash message displaying "You are already logged in!"
 
 ### Add Recipe Page
 ### (regular user and admin user)
