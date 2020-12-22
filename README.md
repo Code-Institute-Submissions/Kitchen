@@ -273,7 +273,6 @@ The selected category page includes:
         back to the page.
     - 'Edit' button - Redirects the user to a page where the prewritten recipe details can be edited.
 
-
 ### Add Recipe Page
 The Add Recipe page includes:
 - Heading text.

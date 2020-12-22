@@ -446,13 +446,18 @@ All manual tests were done in the following browsers:
         - Category names.
     - Make sure the category name is displayed in the recipies section.
     - Make sure that the category recipies are displaying in the blue section under the category name with the following:
-        - Image of the recipe.
-        - Name of the recipe.
+        - Image of each recipe.
+        - Name of each recipe.
         - The name of the user who added the recipe.
-        - The category of the recipe.
-        - The preparation time of the recipe.
+        - The category of each recipe.
+        - The preparation time of each recipe.
         - A 'Delete' button. (If signed in as the maker of the recipe)
+            - Click on 'Delete' button and a modal pops up asking the user if they are sure about deleting the recipe.
+            - Click 'No' and the user is redirected back to the selected category page.
+            - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipies page with a flash
+            message saying "Recipe Deleted!".
         - An 'Edit' button. (If signed in as the maker of the recipe)
+            - Click on 'Edit' button and the user is redirected to the 'Edit Recipe' page.
         - A link to the selected recipe page.
             - When clicked on, the page redirects to the selected recipe page.
         - Make sure that if img link is broken of a certain recipe added by the user, a default image will display
