@@ -198,7 +198,11 @@ The home page includes:
 
 ### Recipies Page
 The Recipies page includes:
-- Hero image with a built in search function.
+- Hero image
+- A search function within the hero image which includes.
+    - A text input.
+    - A reset button.
+    - A search icon.
 - A section with recipe categories that includes:
     - Heading text.
     - Image of each category.
@@ -226,7 +230,9 @@ The Edit Recipe page includes:
     - An option list to edit the category of the recipe.
     - An option list to edit the total preptime for the recipe.
     - A textarea to edit all the ingredients of the recipe.
+        - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
     - A textarea to edit the preparation steps of the recipe.
+        - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
     - An input field to edit the image url.
     - 'Cancel' button that cancels the recipe editing and redirects the user to the 'Recipies' page.
     - 'Save' button that saves the changes of the edited recipe and reloads the page with the saved changes displaying.
@@ -234,8 +240,8 @@ The Edit Recipe page includes:
 
 ### Selected Recipe Page
 The Selected Recipe page includes:
-- An image of the selected recipe.
-- A red section with details about the recipe, including:
+- An image of the selected recipe on the top left.
+- A red section with details about the recipe on the top right, including:
     - Name of the recipe.
     - Name of the user who added the recipe.
     - Category of the recipe.
@@ -252,7 +258,9 @@ The Add Recipe page includes:
     - An option list to pick the category of the recipe.
     - An option list to pick the total preptime for the recipe.
     - A textarea to add all the ingredients of the recipe.
+        - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
     - A textarea to add the preparation steps of the recipe.
+        - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
     - An input field to add an image url.
     - A button to submit the recipe.
     - A red paragraph with information about required fields.
@@ -262,8 +270,8 @@ The Manage Categories page can only be reached in the navbar by the admin user. 
 - Heading text.
 - A button that leads to the 'Add Category' page.
 - A section with the existing recipe categories that includes:
-    - Image of the category.
-    - Name of the category
+    - Image of each category.
+    - Name of each category
     - 'Delete' button, that deletes the category.
         - When clicked on a modal pops up asking the user if they are sure about deleting the category.
         The user is provided with a 'Yes' or a 'No' button, which either deletes the recipe or redirects the user
@@ -285,39 +293,44 @@ The Edit Category page can be reached within the 'Manage Categories' page. It in
 - Text input to edit the name of the category.
 - Text input to edit the image url for the category.
 - 'Cancel' button that cancels the category editing and redirects the user to the 'Manage Recipies' page.
-- 'Add Category' button that saves the changes of the edited category and redirects the user to the 'Manage Categories' page.
+- 'Edit Category' button that saves the changes of the edited category and redirects the user to the 'Manage Categories' page.
 - A red paragraph with information about required fields.
 
 ### Profile Page
 The link to the profile page can be reached in the navbar once a user is signed in to the page. The features of the
 profile page are:
 - Hero image.
-- Section with all recipies the user has made including:
+- Section with user recipies including:
     - Heading text
+        - If no recipies are made by the user, the section will just display a light blue background color. Otherwise:
     - Image of each recipe.
     - Name of each recipe.
     - Name of the user.
     - Category of each recipe.
     - Preptime of each recipe.
-    - 'Delete' button in each recipe card - Makes it possible to delete the recipe.
+    - 'Delete' button in each recipe - Makes it possible to delete the recipe.
         - When clicked on a modal pops up asking the user if they are sure about deleting the recipe.
-        The user is provided with a 'Yes' or a 'No' button, whihc either deletes the recipe or redirects the user
+        The user is provided with a 'Yes' or a 'No' button, which either deletes the recipe or redirects the user
         back to the page.
-    - 'Edit' button in each recipe card - Redirects the user to a page where the prewritten recipe details 
+    - 'Edit' button in each recipe - Redirects the user to a page where the prewritten recipe details 
     can be edited.
-    - Link to each recipe page.
+    - Link to the selected recipe page.
 
 ### 500 Error Page
 When an 'Internal Server Error' occurs the 500 page will show with the following features:
-- Heading text
-- A smaller heading text which points out the type of error.
-- A link that redirects the user to the home page. 
+- A background image covering the viewport.
+- A white information box including:
+    - Heading text
+    - A smaller heading text which points out the type of error.
+    - A link that redirects the user to the home page. 
 
 ### 404 Error Page
 When a 'Not Found' error occurs the 404 page will show with the following features:
-- Heading text
-- A smaller heading text which points out the type of error.
-- A link that redirects the user to the home page. 
+- A background image covering the viewport.
+- A white information box including:
+    - Heading text
+    - A smaller heading text which points out the type of error.
+    - A link that redirects the user to the home page. 
 
 ### Features left to implement
 - Some type of timer function that automatically logges the user out after a certain time of no activity.
@@ -355,6 +368,7 @@ gets to press a 'next' button to view the next 12 recipies.
 - [W3C Markup Validation Service](https://validator.w3.org/) - Used to test the HTML code.
 - [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used to test the CSS code.
 - [JSHint](https://jshint.com/) - Used to test the JavaScript code.
+- [PEP8](http://pep8online.com/) - Used to test the Python code.
 
 ## Testing
 [To View the full testing, click here!](testing.md)
@@ -381,7 +395,7 @@ command: ``` pip3 install -r requirements.txt ```
     os.environ.setdefault("MONGO_URI", "mongodb+srv://<username>:<password>@<clustername>.gjwpx.mongodb.net/<database_name>?retryWrites=true&w=majority")
     os.environ.setdefault("MONGO_DBNAME", "< database_name >")
     ```
-
+    (< username >, < password >, < clustername > and < database_name > in the MONGO_URI where replaced with my database values)
     - .gitignore:
     ```
     env.py
@@ -428,7 +442,7 @@ to connect to the app.
 - Fish category image [Louis Hansel](https://images.unsplash.com/photo-1559847844-5315695dadae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80)
 - Recipies hero image [Anastasia Zhenina](https://images.unsplash.com/photo-1605709303005-0fdddfd73dc4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80)
 
-### Recipe images
+### Recipe text
 - Mushroom recipe image [Karolina Kołodziejczak](https://images.unsplash.com/photo-1607116667981-ff148a14e975?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)
 - Grilled Cheese Sandwich [Pixzolo Photography](https://images.unsplash.com/photo-1528736235302-52922df5c122?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2022&q=80)
 - Chicken Paillard [Tareq Taylor](https://www.koket.se/kyckling-paillard)
@@ -446,7 +460,7 @@ to connect to the app.
 - Soy marinated salmon [Tommy Myllymäki](https://www.koket.se/mitt-kok/tommy-myllymaki/sojamarinerad-lax-med-sesambroccoli/)
 - Default Recipe Img when img link is broken [Eli Eshaghi](https://images.unsplash.com/photo-1584255014406-2a68ea38e48c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1007&q=80)
 
-### Recipe text
+### Recipe images
 Recipies not mentioned here are made up by me.
 - American Pancakes by [Delphine Fortine](https://www.delscookingtwist.com/easy-fluffy-american-pancakes/)
 - Grilled Cheese Sandwich [Sal](https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/)
