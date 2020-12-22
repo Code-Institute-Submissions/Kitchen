@@ -334,7 +334,7 @@ All manual tests were done in the following browsers:
 
 - Further testing:
     - If an already signed in user tries to get to the 'Sign In' page they will be displayed
-    with a flash message displaying "You are already logged in!"
+    with a flash message displaying "You are already signed in in!"
 
 ### Add Recipe Page
 ### (regular user and admin user)
@@ -527,7 +527,7 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 - Further testing:
-    - If a regular user tries to get to the 'Manage Categories' page they will be displayed
+    - If an unauthorized user tries to get to the 'Manage Categories' page they will be displayed
     with a flash message displaying "You are not allowed on this page!"
 
 ### Add category Page
