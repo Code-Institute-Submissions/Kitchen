@@ -348,8 +348,12 @@ main {
 
 
 /* categories.html ------------------------------------------------ */
+.card .card-content {
+    background-color: white!important;
+}
+
 .card {
-    background-color: white;
+    background-color: white!important;
     box-shadow: none;
 }
 
