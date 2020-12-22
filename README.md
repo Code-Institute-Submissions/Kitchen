@@ -51,11 +51,10 @@ the fantastic recipies for some cooking inspiration.
 ## UX
 ### UX goals
 The UX goals for this website are the following:
-- Simple design with a fixed navigation bar at the top.
-- Clear sections of the content of each page.
+- Simple design with a fixed navigation bar at the top for easy navigation.
+- Clear sections of the different content of each page.
 - The site is responsive to all devices.
 - All text on the site is easy to read without any distracting backgrounds.
-
 
 ### User Stories
 The user stories was defined during the **Strategy Plane** phase of this project.
@@ -65,7 +64,7 @@ As a user I want to:
 - Be able to sign up and share my own recipies.
 - Have a good overlook of my own recipies that I've made.
 - Be able to edit and delete recipies that I have made.
-- To be able to search for recipies with a specific name or ingredient in it.
+- Be able to search for recipies with a specific name or ingredient in it.
 
 ### Owner goals
 As the owner of the page I want:
@@ -76,41 +75,48 @@ The site reflects the learning outcome of the Code Institute course so far.
 
 ### Design process
 The **structure** of the site is based upon the data that is presented on each page.
-This recipe site has four collections in the MongoDB database. Recipies, categories, preptime and users. The collections
-then have their own key/values.
+This recipe site has four collections in the MongoDB database. **Recipies**, **categories**, **preptime** and 
+**users**. The collections then have their own key/values.
 
-- **recipies**
-    - category_name
-    - recipe_img
-    - recipe_name
-    - preptime_time
-    - ingredients
-    - preparation_steps
-    - created_by
+#### recipies
+- category_name
+- recipe_img
+- recipe_name
+- preptime_time
+- ingredients
+- preparation_steps
+- created_by
 
-- **categories**
-    - category_name (with the following values to choose from)
-        - Vegetarian
-        - Chicken
-        - Fish
-        - Meat
-    - recipe_img
+#### categories
+- category_name **(with the following values to choose from)*
+    - Vegetarian
+    - Chicken
+    - Fish
+    - Meat
+- recipe_img
 
-- **preptime**
-    - preptime_time (with the following values to choose from)
-        - '<' 30 min 
-        - 30 min
-        - 45 min
-        - 60 min
-        - '>' 60 min 
+#### preptime
+- preptime_time **(with the following values to choose from)*
+    - '<' 30 min 
+    - 30 min
+    - 45 min
+    - 60 min
+    - '>' 60 min 
 
-- **users**
-    - username
-    - password
+#### users
+- username
+- password
+
+The goal of each page is to make it clear to the user from the outset what the page is about without 
+him/her having to read a lot of unnecessary text or scroll unnecessarily much to get to that specific information. 
+Therefore, I have chosen to give each section of data its own design, for recognition, which is then repeated for each page on 
+which the information is reproduced. 
+The user can therefore recognize the pattern of data for each page he/she visits and what kind of 
+information is reflected.
 
 The color scheme for this project was generated with the technology of [Coolors](https://coolors.co/). I wanted the
 colors to be a little bit darker and warmer to welcome the visitor, but still make the content of the pages
-easy to understand with the light foregrounds and the pop of color on the buttons on the page.
+easy to understand with the contrasts between text and foreground and the pop of color on the buttons.
 <br>
 <br>
 The font used for this project was [Open Sans Condensed](https://fonts.google.com/specimen/Open+Sans+Condensed?query=open+sans+) 
@@ -447,7 +453,7 @@ Recipies not mentioned here are made up by me.
 - Chicken Paillard [Köket.se](https://www.koket.se/kyckling-paillard)
 - Butter-fried pikeperch [Köket.se](https://www.koket.se/smorstekt-gosfile-med-lattstuvad-blomkal-dill-och-ansjovis)
 - Chicken Noodle Sallad [Köket.se](https://www.koket.se/nudelsallad-med-friterad-kyckling)
-- Pasta with Pasta with anchovies [Köket.se](https://www.koket.se/pasta-med-sardeller-och-broccoli)
+- Pasta with anchovies [Köket.se](https://www.koket.se/pasta-med-sardeller-och-broccoli)
 - Spaghetti Pancetta [Köket.se](https://www.koket.se/spaghetti-med-pancetta-och-purjo)
 - Beef Stroganoff [Köket.se](https://www.koket.se/mitt-kok/tommy-myllymaki/biff-stroganoff/)
 - Cowboy Soup [Köket.se](https://www.koket.se/efter-tio/linda-skugge/cowboysoppa-med-kottfars/)
@@ -477,5 +483,6 @@ Recipies not mentioned here are made up by me.
 - To my pet bunny Bo for all your comforting cuddles throughout this journey.
 
 ## Disclaimer
+This project was made as the third Milestone Project in the Full Stack Web Development Program at Code Institute.
 This website was created for educational use only.
 
