@@ -105,7 +105,7 @@ This recipe site has four collections in the MongoDB database. **Recipies**, **c
 
 #### users
 - username
-- password
+- password (the password stored in my database is encrypted)
 
 The goal of each page is to make it clear to the user from the outset what the page is about without 
 him/her having to read a lot of unnecessary text or scroll unnecessarily much to get to that specific information. 
