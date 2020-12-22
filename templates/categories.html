@@ -1,52 +1,58 @@
 {% extends "base.html" %}
 {% block content %}
-    <!-- heading text -->
-    <div class="row">
-        <h3 class="center-align open-sans sign-up-heading">Manage Categories</h3>
-    </div>
-    <!-- add category heading text -->
-    <div class="row">
-        <div class="col s12 center-align">
-            <a href="{{ url_for('add_category') }}" class="btn btn-blue add-category-button">
-                Add Category <i class="fas fa-plus-square right"></i>
-            </a>
-            <br>
-            <br>
+    {% if session.user|lower == "admin"|lower %}
+        <!-- heading text -->
+        <div class="row">
+            <h3 class="center-align open-sans sign-up-heading">Manage Categories</h3>
         </div>
-    </div>
-    <!-- categories -->
-    <div class="row">
-        {% for category in categories %}
-            <div class="col s6 m6 l4 xl3 center-align">
-                <div class="category-img">
-                    <!-- onerror https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images -->
-                    <img src="{{ category.recipe_img }}" alt="category image"
-                        onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
-                </div>
-                <div class="card black-text open-sans">
-                    <div class="card-content white-text edit-cat-padding">
-                        <span class="card-title category-title">{{ category.category_name }}</span>
-                    </div>
-                    <div class="card-action edit-cat-padding">
-                        <a href="#modal3" data-target="modal3{{ loop.index }}" class="btn btn-delete modal-trigger">Delete</a>
-                        <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn btn-edit">Edit</a>
-                    </div>
-                </div>
+        <!-- add category heading text -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="{{ url_for('add_category') }}" class="btn btn-blue add-category-button">
+                    Add Category <i class="fas fa-plus-square right"></i>
+                </a>
+                <br>
+                <br>
             </div>
-            <!-- pop up modal for deleting recipe - Materialize -->
-            <div id="modal3{{ loop.index }}" class="modal">
-                <div class="modal-content">
-                    <h4 class="open-sans center-align">Are you sure you want to delete the category?</h4>
+        </div>
+        <!-- categories -->
+        <div class="row">
+            {% for category in categories %}
+                <div class="col s6 m6 l4 xl3 center-align">
+                    <div class="category-img">
+                        <!-- onerror https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images -->
+                        <img src="{{ category.recipe_img }}" alt="category image"
+                            onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
+                    </div>
+                    <div class="card black-text open-sans">
+                        <div class="card-content white-text edit-cat-padding">
+                            <span class="card-title category-title">{{ category.category_name }}</span>
+                        </div>
+                        <div class="card-action edit-cat-padding">
+                            <a href="#modal3" data-target="modal3{{ loop.index }}" class="btn btn-delete modal-trigger">Delete</a>
+                            <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn btn-edit">Edit</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <!-- yes -->
-                    <a href="{{ url_for('delete_category', category_id=category._id) }}"
-                        class="modal-close waves-effect waves-green btn-flat open-sans btn-delete center-align">Yes</a>
-                    <!-- no -->
-                    <a href="{{ url_for('get_categories') }}"
-                        class="modal-close waves-effect waves-green btn-flat open-sans btn-edit center-align">No</a>
+                <!-- pop up modal for deleting recipe - Materialize -->
+                <div id="modal3{{ loop.index }}" class="modal">
+                    <div class="modal-content">
+                        <h4 class="open-sans center-align">Are you sure you want to delete the category?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- yes -->
+                        <a href="{{ url_for('delete_category', category_id=category._id) }}"
+                            class="modal-close waves-effect waves-green btn-flat open-sans btn-delete center-align">Yes</a>
+                        <!-- no -->
+                        <a href="{{ url_for('get_categories') }}"
+                            class="modal-close waves-effect waves-green btn-flat open-sans btn-edit center-align">No</a>
+                    </div>
                 </div>
-            </div>
-        {% endfor %}
-    </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="session-flash">
+            <p class="session-header open-sans">You are not allowed on this page!</p>
+        </div>
+    {% endif %}
 {% endblock %}
