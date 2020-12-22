@@ -142,8 +142,8 @@ All manual tests were done in the following browsers:
         - Hero image
         - blue and red boxes
         - 'Pick a category' section
-
     - Click on 'Sign Up' button in the red box to see that it links to the sign up page.
+        - (Click on 'Add Recipe' in red box if user is already signed in.)
     - Make sure every category image is displaying.
     - Click on the 'Chicken' category image to see that it links to the chicken category page.
     - Click on the 'Fish' category image to see that it links to the fish category page.
@@ -199,6 +199,7 @@ All manual tests were done in the following browsers:
     - Make sure the following content is displaying in each recipe card:
         - Recipe image.
         - Name of recipe.
+        - Name of the user who made the recipe.
         - Category of the recipe.
         - The time to prepare the recipe.
         - Link to the recipe.
@@ -397,11 +398,11 @@ All manual tests were done in the following browsers:
     - Make sure hero image covers the width of the viewport.
     - Make sure the users name is displaying in the blue section under the hero image.
     - Make sure that the users recipies are displaying in the blue section under the users name with the following:
-        - Image of the recipe.
-        - Name of the recipe.
+        - Image of each recipe.
+        - Name of each recipe.
         - The name of the user who added the recipe.
-        - The category of the recipe.
-        - The preparation time of the recipe.
+        - The category of each recipe.
+        - The preparation time of each recipe.
         - A 'Delete' button.
         - An 'Edit' button
         - A link to the selected recipe page.
@@ -409,10 +410,9 @@ All manual tests were done in the following browsers:
         - Make sure that if img link is broken of a recipe a default image will display as the recipes' image.
     - Make sure that if user has no recipies added yet the blue section fills out the page with a min height of the view height.
     - Click on 'Delete' button and a modal pops up asking the user if they are sure about deleting the recipe.
-            - Click 'No' and the user is redirected back to the profile page.
-            - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipies page with a flash
-            message saying "Recipe Deleted!".
-        - Click on 'Edit' button and the user is redirected to the 'Edit Recipe' page.
+        - Click 'No' and the user is redirected back to the profile page.
+        - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipies page with a flash
+        message saying "Recipe Deleted!".
     - Click on the 'Edit' button and the user gets redirected to the edit recipe page.
 
 
@@ -440,12 +440,15 @@ All manual tests were done in the following browsers:
 
 - Main Content:
     - Make sure hero image covers the width of the viewport, displaying the image of the chosen category.
+        - If image URL is broken, a default image will display.
     - Make sure category section is displaying the following:
         - Heading text.
+        - 'All Recipies' button.
         - Category images.
         - Category names.
     - Make sure the category name is displayed in the recipies section.
-    - Make sure that the category recipies are displaying in the blue section under the category name with the following:
+    - Make sure that the category recipies are displaying in the blue section (if there are recipies within that
+        category) under the category name with the following:
         - Image of each recipe.
         - Name of each recipe.
         - The name of the user who added the recipe.
@@ -462,6 +465,9 @@ All manual tests were done in the following browsers:
             - When clicked on, the page redirects to the selected recipe page.
         - Make sure that if img link is broken of a certain recipe added by the user, a default image will display
         as the recipes' image.
+    - If no recipies are created yet, the recipe section is covered with a light blue color with the view height of the
+        device.
+        - **Bug noted if no recipies are displaying. Please se 'Bugs Found' section further down*
 
 - Footer:
     - Make sure footer is covering the width of the viewport.
@@ -499,7 +505,6 @@ All manual tests were done in the following browsers:
         - Click 'Yes' and the category gets deleted, redirecting the user back to the 'Manage Categories' page with a flash
         message saying "Category Deleted!".
     - Click on 'Edit' button and the user is redirected to the 'Edit Category' page.
-    - Click on the 'Edit' button and the user gets redirected to the Edit Category page.
 
 - Footer:
     - Make sure footer is covering the width of the viewport.
@@ -535,7 +540,7 @@ All manual tests were done in the following browsers:
         submitting the new category:
         - The line under the input field turns red.
         - The browser points out to the user to fill out the form correctly.
-    - Make sure if Category Name field doesn't get filled out when submitting the new category:
+    - Make sure if Image URL field doesn't get filled out when submitting the new category:
         - The line under the input field turns red.
         - The browser points out to the user to fill out the form correctly.
     - Click on the 'Add Category' button when the form is filled out correctly and the page redirects to the 'Manage
@@ -573,12 +578,12 @@ All manual tests were done in the following browsers:
         - Img URL input field with icon.
             - The current img url is displayed within the input field for the user to edit.
         - 'Cancel' button.
+            - Click on the 'Cancel' button and the page redirects to the 'Manage Categories' page without saving the changes
+            that was made to the category.
         - 'Edit Category' button.
+            - Click on the 'Edit Category' button and the page redirects to the 'Manage Categories' page and displays the changes
+            to the category that was edited.
         - Red text about the required fields.
-    - Click on the 'Cancel' button and the page redirects to the 'Manage Categories' page without saving the changes
-    that was made to the category.
-    - Click on the 'Edit Category' button and the page redirects to the 'Manage Categories' page and displays the changes
-    to the category that was edited.
 
 - Footer:
     - Make sure footer is covering the width of the viewport.
@@ -746,7 +751,7 @@ Further testing was made on the following pages:
 - Make sure the blue box and red box gets their own rows covering the whole width of the page.
 - Make sure category images gets smaller on smaller devices to fit the device nicely.
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
-a maximun of three on iPad device.
+a maximun of three on iPad device (not PRO).
 
 #### Recipies page
 - Make sure hero image covers the width of the viewport.
@@ -755,7 +760,8 @@ a maximun of three on iPad device.
 a maximun of three on iPad device (not PRO).
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO.
-- Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed.
+- Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed when searching.
+    - **Bug noted. Please se 'Bugs Found' section further down.*
 
 #### Selected Recipe Page
 - Make sure recipe image get its own row and covers the width of the viewport.
@@ -769,9 +775,11 @@ on iPad PRO.
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO. 
 - Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed.
+    - **Bug noted. Please se 'Bugs Found' section further down.*
 
 #### Selected Category Page
 - Make sure hero image covers the width of the viewport.
+- Make sure heading text and button text gets smaller on phone devices.
 - Make sure category images gets smaller on smaller devices to fit the device nicely.
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
 a maximun of three on iPad device (not PRO).
@@ -825,6 +833,10 @@ led me to do an emergency solution for this bug by adding a min-height of the re
 would automatically fill out the view height with the blue background color on all devices.
 This however is causing a pretty large blue empty area at the page, but at least there are no white gaps on the page.
 This is something I will have to try to solve in the future, when more knowledge in python is found.
+The min view height does also affect when searching for a recipe on the 'Recipies' page and when visiting a 
+selected category page that doesn't have any recipies yet. When no recipies are to
+display, the blue background covers the page with a min of the view height for the device. 
+The search function does however also provide a red text displaying when no recipies are found.
 
 <div align="center">
     <img src="static/img/bug1.png" alt="Profile bug" width="600px">
@@ -833,7 +845,6 @@ This is something I will have to try to solve in the future, when more knowledge
     <br>
     <br>
 </div>
-
 
 - **Solved** Though it's required to add an img url when you add a recipe, the images would show a broken link if the
 url was not from the correct source. To solve this bug I added an onerror attribute with a value that would automatically
