@@ -1,56 +1,62 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="add-recipe-container">
-        <!-- heading text -->
-        <div class="row">
-            <h3 class="center-align open-sans sign-up-heading">Add Category</h3>
+    {% if session.user|lower == "admin"|lower %}
+        <div class="add-recipe-container">
+            <!-- heading text -->
+            <div class="row">
+                <h3 class="center-align open-sans sign-up-heading">Add Category</h3>
+            </div>
+            <!-- form container -->
+            <div class="form-container">
+                <form class="col s12" method="POST" action="{{ url_for('add_category') }}">
+                    <!-- category name -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-pencil-alt prefix"></i>
+                            <input id="category_name" name="category_name" minlength="3" maxlength="25" type="text"
+                                class="validate" required>
+                            <label for="category_name" class="open-sans label-text">
+                                Category Name
+                                <span class="red-text">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- img url input -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-image prefix"></i>
+                            <input id="recipe_img" name="recipe_img" type="text" class="validate" required>
+                            <label for="recipe_img" class="open-sans label-text">
+                                Img URL
+                                <span class="red-text">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- submit button -->
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <button type="submit" class="btn btn-blue add-category-button">
+                                Add Category <i class="fas fa-plus-square right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- red text about required fields -->
+                    <div class="row">
+                        <p class="red-text center-align">
+                            <i class="fas fa-asterisk"></i>
+                            Don't forget to fill in the required fields
+                        </p>
+                    </div>
+                </form>
+            </div>
         </div>
-        <!-- form container -->
-        <div class="form-container">
-            <form class="col s12" method="POST" action="{{ url_for('add_category') }}">
-                <!-- category name -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-pencil-alt prefix"></i>
-                        <input id="category_name" name="category_name" minlength="3" maxlength="25" type="text"
-                            class="validate" required>
-                        <label for="category_name" class="open-sans label-text">
-                            Category Name
-                            <span class="red-text">
-                                <i class="fas fa-asterisk"></i>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <!-- img url input -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-image prefix"></i>
-                        <input id="recipe_img" name="recipe_img" type="text" class="validate" required>
-                        <label for="recipe_img" class="open-sans label-text">
-                            Img URL
-                            <span class="red-text">
-                                <i class="fas fa-asterisk"></i>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <!-- submit button -->
-                <div class="row">
-                    <div class="col s12 center-align">
-                        <button type="submit" class="btn btn-blue add-category-button">
-                            Add Category <i class="fas fa-plus-square right"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- red text about required fields -->
-                <div class="row">
-                    <p class="red-text center-align">
-                        <i class="fas fa-asterisk"></i>
-                        Don't forget to fill in the required fields
-                    </p>
-                </div>
-            </form>
+    {% else %}
+        <div class="session-flash">
+            <p class="session-header open-sans">You are not allowed on this page!</p>
         </div>
-    </div>
+    {% endif %}
 {% endblock %}

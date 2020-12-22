@@ -523,7 +523,7 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 - Further testing:
-    - If an already signed in user tries to get to the 'Manage Categories' page they will be displayed
+    - If a regular user tries to get to the 'Manage Categories' page they will be displayed
     with a flash message displaying "You are not allowed on this page!"
 
 ### Add category Page
@@ -604,6 +604,10 @@ All manual tests were done in the following browsers:
     - Click on 'Instagram' icon to see that it links to instagram.com
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
+
+- Further testing:
+    - If a regular user tries to get to the 'Edit Category' page they will be displayed
+    with a flash message displaying "You are not allowed on this page!"
 
 
 ### Edit recipe Page
