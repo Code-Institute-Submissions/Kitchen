@@ -2,7 +2,8 @@
 {% block content %}
     <!-- hero img -->
     <div class="hero-img-category">
-        <img src="{{ category.recipe_img }}" class="category-img" alt="category image">
+        <img src="{{ category.recipe_img }}" class="category-img" alt="category image"
+            onerror="this.onerror=null;this.src='/static/img/no-image.jpg';">
     </div>
     <!-- categories -->
     <div class="row">

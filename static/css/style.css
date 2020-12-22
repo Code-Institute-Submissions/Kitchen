@@ -349,7 +349,7 @@ main {
 
 /* categories.html ------------------------------------------------ */
 .card {
-    background-color: #FCFCFF;
+    background-color: white;
     box-shadow: none;
 }
 
@@ -409,7 +409,7 @@ main {
 }
 
 
-/* 404.html -------------------------------------------------------- */
+/* 404.html/500.html ------------------------------------------------ */
 .error-section h1 {
     font-weight: bold;
 }
