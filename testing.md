@@ -522,6 +522,10 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
+- Further testing:
+    - If an already signed in user tries to get to the 'Manage Categories' page they will be displayed
+    with a flash message displaying "You are not allowed on this page!"
+
 ### Add category Page
 ### (admin user only)
 - Navbar:
