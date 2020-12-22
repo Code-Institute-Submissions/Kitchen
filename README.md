@@ -366,6 +366,10 @@ This to add more clarity to the user on what category that is currently viewed.
 the page. A feature left to implement here would be pagination, to only show for example 12 recipies at a time and then the visitor
 gets to press a 'next' button to view the next 12 recipies.
 - To make it possible to search for specific recipe or ingredient inside a selected category.
+- When the user is on a selected recipe page, there is no back button implemented on the page to take the user back to 
+the previous site. If the user has navigated to the recipe through a selected category, the user will have to click
+on the browsers back button or navigate back to either the home page or recipies page, to select the category again.
+In the future I would like to implement a back button to all pages that takes the user back to the previous page.
 
 ## Technologies used
 ### Languages
