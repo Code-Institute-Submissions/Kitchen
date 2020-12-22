@@ -74,8 +74,8 @@
                                 <!-- delete/edit buttons -->
                                 <div class="recipe-buttons">
                                     {% if session.user|lower == recipe.created_by|lower %}
-                                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
-                                            class="btn btn-delete open-sans">
+                                        <a href="#modal4" data-target="modal4{{ loop.index }}"
+                                            class="btn btn-delete modal-trigger open-sans">
                                             Delete
                                         </a>
                                         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}"
@@ -91,6 +91,24 @@
                                     Recipe Link
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                    <!-- pop up modal for deleting recipe - Materialize -->
+                    <div id="modal4{{ loop.index }}" class="modal">
+                        <div class="modal-content">
+                            <h4 class="open-sans center-align">Are you sure you want to delete the recipe?</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- yes -->
+                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
+                                class="modal-close waves-effect waves-green btn-flat open-sans btn-delete center-align">
+                                Yes
+                            </a>
+                            <!-- no -->
+                            <a href="{{ url_for('select_category', category_id=category._id) }}"
+                                class="modal-close waves-effect waves-green btn-flat open-sans btn-edit center-align">
+                                No
+                            </a>
                         </div>
                     </div>
                 {% endif %}
