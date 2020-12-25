@@ -38,7 +38,7 @@
 10. [Disclaimer](#disclaimer)
 
 ## About
-![Am I Responsive](/static/img/amiresponsive.png)
+![Am I Responsive](/readme-img/amiresponsive.png)
 Kitchen is a website where food enthusiasts from all over the world can gather to share their best recipes.
 With the simple functions, it is easy for everyone to create an account to get started sharing their best 
 cooking tricks. In the future we hope to be able to offer more functions to make the user experience on the website 
@@ -123,7 +123,7 @@ The font used for this project was [Open Sans Condensed](https://fonts.google.co
 and came from [Google Fonts](https://fonts.google.com/).
 
 <div align="center">
-    <img src="static/img/coolors.png" alt="color scheme" width="600px">
+    <img src="/readme-img/coolors.png" alt="color scheme" width="600px">
 </div>
 
 ### Wireframes
@@ -132,28 +132,28 @@ The wireframes where made with the technology of Figma and can be viewed
 [here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr/MS3?node-id=273669%3A448).
 
 <div align="center">
-    <img src="static/img/wireframe1.png" alt="wireframe 1" width="600px">
+    <img src="/readme-img/wireframe1.png" alt="wireframe 1" width="600px">
     <br>
     Home and Recipies pages.
 </div>
 <br>
 <br>
 <div align="center">
-    <img src="static/img/wireframe2.png" alt="wireframe 2" width="600px">
+    <img src="/readme-img/wireframe2.png" alt="wireframe 2" width="600px">
     <br>
     Inside Category and Sign Up pages.
 </div>
 <br>
 <br>
 <div align="center">
-    <img src="static/img/wireframe3.png" alt="wireframe 3" width="600px">
+    <img src="/readme-img/wireframe3.png" alt="wireframe 3" width="600px">
     <br>
     Inside Recipe and Profile pages.
 </div>
 <br>
 <br>
 <div align="center">
-    <img src="static/img/wireframes-mobile.png" alt="wireframe 3" width="600px">
+    <img src="/readme-img/wireframes-mobile.png" alt="wireframe 3" width="600px">
     <br>
     Wireframes for mobile devices.
 </div>
@@ -175,7 +175,7 @@ The features of the site was defined during the **scope plane** phase. The featu
 - Footer with copyright text and social links.
 
 <div align="center">
-    <img src="static/img/navbar.png" alt="Navbar feature" width="600px">
+    <img src="/readme-img/navbar.png" alt="Navbar feature" width="600px">
     <br>
     The Navbar with the different links depending on if you are logged in or not, an admin or not.
 </div>
@@ -191,7 +191,7 @@ The home page includes:
     - Name of each category
 
 <div align="center">
-    <img src="static/img/infobox.png" alt="Info boxes" width="600px">
+    <img src="/readme-img/infobox.png" alt="Info boxes" width="600px">
     <br>
     The red info box that shows different button text depending on if user is logged in or not.    
 </div>

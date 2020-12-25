@@ -860,7 +860,7 @@ display, the blue background covers the page with a min of the view height for t
 The search function does however also provide a red text displaying when no recipies are found.
 
 <div align="center">
-    <img src="static/img/bug1.png" alt="Profile bug" width="600px">
+    <img src="/readme-img/bug1.png" alt="Profile bug" width="600px">
     <br>
     Bug on Profile page when no user recipies.
     <br>
@@ -903,7 +903,7 @@ on the same row. This however is out of my knowledge at the moment, and due to l
 in the future.
 
 <div align="center">
-    <img src="static/img/bug2.png" alt="Profile bug" width="600px">
+    <img src="/readme-img/bug2.png" alt="Profile bug" width="600px">
     <br>
     Bug in categories section when viewed on tablet device.
     <br>
