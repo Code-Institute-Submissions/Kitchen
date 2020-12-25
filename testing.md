@@ -110,6 +110,7 @@ occured:
     since it would break the MONGO_URI itself.
 <br>
 <br>
+
 The **app.py** passed the test without any errors in it.
 
 ## Manual Testing
@@ -126,15 +127,15 @@ All manual tests were done in the following browsers:
     - Click on the 'Recipies' link to see that it links to the recipies page.
     - Click on the 'Sign Up' link to see that it links to the sign up page.
     - Click on the 'Sign In' link to see that it links to the sign in page.
-    - **When Signed in as regular user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-    - **When Signed in as regular user:* Click on 'Profile' link to see that it links to the profile page.
-    - **When Signed in as regular user:* Click on 'Log Out' link to see that it removes the session user cookie
+    - When Signed in as regular user: Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - When Signed in as regular user: Click on 'Profile' link to see that it links to the profile page.
+    - When Signed in as regular user: Click on 'Log Out' link to see that it removes the session user cookie
     and redirects the user to the 'Sign In' page.
-    - **When Signed in as Admin user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-    - **When Signed in as Admin user:* Click on 'Profile' link to see that it links to the profile page.
-    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    - When Signed in as Admin user: Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - When Signed in as Admin user: Click on 'Profile' link to see that it links to the profile page.
+    - When Signed in as Admin user: Click on 'Manage Categories' link to see that it links to the manage 
     categories page.
-    - **When Signed in as Admin user:* Click on 'Log Out' link to see that it removes the session user cookie
+    - When Signed in as Admin user: Click on 'Log Out' link to see that it removes the session user cookie
     and redirects the user to the 'Sign In' page.
 
 - Main Content:
@@ -166,15 +167,15 @@ All manual tests were done in the following browsers:
     - Click on the 'Recipies' link to see that it links to the recipies page.
     - Click on the 'Sign Up' link to see that it links to the sign up page.
     - Click on the 'Sign In' link to see that it links to the sign in page.
-    - **When Signed in as regular user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-    - **When Signed in as regular user:* Click on 'Profile' link to see that it links to the profile page.
-    - **When Signed in as regular user:* Click on 'Log Out' link to see that it removes the session user cookie
+    - When Signed in as regular user: Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - When Signed in as regular user: Click on 'Profile' link to see that it links to the profile page.
+    - When Signed in as regular user: Click on 'Log Out' link to see that it removes the session user cookie
     and redirects the user to the 'Sign In' page.
-    - **When Signed in as Admin user:* Click on 'Add Recipe' link to see that it links to the add recipe page.
-    - **When Signed in as Admin user:* Click on 'Profile' link to see that it links to the profile page.
-    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    - When Signed in as Admin user: Click on 'Add Recipe' link to see that it links to the add recipe page.
+    - When Signed in as Admin user: Click on 'Profile' link to see that it links to the profile page.
+    - When Signed in as Admin user: Click on 'Manage Categories' link to see that it links to the manage 
     categories page.
-    - **When Signed in as Admin user:* Click on 'Log Out' link to see that it removes the session user cookie
+    - When Signed in as Admin user: Click on 'Log Out' link to see that it removes the session user cookie
     and redirects the user to the 'Sign In' page.
         
 - Main Content:
@@ -347,7 +348,7 @@ All manual tests were done in the following browsers:
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
     and redirects the user to the 'Sign In' page.
-    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    - When Signed in as Admin user: Click on 'Manage Categories' link to see that it links to the manage 
     categories page.
 
 - Main Content:
@@ -360,19 +361,19 @@ All manual tests were done in the following browsers:
     - 'Category' options:
         - Make sure icon is displaying.
         - Click on 'Choose category' and Make sure all categories are displaying in the option list.
-        - **Bug noted when not choosing an option in the list. Please se 'Bugs Found' section further down.*
+        - *Bug noted when not choosing an option in the list. Please se 'Bugs Found' section further down.*
     - 'Preptime' options:
         - Make sure icon is displaying.
         - Click on 'How long will it take' and Make sure all preparation times are displaying in the option list.
-        - **Bug noted when not choosing an option in the list. Please se 'Bugs Found' section further down.*
+        - *Bug noted when not choosing an option in the list. Please se 'Bugs Found' section further down.*
     - Ingredients textarea:
         - Make sure icon is displaying.
         - Make sure browser points out if the textarea input is not filled out when submitting the recipe.
-        **Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
+        *Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
     - Preparation steps textarea:
         - Make sure icon is displaying.
         - Make sure browser points out if the textarea input is not filled out when submitting the recipe.
-        **Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
+        *Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
     - Img URL input:
         - Make sure icon is displaying.
         - Make sure browser points out if field is not filled out when submitting the recipe.
@@ -403,7 +404,7 @@ All manual tests were done in the following browsers:
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
     and redirects the user to the 'Sign In' page.
-    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    - When Signed in as Admin user: Click on 'Manage Categories' link to see that it links to the manage 
     categories page.
 
 - Main Content:
@@ -479,7 +480,7 @@ All manual tests were done in the following browsers:
         as the recipes' image.
     - If no recipies are created yet, the recipe section is covered with a light blue color with the view height of the
         device.
-        - **Bug noted if no recipies are displaying. Please se 'Bugs Found' section further down*
+        - *Bug noted if no recipies are displaying. Please se 'Bugs Found' section further down*
 
 - Footer:
     - Make sure footer is covering the width of the viewport.
@@ -628,7 +629,7 @@ All manual tests were done in the following browsers:
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
     and redirects the user to the 'Sign In' page.
-    - **When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
+    - *When Signed in as Admin user:* Click on 'Manage Categories' link to see that it links to the manage 
     categories page.
 
 - Main Content:
@@ -653,12 +654,12 @@ All manual tests were done in the following browsers:
         - Make sure icon is displaying.
         - Make sure current ingredient list is displaying for the user to edit.
         - Make sure browser points out if the textarea input is not filled out when submitting the recipe.
-        **Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
+        *Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
     - Preparation steps textarea:
         - Make sure icon is displaying.
         - Make sure current preparation list is displaying for the user to edit.
         - Make sure browser points out if the textarea input is not filled out when submitting the recipe.
-        **Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
+        *Bug noted of colored line not working correctly. Please se 'Bugs Found' section further down.*
     - Img URL input:
         - Make sure icon is displaying.
         - Make sure current img url is displaying for the user to edit.
@@ -774,7 +775,7 @@ Further testing was made on the following pages:
 
 #### Home Page
 - Make sure the content of the page fits the device nicely.
-    - **Bug noted of gap in category section. Please se 'Bugs Found' section further down.*
+    - *Bug noted of gap in category section. Please se 'Bugs Found' section further down.*
 - Make sure text gets smaller to fit the device better.
 - Make sure the blue box and red box gets their own rows covering the whole width of the page.
 - Make sure category images gets smaller on smaller devices to fit the device nicely.
@@ -789,7 +790,7 @@ a maximun of three on iPad device (not PRO).
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO.
 - Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed when searching.
-    - **Bug noted. Please se 'Bugs Found' section further down.*
+    - *Bug noted. Please se 'Bugs Found' section further down.*
 
 #### Selected Recipe Page
 - Make sure recipe image get its own row and covers the width of the viewport.
@@ -803,7 +804,7 @@ on iPad PRO.
 - Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO. 
 - Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed.
-    - **Bug noted. Please se 'Bugs Found' section further down.*
+    - *Bug noted. Please se 'Bugs Found' section further down.*
 
 #### Selected Category Page
 - Make sure hero image covers the width of the viewport.
@@ -823,7 +824,7 @@ a maximun of three on iPad devices.
 Materialize applies a custom CSS on all select elements which makes the 'required' attributes not working on 
 unordered lists. Even though this is covered in the Mini Project that this project is based upon, the code provided
 there didn't work for me when I tried it out. I therefor decided to leave this bug to hopefully solve it in the
-future, but for now I decided to put a red **'*'** mark next to the fields I wanted to be required to
+future, but for now I decided to put a red mark next to the fields I wanted to be required to
 show the user that the fields are required after all. When a user wants to add a recipe or edit a recipe and the option
 sections gets left out empty, the browser does not point this out correctly.
 
