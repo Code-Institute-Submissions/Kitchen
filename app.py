@@ -27,7 +27,7 @@ def get_home():
     return render_template("index.html", home=home, categories=categories)
 
 
-# get recipies page ---------------------------------------------------------
+# get recipes page ---------------------------------------------------------
 @app.route("/get_recipies")
 def get_recipies():
     recipies = list(mongo.db.recipies.find())
@@ -105,7 +105,7 @@ def profile(username):
     # session username from database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    # for users recipies
+    # for users recipes
     recipies = mongo.db.recipies.find()
 
     if session["user"]:
@@ -244,7 +244,7 @@ def select_category(category_id):
     selected_category = mongo.db.categories.find_one({
         "_id": ObjectId(category_id)
         })
-    # selected category recipies
+    # selected category recipes
     recipies = mongo.db.recipies.find()
     return render_template(
         "select_category.html", category=selected_category,
