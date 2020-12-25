@@ -8,7 +8,7 @@
     - [Python](#python)
 3. [Manual Testing](#manual-testing)
     - [Home Page/Index Page](#home-page)
-    - [Recipies Page](#recipies-page)
+    - [Recipes Page](#recipes-page)
     - [Selected Recipe Page](#selected-recipe-page)
     - [Sign Up Page](#sign-up-page)
     - [Sign In Page](#sign-in-page)
@@ -27,20 +27,20 @@
 ## User Testing
 1. **Get inspired into learning new recipes.**
     - This page was designed with an idea to look as realistic as possible (from a beginners point of view). 
-    This to both encourage and inspire the user to scroll through all different kinds of recipies.
+    This to both encourage and inspire the user to scroll through all different kinds of recipes.
     - High quality images are used throughout the site to increase the user experience to the max.
-    - All recipies are authentic. (All authors are credited in the [README.md](README.md) file)
+    - All recipes are authentic. (All authors are credited in the [README.md](README.md) file)
 
 2. **Browse different categories for easier navigation of what kind of recipe I want to cook.**
     - The different categories are displayed on the following pages for the user to navigate to:
         - Home Page 
-        - Recipies Page
+        - Recipes Page
     - The categories has their own category image that represents the content behind the category itself. 
     This to make it easy to identify the category before reading the name of it.
     - When clicking on each category the category image acts as the hero image on the selected category page, 
     to also indicate which category is currently viewed.
 
-3. **Be able to sign up and share my own recipies.**
+3. **Be able to sign up and share my own recipes.**
     - When the user first visits the page he/she is prompted to press the blue button in the red section right under the hero image
     to sign up to the page.
     - The user can also sign up by pressing the 'Sign Up' button in the navigation bar at the top.
@@ -50,28 +50,28 @@
     - The user can also click on the link in the navigation bar with the text 'Add Recipe' to get to the page to add
     a recipe.
 
-4. **Have a good overlook of my own recipies that I've made.**
-    - On the users profile page, all the users recipies are listed right under the hero image of the page.
-    - When the user don't have any recipies made the recipies section will fill out with a blue color to indicate
+4. **Have a good overlook of my own recipes that I've made.**
+    - On the users profile page, all the users recipes are listed right under the hero image of the page.
+    - When the user don't have any recipes made the recipes section will fill out with a blue color to indicate
     that the list is empty.
 
-5. **Be able to edit and delete recipies that I have made.**
+5. **Be able to edit and delete recipes that I have made.**
     - On the each user recipe card there are two buttons displayed that only the logged in user can se:
         - A red 'Delete' button. 
         - A blue 'Edit' button.
-    - The user can edit and delete their recipies on the following pages:
+    - The user can edit and delete their recipes on the following pages:
         - Profile Page:
-            - On the profile page, the user has a better access over the recipies he/she has written. From here the
+            - On the profile page, the user has a better access over the recipes he/she has written. From here the
             user is able to both delete and edit each recipe.
-        - Recipies Page:
-            - The user is also able to delete and edit their recipies from the Recipies Page, however when a lot of
-            recipies are displaying, and not only by the user in session, the user has to scroll through all of them
+        - Recipes Page:
+            - The user is also able to delete and edit their recipes from the Recipes Page, however when a lot of
+            recipes are displaying, and not only by the user in session, the user has to scroll through all of them
             in the order that the recipe was made and without any type of relevance.
         - Selected Category page.
-            - The same rules apply on this page as on the Recipies page mentioned above.
+            - The same rules apply on this page as on the Recipes page mentioned above.
 
-6. **To be able to search for recipies with a specific name or ingredient in it.**
-    - The search function on the 'Recipies' page makes it possible for the user to search for a recipe with a 
+6. **To be able to search for recipes with a specific name or ingredient in it.**
+    - The search function on the 'Recipes' page makes it possible for the user to search for a recipe with a 
     specific ingredient in it or with a specific name. You can search for multiple search words at a time which makes
     it easier to find what you are looking for.
 
@@ -81,7 +81,7 @@ All html templates (except for the 404.html, 500.html, profile.html and base.htm
 [W3C Markup Validation Service](https://validator.w3.org/) by Validate by URI. 
 This, to not cause any errors by the Jinja templates that was used in this project, since that would be expected.
 The errors that occured was the following:
-1. Alt attribute missing on recipe images in recipies.html.
+1. Alt attribute missing on recipe images in recipes.html.
     - This error was corrected by adding the alt attribute.
 2. Alt attribute missing on recipe images in select_category.html.
     - This error was corrected by adding the alt attribute.
@@ -124,7 +124,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on the 'Sign Up' link to see that it links to the sign up page.
     - Click on the 'Sign In' link to see that it links to the sign in page.
     - When Signed in as regular user: Click on 'Add Recipe' link to see that it links to the add recipe page.
@@ -159,12 +159,12 @@ All manual tests were done in the following browsers:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-### Recipies Page
+### Recipes Page
 - Navbar:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on the 'Sign Up' link to see that it links to the sign up page.
     - Click on the 'Sign In' link to see that it links to the sign in page.
     - When Signed in as regular user: Click on 'Add Recipe' link to see that it links to the add recipe page.
@@ -182,20 +182,20 @@ All manual tests were done in the following browsers:
     - Make sure that the main content fits the entire viewport without any white gaps, including:
         - Hero image.
         - 'Pick a category' section.
-        - 'All Recipies' section.
+        - 'All Recipes' section.
     - Make sure the search function is working by typing in a test word of 'Pasta'.
-        - If recipe: The 'All Recipies' section displays all recipies that include the word pasta in either the
+        - If recipe: The 'All Recipes' section displays all recipes that include the word pasta in either the
         ingredient list or the preparation steps.
     - Make sure the search function is working when no recipe is found by typing in the word 'Nej'.
         - No recipe during the testing of this site includes the word no, 
-        so therefore the 'All recipies' section displays a red text saying
-        'No recipies found, try searching for something else'.
-    - Click on 'Reset' button in the search section to see that it links back to all recipies displaying.
+        so therefore the 'All recipes' section displays a red text saying
+        'No recipes found, try searching for something else'.
+    - Click on 'Reset' button in the search section to see that it links back to all recipes displaying.
     - Click on the 'Chicken' category image to see that it links to the chicken category page.
     - Click on the 'Fish' category image to see that it links to the fish category page.
     - Click on the 'Meat' category image to see that it links to the meat category page.
     - Click on the 'Vegetarian' category image to see that it links to the vegetarian category page.
-    - Make sure all recipies are showing when first visiting the page but also after clicking the 'Reset' button
+    - Make sure all recipes are showing when first visiting the page but also after clicking the 'Reset' button
     in the search function.
     - Make sure the following content is displaying in each recipe card:
         - Recipe image.
@@ -204,13 +204,13 @@ All manual tests were done in the following browsers:
         - Category of the recipe.
         - The time to prepare the recipe.
         - Link to the recipe.
-            - When clicked on the user is redirected to the selected recipies page.
+            - When clicked on the user is redirected to the selected recipes page.
         - When image link is broken, a default image shows.
     - Click on recipe link to see that it links to the selected recipe page.
     - If user is logged in, make sure 'Delete' and 'Edit' buttons are displaying in the recipe card over the recipe link.
         - Click on 'Delete' button and a modal pops up asking the user if they are sure about deleting the recipe.
-            - Click 'No' and the user is redirected back to the recipies page.
-            - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipies page with a flash
+            - Click 'No' and the user is redirected back to the recipes page.
+            - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipes page with a flash
             message saying "Recipe Deleted!".
         - Click on 'Edit' button and the user is redirected to the 'Edit Recipe' page.
 
@@ -227,7 +227,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page. (When logged in as regular user or admin)
     - Click on 'Profile' link to see that it links to the profile page. (When logged in as regular user or admin)
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -262,7 +262,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on the 'Sign Up' link to see that it links to the sign up page.
     - Click on the 'Sign In' link to see that it links to the sign in page.
 
@@ -301,7 +301,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on the 'Sign Up' link to see that it links to the sign up page.
     - Click on the 'Sign In' link to see that it links to the sign in page.
 
@@ -343,7 +343,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page.
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -379,7 +379,7 @@ All manual tests were done in the following browsers:
         - Make sure browser points out if field is not filled out when submitting the recipe.
     - 'Add Recipe' button:
         - Make sure that when form is filled out correctly and the 'Add Recipe' button is clicked the page redirects
-        to the 'Recipies' page with all recipies displaying including the newely added one at the bottom.
+        to the 'Recipes' page with all recipes displaying including the newely added one at the bottom.
     - Make sure red text about required fields are showing.
 - Footer:
     - Make sure footer is covering the width of the viewport.
@@ -390,7 +390,7 @@ All manual tests were done in the following browsers:
     - Click on 'Youtube' icon to see that it links to youtube.com
 
 - Further testing:
-    - If a user is not signed in and tries to get to the 'Add Recipies' page they will be displayed
+    - If a user is not signed in and tries to get to the 'Add Recipes' page they will be displayed
     with a flash message displaying "You must be signed in to be able to add a recipe!"
 
 ### Profile Page
@@ -399,7 +399,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page.
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -410,7 +410,7 @@ All manual tests were done in the following browsers:
 - Main Content:
     - Make sure hero image covers the width of the viewport.
     - Make sure the users name is displaying in the blue section under the hero image.
-    - Make sure that the users recipies are displaying in the blue section under the users name with the following:
+    - Make sure that the users recipes are displaying in the blue section under the users name with the following:
         - Image of each recipe.
         - Name of each recipe.
         - The name of the user who added the recipe.
@@ -421,10 +421,10 @@ All manual tests were done in the following browsers:
         - A link to the selected recipe page.
             - When clicked on the page redirects to the selected recipe page.
         - Make sure that if img link is broken of a recipe a default image will display as the recipes' image.
-    - Make sure that if user has no recipies added yet the blue section fills out the page with a min height of the view height.
+    - Make sure that if user has no recipes added yet the blue section fills out the page with a min height of the view height.
     - Click on 'Delete' button and a modal pops up asking the user if they are sure about deleting the recipe.
         - Click 'No' and the user is redirected back to the profile page.
-        - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipies page with a flash
+        - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipes page with a flash
         message saying "Recipe Deleted!".
     - Click on the 'Edit' button and the user gets redirected to the edit recipe page.
 
@@ -442,7 +442,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page. (When logged in as regular user or admin)
     - Click on 'Profile' link to see that it links to the profile page. (When logged in as regular user or admin)
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -456,11 +456,11 @@ All manual tests were done in the following browsers:
         - If image URL is broken, a default image will display.
     - Make sure category section is displaying the following:
         - Heading text.
-        - 'All Recipies' button.
+        - 'All Recipes' button.
         - Category images.
         - Category names.
-    - Make sure the category name is displayed in the recipies section.
-    - Make sure that the category recipies are displaying in the blue section (if there are recipies within that
+    - Make sure the category name is displayed in the recipes section.
+    - Make sure that the category recipes are displaying in the blue section (if there are recipes within that
         category) under the category name with the following:
         - Image of each recipe.
         - Name of each recipe.
@@ -470,7 +470,7 @@ All manual tests were done in the following browsers:
         - A 'Delete' button. (If signed in as the maker of the recipe)
             - Click on 'Delete' button and a modal pops up asking the user if they are sure about deleting the recipe.
             - Click 'No' and the user is redirected back to the selected category page.
-            - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipies page with a flash
+            - Click 'Yes' and the recipe gets deleted, redirecting the user back to the recipes page with a flash
             message saying "Recipe Deleted!".
         - An 'Edit' button. (If signed in as the maker of the recipe)
             - Click on 'Edit' button and the user is redirected to the 'Edit Recipe' page.
@@ -478,9 +478,9 @@ All manual tests were done in the following browsers:
             - When clicked on, the page redirects to the selected recipe page.
         - Make sure that if img link is broken of a certain recipe added by the user, a default image will display
         as the recipes' image.
-    - If no recipies are created yet, the recipe section is covered with a light blue color with the view height of the
+    - If no recipes are created yet, the recipe section is covered with a light blue color with the view height of the
         device.
-        - *Bug noted if no recipies are displaying. Please se 'Bugs Found' section further down*
+        - *Bug noted if no recipes are displaying. Please se 'Bugs Found' section further down*
 
 - Footer:
     - Make sure footer is covering the width of the viewport.
@@ -496,7 +496,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page.
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -537,7 +537,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page.
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -582,7 +582,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page.
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -624,7 +624,7 @@ All manual tests were done in the following browsers:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page.
     - Click on 'Profile' link to see that it links to the profile page.
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -665,7 +665,7 @@ All manual tests were done in the following browsers:
         - Make sure current img url is displaying for the user to edit.
         - Make sure browser points out if field is not filled out when submitting the recipe.
     - 'Cancel' button:
-        - Click on the 'Cancel' button and the page redirects to the 'Recipies' page displaying all recipies but
+        - Click on the 'Cancel' button and the page redirects to the 'Recipes' page displaying all recipes but
         without saving the changes that was made to the recipe.
     - 'Save' button:
         - Click on the 'Save' button after the form is filled out correctly the page stays on the
@@ -692,7 +692,7 @@ method could be applied to all pages of the site to test the 404 error function.
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link to see that it links to the recipies page.
+    - Click on the 'Recipes' link to see that it links to the recipes page.
     - Click on 'Add Recipe' link to see that it links to the add recipe page. (When logged in as regular user or admin)
     - Click on 'Profile' link to see that it links to the profile page. (When logged in as regular user or admin)
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -719,8 +719,8 @@ method could be applied to all pages of the site to test the 404 error function.
 ### Error 500 Page
 To test the 500 error page, when an internal service error occure, I did the following:
 - Changed debug mode in the app.py to **False**.
-- Changed the name of 'recipies.html' page to 'recipiess.html'
-This would cause the 500 error page to appear everytime I tried to reach the recipies page. This could be applied to
+- Changed the name of 'recipes.html' page to 'recipess.html'
+This would cause the 500 error page to appear everytime I tried to reach the recipes page. This could be applied to
 all pages of the site to test the 500 error function.
 When on the 500 error page:
 
@@ -728,7 +728,7 @@ When on the 500 error page:
     - Make sure navbar covers the width of the viewport.
     - Click on 'Kitchen.' icon on the left to see that it links to the home page.
     - Click on the 'Home' link to see that it links to the home page.
-    - Click on the 'Recipies' link. **Due to the testing, the page would redirect to the same 500 error page*
+    - Click on the 'Recipes' link. *Due to the testing, the page would redirect to the same 500 error page*
     - Click on 'Add Recipe' link to see that it links to the add recipe page. (When logged in as regular user or admin)
     - Click on 'Profile' link to see that it links to the profile page. (When logged in as regular user or admin)
     - Click on 'Log Out' link to see that it removes the session user cookie
@@ -752,8 +752,8 @@ When on the 500 error page:
     - Click on 'Twitter' icon to see that it links to twitter.com
     - Click on 'Youtube' icon to see that it links to youtube.com
 
-To go back to the original state of the page I put the debug mode to **True** and changed back the 'recipiess.html'
-page to the original name of 'recipies.html'.
+To go back to the original state of the page I put the debug mode to **True** and changed back the 'recipess.html'
+page to the original name of 'recipes.html'.
 The first time this test was applied the page got stuck on the 500 error page despite doing a hard refresh of the page. 
 To solve this issue I had to clear the cache and cookies for the site.
 
@@ -782,14 +782,14 @@ Further testing was made on the following pages:
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
 a maximun of three on iPad device (not PRO).
 
-#### Recipies page
+#### Recipes page
 - Make sure hero image covers the width of the viewport.
 - Make sure category images gets smaller on smaller devices to fit the device nicely.
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
 a maximun of three on iPad device (not PRO).
-- Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
+- Make sure recipes are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO.
-- Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed when searching.
+- Make sure recipe section fills out the entire vh if no recipes/ or a few recipes are displayed when searching.
     - *Bug noted. Please se 'Bugs Found' section further down.*
 
 #### Selected Recipe Page
@@ -801,9 +801,9 @@ on iPad PRO.
 
 #### Profile Page (regular user and admin user)
 - Make sure the hero image covers the width of the viewport.
-- Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
+- Make sure recipes are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO. 
-- Make sure recipe section fills out the entire vh if no recipies/ or a few recipies are displayed.
+- Make sure recipe section fills out the entire vh if no recipes/ or a few recipes are displayed.
     - *Bug noted. Please se 'Bugs Found' section further down.*
 
 #### Selected Category Page
@@ -812,7 +812,7 @@ on iPad PRO.
 - Make sure category images gets smaller on smaller devices to fit the device nicely.
 - Make sure categories are displayed with a maximun of two on each row in category section on phone devices and
 a maximun of three on iPad device (not PRO).
-- Make sure recipies are displayed with a maximum of one on each row on phone devices, two on iPad and three 
+- Make sure recipes are displayed with a maximum of one on each row on phone devices, two on iPad and three 
 on iPad PRO.
 
 #### Manage Categories Page (admin user only)
@@ -843,27 +843,27 @@ function entirely and redo it to try to understand the logic of it better. It tu
 variable for the categories, so therefor they would not display when searching. After adding the variable to the search
 function worked without any issues.
 
-- **Not Solved** When a user don't have recipies added, their profile page would not fill out completely causing a 
+- **Not Solved** When a user don't have recipes added, their profile page would not fill out completely causing a 
 white gap within the recipe section until the footer area. Originally my
 idea to solve this bug was to put in an else statement in my Jinja code for the profile page with a text displaying
-"No recipies found!" when no recipies was to be found. 
+"No recipes found!" when no recipes was to be found. 
 However this caused even more bugs when adding the else statement by looping the text endlessly all over the 
-page even if there was recipies there or not.
+page even if there was recipes there or not.
 Explained by tutor support, this was apperently a limitation with Jinja templating, so to solve this problem I 
 would have to do it from my python code. Because of my limitation of knowledge in python (and lack of time) it 
 led me to do an emergency solution for this bug by adding a min-height of the recipe section that 
 would automatically fill out the view height with the blue background color on all devices.
 This however is causing a pretty large blue empty area at the page, but at least there are no white gaps on the page.
 This is something I will have to try to solve in the future, when more knowledge in python is found.
-The min view height does also affect when searching for a recipe on the 'Recipies' page and when visiting a 
-selected category page that doesn't have any recipies yet. When no recipies are to
+The min view height does also affect when searching for a recipe on the 'Recipes' page and when visiting a 
+selected category page that doesn't have any recipes yet. When no recipes are to
 display, the blue background covers the page with a min of the view height for the device. 
-The search function does however also provide a red text displaying when no recipies are found.
+The search function does however also provide a red text displaying when no recipes are found.
 
 <div align="center">
     <img src="/readme-img/bug1.png" alt="Profile bug" width="600px">
     <br>
-    Bug on Profile page when no user recipies.
+    Bug on Profile page when no user recipes.
     <br>
     <br>
 </div>
@@ -872,22 +872,22 @@ The search function does however also provide a red text displaying when no reci
 url was not from the correct source. To solve this bug I added an onerror attribute with a value that would automatically
 replace the broken image link with a default image.
 
-- **Not Solved** When deleting a recipe from the profile page, the user gets redirected to the 'get_recipies' page
+- **Not Solved** When deleting a recipe from the profile page, the user gets redirected to the 'get_recipes' page
 instead of staying on the profile page after deleting. Due to lack of time this bug will have to remain to be solved
 in the future.
 
 - **Not Solved** When editing a recipe from the profile page, and the user clicks on the 'Cancel' button the user 
-gets redirected to the 'get_recipies' page instead of staying on the profile page after clicking on 'Cancel'. 
+gets redirected to the 'get_recipes' page instead of staying on the profile page after clicking on 'Cancel'. 
 Due to lack of time this bug will have to remain to be solved in the future.
 
 - **Not Solved** When not filling out the textareas that are required when adding/editing a recipe the line under the
 text input doesn't change to a red color due to a Materialize bug. However if not filling out the text area when submitting
 a recipe still makes the browser point out to fill the required field in.
 
-- **Not Solved** When a category gets edited, the recipies within that category will not automatically change to the
-edited category. The recipies will still have the old category name displayed which makes it impossible to reach them within
+- **Not Solved** When a category gets edited, the recipes within that category will not automatically change to the
+edited category. The recipes will still have the old category name displayed which makes it impossible to reach them within
 the select category function. As soon as the name for the edited category got changed back or a new category with that
-particular name was created, the recipies could be reached.
+particular name was created, the recipes could be reached.
 
 - **Not Solved** When inspecting the home page in the developer tool a gap under the category section when 
 viewing the page from an iPad Pro perspective would appear. I guess this has to do with the fact that the iPad PRO 

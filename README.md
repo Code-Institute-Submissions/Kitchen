@@ -9,7 +9,7 @@
     - [Wireframes](#wireframes)
 3. [Features](#features)
     - [Home Page](#home-page)
-    - [Recipies Page](#recipies-page)
+    - [Recipes Page](#recipes-page)
     - [Edit Recipe Page](#edit-recipe-page)
     - [Selected Recipe Page](#selected-recipe-page)
     - [Add Recipe Page](#add-recipe-page)
@@ -41,10 +41,10 @@
 ![Am I Responsive](/readme-img/amiresponsive.png)
 Kitchen is a website where food enthusiasts from all over the world can gather to share their best recipes.
 With the simple functions, it is easy for everyone to create an account to get started sharing their best 
-cooking tricks. In the future we hope to be able to offer more functions to make the user experience on the website 
+cooking tricks. In the future, we hope to be able to offer more functions to make the user experience on the website 
 even better.
-If you're not interested in signing up and share a recipe, you can of course visit the site to brows through all
-the fantastic recipies for some cooking inspiration.
+If you're not interested in signing up and share a recipe, you can of course visit the site to browse through all
+the fantastic recipes for some cooking inspiration.
 
 [View the live website here!](https://kitchen-josefinekihlstrom.herokuapp.com/get_home)
 
@@ -61,24 +61,24 @@ The user stories was defined during the **Strategy Plane** phase of this project
 As a user I want to:
 - Get inspired into learning new recipes.
 - Browse different categories for easier navigation of what kind of recipe I want to cook.
-- Be able to sign up and share my own recipies.
-- Have a good overlook of my own recipies that I've made.
-- Be able to edit and delete recipies that I have made.
-- Be able to search for recipies with a specific name or ingredient in it.
+- Be able to sign up and share my own recipes.
+- Have a good overlook of my own recipes that I've made.
+- Be able to edit and delete recipes that I have made.
+- Be able to search for recipes with a specific name or ingredient in it.
 
 ### Owner goals
 As the owner of the page I want:
 - The page to look as professional as possible considering the knowledge that I have acquired through the course.
 The site reflects the learning outcome of the Code Institute course so far.
 - To be able to edit and/or delete a category.
-- To be able to create new food categories for the users to fill with recipies.
+- To be able to create new food categories for the users to fill with recipes.
 
 ### Design process
 The **structure** of the site is based upon the data that is presented on each page.
-This recipe site has four collections in the MongoDB database. **Recipies**, **categories**, **preptime** and 
+This recipe site has four collections in the MongoDB database. **Recipes**, **categories**, **preptime** and 
 **users**. The collections then have their own key/values.
 
-#### recipies
+#### recipes
 - category_name
 - recipe_img
 - recipe_name
@@ -88,7 +88,7 @@ This recipe site has four collections in the MongoDB database. **Recipies**, **c
 - created_by
 
 #### categories
-- category_name **(with the following values to choose from)*
+- category_name *(with the following values to choose from)*
     - Vegetarian
     - Chicken
     - Fish
@@ -96,7 +96,7 @@ This recipe site has four collections in the MongoDB database. **Recipies**, **c
 - recipe_img
 
 #### preptime
-- preptime_time **(with the following values to choose from)*
+- preptime_time *(with the following values to choose from)*
     - '<' 30 min 
     - 30 min
     - 45 min
@@ -134,7 +134,7 @@ The wireframes where made with the technology of Figma and can be viewed
 <div align="center">
     <img src="/readme-img/wireframe1.png" alt="wireframe 1" width="600px">
     <br>
-    Home and Recipies pages.
+    Home and Recipes pages.
 </div>
 <br>
 <br>
@@ -165,7 +165,7 @@ The features of the site was defined during the **scope plane** phase. The featu
 - Fixed Navigation bar at the top of all pages. Complete list of links in the navbar:
     - **Logo** - Linked to home page.
     - **Home** - Linked to home page.
-    - **Recipies** - linked to recipies page.
+    - **Recipes** - linked to recipes page.
     - **Add Recipe** - Linked to page where the user can add recipe.
     - **Manage Categories** - Linked to a page where admin can manage categories.
     - **Profile** - Linked to the profile page of the user.
@@ -196,8 +196,8 @@ The home page includes:
     The red info box that shows different button text depending on if user is logged in or not.    
 </div>
 
-### Recipies Page
-The Recipies page includes:
+### Recipes Page
+The Recipes page includes:
 - Hero image
 - A search function within the hero image which includes.
     - A text input.
@@ -207,7 +207,7 @@ The Recipies page includes:
     - Heading text.
     - Image of each category.
     - Name of each category
-- Section with all recipies including:
+- Section with all recipes including:
     - Heading text
     - Image of each recipe.
     - Name of each recipe.
@@ -234,7 +234,7 @@ The Edit Recipe page includes:
     - A textarea to edit the preparation steps of the recipe.
         - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
     - An input field to edit the image url.
-    - 'Cancel' button that cancels the recipe editing and redirects the user to the 'Recipies' page.
+    - 'Cancel' button that cancels the recipe editing and redirects the user to the 'Recipes' page.
     - 'Save' button that saves the changes of the edited recipe and reloads the page with the saved changes displaying.
     - A red paragraph with information about required fields.
 
@@ -255,10 +255,10 @@ The selected category page includes:
 - Hero image
 - A section with recipe categories that includes:
     - Heading text.
-    - 'All Recipies' button that links to 'Recipies' page with all recipies displaying.
+    - 'All Recipes' button that links to 'Recipes' page with all recipes displaying.
     - Image of each category.
     - Name of each category
-- Section with all recipies from selected category including:
+- Section with all recipes from selected category including:
     - Heading text with category name included
     - Image of each recipe.
     - Name of each recipe.
@@ -315,7 +315,7 @@ The Edit Category page can be reached within the 'Manage Categories' page. It in
 - Heading text.
 - Text input to edit the name of the category.
 - Text input to edit the image url for the category.
-- 'Cancel' button that cancels the category editing and redirects the user to the 'Manage Recipies' page.
+- 'Cancel' button that cancels the category editing and redirects the user to the 'Manage Recipes' page.
 - 'Edit Category' button that saves the changes of the edited category and redirects the user to the 'Manage Categories' page.
 - A red paragraph with information about required fields.
 
@@ -323,9 +323,9 @@ The Edit Category page can be reached within the 'Manage Categories' page. It in
 The link to the profile page can be reached in the navbar once a user is signed in to the page. The features of the
 profile page are:
 - Hero image.
-- Section with user recipies including:
+- Section with user recipes including:
     - Heading text
-        - If no recipies are made by the user, the section will just display a light blue background color. Otherwise:
+        - If no recipes are made by the user, the section will just display a light blue background color. Otherwise:
     - Image of each recipe.
     - Name of each recipe.
     - Name of the user.
@@ -362,13 +362,13 @@ recipe cards on the recipe page together with all other information.
 - When the user choose a category to go to, I would like for that category to become disabled to click on again 
 when the user is already on that specific categories page. 
 This to add more clarity to the user on what category that is currently viewed.
-- Currently when someone is on the 'All Recipies' page, there is no limit on how many recipies that are showing on
-the page. A feature left to implement here would be pagination, to only show for example 12 recipies at a time and then the visitor
-gets to press a 'next' button to view the next 12 recipies.
+- Currently when someone is on the 'All Recipes' page, there is no limit on how many recipes that are showing on
+the page. A feature left to implement here would be pagination, to only show for example 12 recipes at a time and then the visitor
+gets to press a 'next' button to view the next 12 recipes.
 - To make it possible to search for specific recipe or ingredient inside a selected category.
 - When the user is on a selected recipe page, there is no back button implemented on the page to take the user back to 
 the previous site. If the user has navigated to the recipe through a selected category, the user will have to click
-on the browsers back button or navigate back to either the home page or recipies page, to select the category again.
+on the browsers back button or navigate back to either the home page or recipes page, to select the category again.
 In the future I would like to implement a back button to all pages that takes the user back to the previous page.
 
 ## Technologies used
@@ -392,7 +392,7 @@ In the future I would like to implement a back button to all pages that takes th
 - [Fontawesome](https://fontawesome.com/) - Used for icons.
 - [Coolors](https://coolors.co/) - Used to generate the color scheme.
 - [Figma](https://www.figma.com/) - Used to make wireframes.
-- [Google Fonts](https://fonts.google.com/) - The font used for this project: **Open Sans Condensed*
+- [Google Fonts](https://fonts.google.com/) - The font used for this project: *Open Sans Condensed*
 - [W3C Markup Validation Service](https://validator.w3.org/) - Used to test the HTML code.
 - [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used to test the CSS code.
 - [JSHint](https://jshint.com/) - Used to test the JavaScript code.
@@ -469,7 +469,7 @@ to connect to the app.
 - Chicken category image [Atharva Tulsi](https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80)
 - Meat category image [Sam Loyd](https://images.unsplash.com/photo-1595777216528-071e0127ccbf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
 - Fish category image [Louis Hansel](https://images.unsplash.com/photo-1559847844-5315695dadae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80)
-- Recipies hero image [Anastasia Zhenina](https://images.unsplash.com/photo-1605709303005-0fdddfd73dc4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80)
+- Recipes hero image [Anastasia Zhenina](https://images.unsplash.com/photo-1605709303005-0fdddfd73dc4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80)
 
 ### Recipe text
 - Mushroom recipe image [Karolina Kołodziejczak](https://images.unsplash.com/photo-1607116667981-ff148a14e975?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)
@@ -490,7 +490,7 @@ to connect to the app.
 - Default Recipe Img when img link is broken [Eli Eshaghi](https://images.unsplash.com/photo-1584255014406-2a68ea38e48c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1007&q=80)
 
 ### Recipe images
-Recipies not mentioned here are made up by me.
+Recipes not mentioned here are made up by me.
 - American Pancakes by [Delphine Fortine](https://www.delscookingtwist.com/easy-fluffy-american-pancakes/)
 - Grilled Cheese Sandwich [Sal](https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/)
 - Chicken Paillard [Köket.se](https://www.koket.se/kyckling-paillard)
