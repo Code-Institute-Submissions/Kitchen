@@ -19,26 +19,50 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-# get home page --------------------------------------------------------------
 @app.route("/get_home")
 def get_home():
+    """Takes the user to the home page.
+
+    Categories variable finds and displays the categories stored in the MongoDB
+    database. The value then sorts the categories alphabetically.
+
+    Returns the index.html page."""
+
     home = mongo.db.home.find()
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("index.html", home=home, categories=categories)
 
 
-# get recipes page ---------------------------------------------------------
 @app.route("/get_recipies")
 def get_recipies():
+    """Takes the user to the recipes page.
+
+    Recipies variable finds and displays the recipies stored in the MongoDB
+    database and categories variable finds and displays the categories stored
+    in the MongoDB database with a value that sorts the categories
+    alphabetically.
+
+    Returns the recipies.html page."""
+
     recipies = list(mongo.db.recipies.find())
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template(
         "recipies.html", recipies=recipies, categories=categories)
 
 
-# search function ------------------------------------------------------------
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """Search function.
+
+    Query variable connects to the MongoDB text index. The function
+    searches the text within the recipe ingredients and recipe name.
+    Recipies variable finds and displays the recipies stored in the MongoDB
+    database containing the keywords used in the search function.
+    Categories variable finds and displays all the categories
+    stored in the MongoDB database.
+
+    Returns the recipies.html page."""
+
     query = request.form.get("query")
     recipies = list(mongo.db.recipies.find({"$text": {"$search": query}}))
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -46,9 +70,21 @@ def search():
         "recipies.html", recipies=recipies, categories=categories)
 
 
-# get signup page ---------------------------------------------------------
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
+    """Allows the user to sign up to the page.
+
+    The user_existing variable checks if the username is already existing.
+    If the username already exists, the page will redirect to the signup.html
+    page with a flash message displaying.
+    The register variable registers the username and password in
+    the MongoDB database. The password is encrypted before sent to
+    the database.
+    When new user is signed up the page redirects to the profile page
+    displaying a flash message.
+
+    Returns the signup.html page"""
+
     if request.method == "POST":
         # Checking if username exist
         user_existing = mongo.db.users.find_one(
@@ -70,9 +106,20 @@ def signup():
     return render_template("signup.html")
 
 
-# sign in --------------------------------------------------------------------
 @app.route("/signin", methods=["GET", "POST"])
 def signin():
+    """Allows the user to sign in to the page.
+
+    The user_existing variable checks if the user exists in the database.
+    If the user exist and password is correct the user is redirected to the
+    profile page with a flash message displaying.
+    If the password doesn't match the user is redirected to the signin.html
+    page with a flash message displaying.
+    If the username doesn't exist, the user is redirected to the signin.page
+    with a flash message displaying.
+
+    Returns the signin.html page."""
+
     if request.method == "POST":
         # check if user exists
         user_existing = mongo.db.users.find_one(
