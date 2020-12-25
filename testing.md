@@ -1,7 +1,7 @@
 # Testing
 ## Content
 1. [User Testing](#user-testing)
-2. [Automated testing](#automated-testing)
+2. [Validator testing](#validator-testing)
     - [HTML](#html)
     - [CSS](#css)
     - [JavaScript](#javascript)
@@ -75,7 +75,7 @@
     specific ingredient in it or with a specific name. You can search for multiple search words at a time which makes
     it easier to find what you are looking for.
 
-## Automated Testing
+## Validator Testing
 ### HTML
 All html templates (except for the 404.html, 500.html, profile.html and base.html) where tested using 
 [W3C Markup Validation Service](https://validator.w3.org/) by Validate by URI. 
