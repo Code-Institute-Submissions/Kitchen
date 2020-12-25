@@ -146,9 +146,15 @@ def signin():
     return render_template("signin.html")
 
 
-# users profile ---------------------------------------------------------
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """Takes the user to the profile page
+
+    Username variable checks the session username and returns
+    the users profile page.
+    Recipies variable finds and displays the recipes from the database.
+
+    Returns the signin page if no session user."""
     # session username from database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -162,18 +168,30 @@ def profile(username):
     return redirect(url_for("signin"))
 
 
-# log out ----------------------------------------------------------------
 @app.route("/logout")
 def logout():
-    # log out by deleting session cookies
+    """Function that removes session cookie and logs user out.
+    Returns the signin.html page with a flash message displaying."""
+
     flash("You have logged out")
+    # log out by deleting session cookies
     session.pop("user")
     return redirect(url_for("signin"))
 
 
-# add recipe -------------------------------------------------------------
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    """Function to add new user recipe.
+
+    Recipe variable takes the recipe keys and values that gets sent
+    to the MongoDB and returns the recipies.html page with a flash message
+    displaying.
+    Categories variable gets the category values from the database to option
+    list for categories and preptimes gets the preptime values from
+    the database to the option list for preptimes.
+
+    Returns the add_recipe.html page"""
+
     if request.method == "POST":
         recipe = {
             "category_name": request.form.get("category_name"),
@@ -194,9 +212,19 @@ def add_recipe():
         "add_recipe.html", categories=categories, preptime=preptimes)
 
 
-# edit recipe -------------------------------------------------------------
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    """Function to edit recipes from the database.
+
+    Edit variable takes the edited recipe keys and values that gets sent
+    to the MongoDB and returns the edit_recipies.html page with a flash
+    message displaying.
+    The recipe variable finds the recipe id that is to be edited.
+    Categories variable gets the category values from the database to the
+    option list for categories and preptimes gets the preptime values from
+    the database to the option list for preptimes.
+
+    Returns the edit_recipe.html page."""
     if request.method == "POST":
         edit = {
             "category_name": request.form.get("category_name"),
@@ -220,24 +248,36 @@ def edit_recipe(recipe_id):
         categories=categories, preptime=preptimes)
 
 
-# delete recipe -------------------------------------------------------------
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+    """Function to delete a recipe by its id.
+    Returns the recipies.html page with a flash message displaying."""
+
     mongo.db.recipies.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Deleted!")
     return redirect(url_for('get_recipies'))
 
 
-# categories -------------------------------------------------------------
 @app.route("/get_categories")
 def get_categories():
+    """Function that displays categories.
+    Returns the categories.html page."""
+
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
-# add categories ----------------------------------------------------------
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
+    """Function to add new category.
+
+    The category variable takes the category key and values that gets sent
+    to the MongoDB database.
+    When a new category is added the user redirected to the categories.html
+    page with a flash message displaying.
+
+    Returns the add_category.html page."""
+
     if request.method == "POST":
         category = {
             "category_name": request.form.get("category_name"),
@@ -250,9 +290,18 @@ def add_category():
     return render_template("add_category.html")
 
 
-# edit categories ----------------------------------------------------------
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
+    """Function to edit category.
+
+    The submit variable takes the edited category key and values that gets sent
+    to the MongoDB database.
+    When a category is edited the user is redirected to the categories.html
+    page with a flash message displaying.
+    The category variable gets the category id that is to be edited.
+
+    Returns the add_category.html page."""
+
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
@@ -266,25 +315,39 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
-# delete categories ----------------------------------------------------------
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
+    """Function that deletes a category by its id.
+    Returns the categories.html page with a flash message displaying."""
+
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category Deleted")
     return redirect(url_for("get_categories"))
 
 
-# select recipe ----------------------------------------------------------
 @app.route("/select_recipe/<recipe_id>")
 def select_recipe(recipe_id):
+    """Function that shows selected recipe.
+
+    The selected_recipe variable finds the recipe id and returns the
+    select_recipe.html page."""
+
     selected_recipe = mongo.db.recipies.find_one({"_id": ObjectId(recipe_id)})
     return render_template(
         "select_recipe.html", recipe=selected_recipe)
 
 
-# select category ----------------------------------------------------------
 @app.route("/select_category/<category_id>")
 def select_category(category_id):
+    """Function that shows selected category recipes.
+
+    The categories variable finds all the categories from the database
+    that will be displaying on the page for the user to pick a new category.
+    The selected_category variable finds the selected category id.
+    The recipies variable finds the recipies from the database that will be
+    displaying on the page.
+
+    Returns the select_category.html page."""
     # for selecting a new category from category section
     categories = mongo.db.categories.find().sort("category_name", 1)
     # connecting to the category id
@@ -298,19 +361,25 @@ def select_category(category_id):
         recipies=recipies, categories=categories)
 
 
-# 404 error ----------------------------------------------------------
-# https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
 @app.errorhandler(404)
 def page_not_found(e):
-    # returns the 404.html page
+    """If page is not found.
+
+    Code with help from:
+    https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
+
+    Returns the 404.html page."""
     return render_template('404.html'), 404
 
 
-# 500 error ----------------------------------------------------------
-# https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
 @app.errorhandler(500)
 def internal_server_error(e):
-    # returns the 500.html page
+    """If internal server error.
+
+    Code with help from:
+    https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
+
+    Returns the 500.html page."""
     return render_template('500.html'), 500
 
 
