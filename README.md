@@ -57,7 +57,7 @@ The UX goals for this website are the following:
 - All text on the site is easy to read without any distracting backgrounds.
 
 ### User Stories
-The user stories was defined during the **Strategy Plane** phase of this project.
+The user stories were defined during the **Strategy Plane** phase of this project.
 As a user I want to:
 - Get inspired into learning new recipes.
 - Browse different categories for easier navigation of what kind of recipe I want to cook.
@@ -128,7 +128,7 @@ and came from [Google Fonts](https://fonts.google.com/).
 
 ### Wireframes
 The **skeleton** and **surface** plane was defined in the structure of the wireframes for this project.
-The wireframes where made with the technology of Figma and can be viewed 
+The wireframes were made with the technology of Figma and can be viewed 
 [here](https://www.figma.com/file/aCMvZLULq29HaO6xSANTzr/MS3?node-id=273669%3A448).
 
 <div align="center">
@@ -161,16 +161,16 @@ The wireframes where made with the technology of Figma and can be viewed
 <br>
 
 ## Features
-The features of the site was defined during the **scope plane** phase. The features for all pages are:
+The features of the site were defined during the **scope plane** phase. The features for all pages are:
 - Fixed Navigation bar at the top of all pages. Complete list of links in the navbar:
-    - **Logo** - Linked to home page.
-    - **Home** - Linked to home page.
-    - **Recipes** - linked to recipes page.
+    - **Logo** - Linked to the home page.
+    - **Home** - Linked to the home page.
+    - **Recipes** - linked to the recipes page.
     - **Add Recipe** - Linked to page where the user can add recipe.
-    - **Manage Categories** - Linked to a page where admin can manage categories.
+    - **Manage Categories** - Linked to the page where the admin user can manage categories.
     - **Profile** - Linked to the profile page of the user.
-    - **Sign In** - Linked to page where user can sign in.
-    - **Sign Up** - Linked to page where new user can sign up.
+    - **Sign In** - Linked to the page where user can sign in.
+    - **Sign Up** - Linked to the page where new users can sign up.
     - **Log Out** - Logs user out of the site.
 - Footer with copyright text and social links.
 
@@ -185,7 +185,7 @@ The home page includes:
 - Hero image with a welcome text.
 - A blue box with brief information about the page.
 - A red box, with a heading text and a button.
-- A section with recipe categories that includes:
+- A section with recipe categories that include:
     - Heading text.
     - Image of each category.
     - Name of each category
@@ -203,7 +203,7 @@ The Recipes page includes:
     - A text input.
     - A reset button.
     - A search icon.
-- A section with recipe categories that includes:
+- A section with recipe categories that include:
     - Heading text.
     - Image of each category.
     - Name of each category
@@ -215,7 +215,7 @@ The Recipes page includes:
     - Category of each recipe.
     - Preptime of each recipe.
     - Link to each recipe page.
-- The maker of the recipe also have two buttons above the recipe link:
+- The maker of the recipe also has two buttons above the recipe link:
     - 'Delete' button - Makes it possible to delete the recipe.
         - When clicked on a modal pops up asking the user if they are sure about deleting the recipe.
         The user is provided with a 'Yes' or a 'No' button, which either deletes the recipe or redirects the user
@@ -225,17 +225,17 @@ The Recipes page includes:
 ### Edit Recipe Page
 The Edit Recipe page includes:
 - Heading text.
-- A form for the logged in user to edit their recipe. The form includes:
+- A form for the logged-in user to edit their recipe. The form includes:
     - An input field to edit the name of the recipe.
     - An option list to edit the category of the recipe.
     - An option list to edit the total preptime for the recipe.
-    - A textarea to edit all the ingredients of the recipe.
-        - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
-    - A textarea to edit the preparation steps of the recipe.
-        - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
+    - A text area to edit all the ingredients of the recipe.
+        - Displayed under the text area is a paragraph that describes how to write the text to format it correctly.
+    - A text area to edit the preparation steps of the recipe.
+        - Displayed under the text area is a paragraph that describes how to write the text to format it correctly.
     - An input field to edit the image url.
-    - 'Cancel' button that cancels the recipe editing and redirects the user to the 'Recipes' page.
-    - 'Save' button that saves the changes of the edited recipe and reloads the page with the saved changes displaying.
+    - 'Cancel' button cancels the recipe that is being edited and redirects the user to the 'Recipes' page.
+    - 'Save' button saves the changes of the edited recipe and reloads the page with the saved changes displaying.
     - A red paragraph with information about required fields.
 
 ### Selected Recipe Page
@@ -246,19 +246,19 @@ The Selected Recipe page includes:
     - Name of the user who added the recipe.
     - Category of the recipe.
     - Preptime for the recipe.
-- A section divided into two columns that includes:
+- A section divided into two columns that include:
     - The ingredients list to the left.
     - The preparation steps to the right.
 
 ### Selected Category Page
 The selected category page includes:
 - Hero image
-- A section with recipe categories that includes:
+- A section with recipe categories that include:
     - Heading text.
     - 'All Recipes' button that links to 'Recipes' page with all recipes displaying.
     - Image of each category.
     - Name of each category
-- Section with all recipes from selected category including:
+- Section with all recipes from the selected category including:
     - Heading text with category name included
     - Image of each recipe.
     - Name of each recipe.
@@ -266,7 +266,7 @@ The selected category page includes:
     - Category of each recipe.
     - Preptime of each recipe.
     - Link to each recipe page.
-- The maker of the recipe also have two buttons above the recipe link:
+- The maker of the recipe also has two buttons above the recipe link:
     - 'Delete' button - Makes it possible to delete the recipe.
         - When clicked on a modal pops up asking the user if they are sure about deleting the recipe.
         The user is provided with a 'Yes' or a 'No' button, which either deletes the recipe or redirects the user
@@ -276,20 +276,20 @@ The selected category page includes:
 ### Add Recipe Page
 The Add Recipe page includes:
 - Heading text.
-- A form for the logged in user to add their recipe to. The form includes:
+- A form for the logged-in user to add their recipe too. The form includes:
     - An input field to write the name of the recipe.
     - An option list to pick the category of the recipe.
     - An option list to pick the total preptime for the recipe.
-    - A textarea to add all the ingredients of the recipe.
-        - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
-    - A textarea to add the preparation steps of the recipe.
-        - Displayed under the textarea is a paragraph that describes how to write the text to format it correct.
+    - A text area to add all the ingredients of the recipe.
+        - Displayed under the text area is a paragraph that describes how to write the text to format it correctly.
+    - A text area to add the preparation steps of the recipe.
+        - Displayed under the text area is a paragraph that describes how to write the text to format it correctly.
     - An input field to add an image url.
     - A button to submit the recipe.
     - A red paragraph with information about required fields.
 
 ### Manage Categories Page
-The Manage Categories page can only be reached in the navbar by the admin user. It includes:
+The Manage Categories page can only be reached in the navbar by the admin user. It include:
 - Heading text.
 - A button that leads to the 'Add Category' page.
 - A section with the existing recipe categories that includes:
@@ -299,7 +299,7 @@ The Manage Categories page can only be reached in the navbar by the admin user. 
         - When clicked on a modal pops up asking the user if they are sure about deleting the category.
         The user is provided with a 'Yes' or a 'No' button, which either deletes the recipe or redirects the user
         back to the page.
-    - 'Edit button', that redirects the admin user to another page where the category name or image url can be
+    - 'Edit button', which redirects the admin user to another page where the category name or image url can be
     edited.
 
 ### Add Category Page
@@ -307,7 +307,7 @@ The Add Category page can be reached within the 'Manage Categories' page. It inc
 - Heading text.
 - Text input to fill out the name of the category.
 - Text input to add an image url for the category.
-- 'Add Category' button that creates the new category and redirects the user to the 'Manage Categories' page.
+- 'Add Category' button creates the new category and redirects the user to the 'Manage Categories' page.
 - A red paragraph with information about required fields.
 
 ### Edit Category Page
@@ -315,8 +315,8 @@ The Edit Category page can be reached within the 'Manage Categories' page. It in
 - Heading text.
 - Text input to edit the name of the category.
 - Text input to edit the image url for the category.
-- 'Cancel' button that cancels the category editing and redirects the user to the 'Manage Recipes' page.
-- 'Edit Category' button that saves the changes of the edited category and redirects the user to the 'Manage Categories' page.
+- 'Cancel' button cancels the category editing and redirects the user to the 'Manage Recipes' page.
+- 'Edit Category' button saves the changes of the edited category and redirects the user to the 'Manage Categories' page.
 - A red paragraph with information about required fields.
 
 ### Profile Page
@@ -356,20 +356,20 @@ When a 'Not Found' error occurs the 404 page will show with the following featur
     - A link that redirects the user to the home page. 
 
 ### Features left to implement
-- Some type of timer function that automatically logges the user out after a certain time of no activity.
-- A rating function to make all visitors able to rate each recipe. The rating result would then be displaying in the
+- Some type of timer function that automatically logs the user out after a certain time of no activity.
+- A rating function to make all visitors able to rate each recipe. The rating result would then be displayed in the
 recipe cards on the recipe page together with all other information.
-- When the user choose a category to go to, I would like for that category to become disabled to click on again 
+- When the user chooses a category to go to, I would like for that category to become disabled to click on again 
 when the user is already on that specific categories page. 
-This to add more clarity to the user on what category that is currently viewed.
-- Currently when someone is on the 'All Recipes' page, there is no limit on how many recipes that are showing on
+This to add more clarity to the user on what category is currently viewed.
+- Currently, when someone is on the 'All Recipes' page, there is no limit on how many recipes that are showing on
 the page. A feature left to implement here would be pagination, to only show for example 12 recipes at a time and then the visitor
 gets to press a 'next' button to view the next 12 recipes.
-- To make it possible to search for specific recipe or ingredient inside a selected category.
+- To make it possible to search for a specific recipe or ingredient inside a selected category.
 - When the user is on a selected recipe page, there is no back button implemented on the page to take the user back to 
 the previous site. If the user has navigated to the recipe through a selected category, the user will have to click
-on the browsers back button or navigate back to either the home page or recipes page, to select the category again.
-In the future I would like to implement a back button to all pages that takes the user back to the previous page.
+on the browser's back button or navigate back to either the home page or recipes page, to select the category again.
+In the future, I would like to implement a back button to all pages that take the user back to the previous page.
 
 ## Technologies used
 ### Languages
