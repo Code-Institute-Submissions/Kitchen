@@ -78,7 +78,7 @@ The **structure** of the site is based upon the data that is presented on each p
 This recipe site has four collections in the MongoDB database. **Recipes**, **categories**, **preptime** and 
 **users**. The collections then have their own key/values.
 
-#### recipes
+#### recipies
 - category_name
 - recipe_img
 - recipe_name

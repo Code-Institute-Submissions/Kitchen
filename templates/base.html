@@ -23,7 +23,7 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                     <ul class="right hide-on-med-and-down open-sans">
                         <li class="navbar-text"><a href="{{ url_for('get_home') }}">Home</a></li>
-                        <li class="navbar-text"><a href="{{ url_for('get_recipies') }}">Recipies</a></li>
+                        <li class="navbar-text"><a href="{{ url_for('get_recipies') }}">Recipes</a></li>
                         {% if session.user %}
                             <li class="navbar-text"><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
                             {% if session.user|lower == "admin"|lower %}
@@ -41,7 +41,7 @@
             <!-- navbar collapsed -->
             <ul class="sidenav open-sans" id="mobile-demo">
                 <li class="navbar-text"><a href="{{ url_for('get_home') }}">Home</a></li>
-                <li class="navbar-text"><a href="{{ url_for('get_recipies') }}">Recipies</a></li>
+                <li class="navbar-text"><a href="{{ url_for('get_recipies') }}">Recipes</a></li>
                 {% if session.user %}
                     <li class="navbar-text"><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
                     {% if session.user|lower == "admin"|lower %}

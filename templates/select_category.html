@@ -9,12 +9,12 @@
     <div class="row">
         <h2 class="open-sans category-heading">Pick a category</h2>
     </div>
-    <!-- all recipies button -->
+    <!-- all recipes button -->
     <div class="row">
         <div class="back-btn center-align">
             <a href="{{ url_for('get_recipies') }}" class="btn btn-blue open-sans">
                 <i class="fas fa-long-arrow-alt-left"></i>
-                All Recipies
+                All Recipes
             </a>
         </div>
     </div>
@@ -38,7 +38,7 @@
     <!-- recipe card -->
     <div class="recipe-area">
         <div class="row">
-            <h2 class="open-sans category-heading">{{ category.category_name }} recipies</h2>
+            <h2 class="open-sans category-heading">{{ category.category_name }} recipes</h2>
         </div>
         <div class="row">
             {% for recipe in recipies %}
