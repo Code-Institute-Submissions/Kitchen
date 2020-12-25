@@ -1,3 +1,11 @@
+"""Kitchen - Milestone 3 Project.
+
+This project was made with guidance from the
+Mini Project - Task Manager | Putting It All Together led by Tim
+
+(c) by Josefine Kihlström 2020.
+"""
+
 import os
 from flask import (
     Flask, flash, render_template,
@@ -26,7 +34,8 @@ def get_home():
     Categories variable finds and displays the categories stored in the MongoDB
     database. The value then sorts the categories alphabetically.
 
-    Returns the index.html page."""
+    Returns the index.html page.
+    """
 
     home = mongo.db.home.find()
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -42,7 +51,8 @@ def get_recipies():
     in the MongoDB database with a value that sorts the categories
     alphabetically.
 
-    Returns the recipies.html page."""
+    Returns the recipies.html page.
+    """
 
     recipies = list(mongo.db.recipies.find())
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -61,7 +71,8 @@ def search():
     Categories variable finds and displays all the categories
     stored in the MongoDB database.
 
-    Returns the recipies.html page."""
+    Returns the recipies.html page.
+    """
 
     query = request.form.get("query")
     recipies = list(mongo.db.recipies.find({"$text": {"$search": query}}))
@@ -83,7 +94,8 @@ def signup():
     When new user is signed up the page redirects to the profile page
     displaying a flash message.
 
-    Returns the signup.html page"""
+    Returns the signup.html page
+    """
 
     if request.method == "POST":
         # Checking if username exist
@@ -118,7 +130,8 @@ def signin():
     If the username doesn't exist, the user is redirected to the signin.page
     with a flash message displaying.
 
-    Returns the signin.html page."""
+    Returns the signin.html page.
+    """
 
     if request.method == "POST":
         # check if user exists
@@ -154,7 +167,8 @@ def profile(username):
     the users profile page.
     Recipies variable finds and displays the recipes from the database.
 
-    Returns the signin page if no session user."""
+    Returns the signin page if no session user.
+    """
     # session username from database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -171,7 +185,8 @@ def profile(username):
 @app.route("/logout")
 def logout():
     """Function that removes session cookie and logs user out.
-    Returns the signin.html page with a flash message displaying."""
+    Returns the signin.html page with a flash message displaying.
+    """
 
     flash("You have logged out")
     # log out by deleting session cookies
@@ -190,7 +205,8 @@ def add_recipe():
     list for categories and preptimes gets the preptime values from
     the database to the option list for preptimes.
 
-    Returns the add_recipe.html page"""
+    Returns the add_recipe.html page.
+    """
 
     if request.method == "POST":
         recipe = {
@@ -224,7 +240,8 @@ def edit_recipe(recipe_id):
     option list for categories and preptimes gets the preptime values from
     the database to the option list for preptimes.
 
-    Returns the edit_recipe.html page."""
+    Returns the edit_recipe.html page.
+    """
     if request.method == "POST":
         edit = {
             "category_name": request.form.get("category_name"),
@@ -251,7 +268,8 @@ def edit_recipe(recipe_id):
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     """Function to delete a recipe by its id.
-    Returns the recipies.html page with a flash message displaying."""
+    Returns the recipies.html page with a flash message displaying.
+    """
 
     mongo.db.recipies.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Deleted!")
@@ -261,7 +279,8 @@ def delete_recipe(recipe_id):
 @app.route("/get_categories")
 def get_categories():
     """Function that displays categories.
-    Returns the categories.html page."""
+    Returns the categories.html page.
+    """
 
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
@@ -276,7 +295,8 @@ def add_category():
     When a new category is added the user redirected to the categories.html
     page with a flash message displaying.
 
-    Returns the add_category.html page."""
+    Returns the add_category.html page.
+    """
 
     if request.method == "POST":
         category = {
@@ -300,7 +320,8 @@ def edit_category(category_id):
     page with a flash message displaying.
     The category variable gets the category id that is to be edited.
 
-    Returns the add_category.html page."""
+    Returns the add_category.html page.
+    """
 
     if request.method == "POST":
         submit = {
@@ -318,7 +339,8 @@ def edit_category(category_id):
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     """Function that deletes a category by its id.
-    Returns the categories.html page with a flash message displaying."""
+    Returns the categories.html page with a flash message displaying.
+    """
 
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category Deleted")
@@ -330,7 +352,8 @@ def select_recipe(recipe_id):
     """Function that shows selected recipe.
 
     The selected_recipe variable finds the recipe id and returns the
-    select_recipe.html page."""
+    select_recipe.html page.
+    """
 
     selected_recipe = mongo.db.recipies.find_one({"_id": ObjectId(recipe_id)})
     return render_template(
@@ -347,7 +370,8 @@ def select_category(category_id):
     The recipies variable finds the recipies from the database that will be
     displaying on the page.
 
-    Returns the select_category.html page."""
+    Returns the select_category.html page.
+    """
     # for selecting a new category from category section
     categories = mongo.db.categories.find().sort("category_name", 1)
     # connecting to the category id
@@ -368,7 +392,8 @@ def page_not_found(e):
     Code with help from:
     https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
 
-    Returns the 404.html page."""
+    Returns the 404.html page.
+    """
     return render_template('404.html'), 404
 
 
@@ -379,7 +404,8 @@ def internal_server_error(e):
     Code with help from:
     https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
 
-    Returns the 500.html page."""
+    Returns the 500.html page.
+    """
     return render_template('500.html'), 500
 
 
