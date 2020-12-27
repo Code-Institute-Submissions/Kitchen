@@ -294,7 +294,7 @@ All manual tests were done in the following browsers:
 
 - Further testing:
     - If an already signed in user tries to get to the 'Sign Up' page they will be displayed
-    with a flash message displaying "Please log out before signin up again!"
+    with a message saying "Please log out if you want to sign up for a new account."
 
 ### Sign In Page
 - Navbar:
@@ -335,8 +335,8 @@ All manual tests were done in the following browsers:
 
 - Further testing:
     - If an already signed in user tries to get to the 'Sign In' page they will be displayed
-    with a message saying 'Oops! Looks like you are already signed in. Please log out if you want to change
-    account'
+    with a message saying "Oops! Looks like you are already signed in. Please log out if you want to change
+    account."
 
 ### Add Recipe Page
 ### (regular user and admin user)

@@ -6,8 +6,20 @@
         <div class="row">
             <!-- if user is already signed in -->
             {% if session.user %}
-                <div class="session-flash">
-                    <p class="session-header open-sans">Please log out before signin up again!</p>
+                <div class="signup-background signup-margin">
+                    <div class="col s12 m5">
+                        <div class="card-panel error-card">
+                            <div class="row center-align error-section">
+                                <h1 class="open-sans">Oops!</h1>
+                                <h5 class="open-sans">
+                                    Please log out if you want to sign up for a new account.
+                                </h5>
+                                <h6 class="open-sans">
+                                    <a href="{{ url_for('get_home') }}">Or click here to go back to the home page.</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             {% else %}
                 <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signup') }}">
