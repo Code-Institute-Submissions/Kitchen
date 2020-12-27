@@ -83,6 +83,7 @@ This recipe site has four collections in the MongoDB database. **Recipes**, **ca
 </div>
 
 #### recipies
+- _id
 - category_name
 - recipe_img
 - recipe_name
@@ -92,6 +93,7 @@ This recipe site has four collections in the MongoDB database. **Recipes**, **ca
 - created_by
 
 #### categories
+- _id
 - category_name *(with the following values to choose from)*
     - Vegetarian
     - Chicken
@@ -100,6 +102,7 @@ This recipe site has four collections in the MongoDB database. **Recipes**, **ca
 - recipe_img
 
 #### preptime
+- _id
 - preptime_time *(with the following values to choose from)*
     - '<' 30 min 
     - 30 min
@@ -108,6 +111,7 @@ This recipe site has four collections in the MongoDB database. **Recipes**, **ca
     - '>' 60 min 
 
 #### users
+- _id
 - username
 - password (the password stored in my database is encrypted)
 
