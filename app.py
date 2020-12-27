@@ -1,7 +1,7 @@
 """Kitchen - Milestone 3 Project.
 
-This project was made with guidance from the
-Mini Project - Task Manager | Putting It All Together led by Tim
+This project was mainly made with guidance from the
+Mini Project - Task Manager | Putting It All Together led by Tim.
 
 (c) by Josefine Kihlström 2020.
 """
