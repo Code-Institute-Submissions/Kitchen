@@ -682,7 +682,7 @@ All manual tests were done in the following browsers:
 
 - Further testing:
     - If an unauthorized user tries to get to the 'Edit Recipe' page for a recipe they did not create
-    they will be displayed with a flash message displaying "You are not allowed on this page!"
+    they will be displayed with a 404 message."
 
 ### Error 404 Page
 To test the 404 error page I simply added a random letter to the url for the page that I knew would not exist. This
