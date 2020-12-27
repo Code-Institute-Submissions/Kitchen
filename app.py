@@ -316,11 +316,12 @@ def edit_category(category_id):
 
     The submit variable takes the edited category key and values that gets sent
     to the MongoDB database.
-    When a category is edited the user is redirected to the categories.html
-    page with a flash message displaying.
+    The Admin user is the only one who can edit a category.
+    When a category is edited the admin user is redirected to the
+    categories.html page with a flash message displaying.
     The category variable gets the category id that is to be edited.
 
-    Returns the add_category.html page.
+    Returns the edit_category.html page.
     """
 
     if request.method == "POST":
@@ -412,4 +413,4 @@ def internal_server_error(e):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=False)
+            debug=True)
