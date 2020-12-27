@@ -920,3 +920,6 @@ background images. Despite research I have not yet come up with a solution for t
 - **Not Solved** When selecting a preptime when editing or adding a recipe, the options do not display in 
 the increasing logic order they should be. The '< 30' option is displaying right before the '> 60' option instead of
 displaying as the first option. Due to lack of time, this bug remains.
+
+- **Not Solved** When a non signed in user tries to get to a user profile by https input, an internal server error
+appears. Due to lack of time, this bug remains, but at least the page is redirected to the 500.html error page.
