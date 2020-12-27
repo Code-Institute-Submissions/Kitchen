@@ -602,7 +602,7 @@ main {
     }
 
     .add-recipe-container {
-        width: 350px;
+        width: 300px!important;
     }
 
     .welcome-h1 {
