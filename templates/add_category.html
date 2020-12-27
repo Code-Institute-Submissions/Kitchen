@@ -56,10 +56,18 @@
         </div>
     {% else %}
         <!-- if unauthorized user tries to get to the page -->
-        <div class="session-flash">
-            <p class="session-header open-sans">You are not allowed on this page!</p>
-        </div>
         <div class="signup-background">
+            <div class="col s12 m5">
+                <div class="card-panel error-card">
+                    <div class="row center-align error-section">
+                        <h1 class="open-sans">Oops!</h1>
+                        <h5 class="open-sans">The page you where looking for does not exist.</h5>
+                        <h6 class="open-sans">
+                            <a href="{{ url_for('get_home') }}">Click here to go back to the home page.</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
         </div>
     {% endif %}
 {% endblock %}
