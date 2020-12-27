@@ -536,4 +536,10 @@ Recipes not mentioned here are made up by me.
 ## Disclaimer
 This project was made as the third Milestone Project in the Full Stack Web Development Program at Code Institute.
 This website was created for educational use only.
+<br>
 
+**Please note** that during the development of this project, a mistake was made in the grammatical spelling of 
+the word 'recipes'. Therefore, the word is misspelled in both the database and in the HTML code. 
+In order not to encounter major bugs in changing these grammatical errors, I have chosen to keep these 
+incorrect spellings until the course is over and when time to resolve any such errors will occure.
+Thanks for the indulgence for this annoying mistake.

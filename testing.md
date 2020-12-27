@@ -23,6 +23,7 @@
     - [Error 500 Page](#error-500-page)
     - [Testing on phone and tablet devices](#testing-on-phone-and-tablet-devices)
 4. [Bugs Found](#bugs-found)
+5. [Other Notes](#other-notes)
 
 ## User Testing
 1. **Get inspired into learning new recipes.**
@@ -923,3 +924,10 @@ displaying as the first option. Due to lack of time, this bug remains.
 
 - **Not Solved** When a non signed in user tries to get to a user profile by https input, an internal server error
 appears. Due to lack of time, this bug remains, but at least the page is redirected to the 500.html error page.
+
+## Other Notes
+Please note that during the development of this project, a mistake was made in the grammatical spelling of 
+the word 'recipes'. Therefore, the word is misspelled in both the database and in the HTML code. 
+In order not to encounter major bugs in changing these grammatical errors, I have chosen to keep these 
+incorrect spellings until the course is over and when time to resolve any such errors will occure.
+Thanks for the indulgence for this annoying mistake.
