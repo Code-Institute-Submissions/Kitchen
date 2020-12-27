@@ -391,7 +391,7 @@ All manual tests were done in the following browsers:
 
 - Further testing:
     - If a user is not signed in and tries to get to the 'Add Recipes' page they will be displayed
-    with a flash message displaying "You must be signed in to be able to add a recipe!"
+    with a 404 message."
 
 ### Profile Page
 ### (regular user and admin user)
