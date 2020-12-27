@@ -529,7 +529,7 @@ All manual tests were done in the following browsers:
 
 - Further testing:
     - If an unauthorized user tries to get to the 'Manage Categories' page they will be displayed
-    with a flash message displaying "You are not allowed on this page!"
+    with a 404 message."
 
 ### Add category Page
 ### (admin user only)
