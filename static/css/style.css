@@ -150,6 +150,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom: -1px!important;
     width: 100%;
     background-color: #FCFCFF;
     min-height: 100vh;

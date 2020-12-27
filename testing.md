@@ -335,7 +335,8 @@ All manual tests were done in the following browsers:
 
 - Further testing:
     - If an already signed in user tries to get to the 'Sign In' page they will be displayed
-    with a flash message displaying "You are already signed in in!"
+    with a message saying 'Oops! Looks like you are already signed in. Please log out if you want to change
+    account'
 
 ### Add Recipe Page
 ### (regular user and admin user)
